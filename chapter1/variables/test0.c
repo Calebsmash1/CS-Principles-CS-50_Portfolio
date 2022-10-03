@@ -7,7 +7,7 @@
  * Mount Greylock
  */
 
-
+#include <stdio.h>
 int main(void)
 {
     //Declare an integer variable called x
