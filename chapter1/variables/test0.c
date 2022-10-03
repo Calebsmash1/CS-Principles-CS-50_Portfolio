@@ -10,12 +10,13 @@
 #include <stdio.h>
 int main(void)
 {
-    //Declare an integer variable called x
+    //Declare an integer variable called x and assign 7 to it
     int x;
 
-    // Assign a value to x
-    x = 7;
+    // Declare an integer variable called y and assign 3 to it
+    int y = 3;
 
     //Print the current value
     printf("x is %i\n", x);
+    printf("y is %i\n", y);
 }
