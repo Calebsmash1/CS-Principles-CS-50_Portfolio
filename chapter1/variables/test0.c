@@ -11,7 +11,7 @@
 int main(void)
 {
     //Declare an integer variable called x and assign 7 to it
-    int x;
+    int x = 7;
 
     // Declare an integer variable called y and assign x + 1 to it
     int y = x + 1;
