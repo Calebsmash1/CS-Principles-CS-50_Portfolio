@@ -17,5 +17,5 @@ int main(void)
     x = 7;
 
     //Print the current value
-    printf("x is %i\n",) x);
+    printf("x is %i\n", x);
 }
