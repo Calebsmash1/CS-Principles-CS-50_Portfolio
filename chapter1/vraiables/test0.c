@@ -1,2 +1,13 @@
-// This program will make variables and assign numbers to them
-// then display them to the screen
+/**
+ * This program will create variables, assign values, and
+ * prints them out.
+ *
+ * Ernani Caleb Rosse
+ * CS50 AP
+ * Mount Greylock
+ */
+
+int main(void)
+{
+    
+}
