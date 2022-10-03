@@ -17,5 +17,5 @@ int main(void)
     int y = x + 1;
 
     //Print the current value
-    printf("The value of x is %i and the value of y is %i\n, x, y);
+    printf("The value of x is %i and the value of y is %i\n", x, y);
 }
