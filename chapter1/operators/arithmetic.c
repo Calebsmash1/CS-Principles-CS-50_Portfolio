@@ -17,5 +17,8 @@ int main(void)
     // int add = number1 + number2;
     // printf("%i plus %i is %i\n", number1, number2, add);
 
-    printf("%i plus %i is %i\n, number1, number2, number1 + number2);
+    printf("%i plus %i is %i\n", number1, number2, number1 + number2);
+    printf("%i minus %i is %i\n", number1, number2, number1 - number2);
+    printf("%i times %i is %i\n", number1, number2, number1 * number2);
+    printf("%i divided by %i is %i\n", number1, number2, number1 / number2);
 }
