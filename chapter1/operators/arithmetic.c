@@ -13,7 +13,9 @@ int main(void)
     // Prompt the user for another integer
     int number2 = get_int("Another Integer: ");
 
-    // Addition
-    int add = number1 + number2;
-    printf("%i plus %i is %i\n", number1, number2, add);
+    // Addition using an extra variable
+    // int add = number1 + number2;
+    // printf("%i plus %i is %i\n", number1, number2, add);
+
+    printf("%i plus %i is %i\n, number1, number2, number1 + number2);
 }
