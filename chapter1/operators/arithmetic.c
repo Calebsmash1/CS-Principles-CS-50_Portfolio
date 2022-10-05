@@ -14,5 +14,6 @@ int main(void)
     int number2 = get_int("Another Integer: ");
 
     // Addition
-    int add = 
+    int add = number1 + number2;
+    printf("%i plus %i is %i\n", number1, number2, add);
 }
