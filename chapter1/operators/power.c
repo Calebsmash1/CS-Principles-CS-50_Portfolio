@@ -14,5 +14,5 @@ int main(void)
     // Prompt the user for a power
     double p = get_double("Give a power, please: ");
 
-    printf("%f raised to the power of %f is %f\n", number, p, pow(number, p));
+    printf("%0.3f raised to the power of %0.3f is %0.3f\n", number, p, pow(number, p));
 }
