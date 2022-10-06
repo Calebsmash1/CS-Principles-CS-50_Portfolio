@@ -20,8 +20,9 @@ int main(void)
     printf("%i plus %i is %i\n", number1, number2, number1 + number2);
     printf("%i minus %i is %i\n", number1, number2, number1 - number2);
     printf("%i times %i is %i\n", number1, number2, number1 * number2);
-    // Nothe* An integer divided by an integer is always an integer
+    // Note* An integer divided by an integer is always an integer
     // Floor division
     printf("%i divided by %i is %i\n", number1, number2, number1 / number2);
+    // Mod
     printf("The remainder when %i is divided by %i is %i\n", number1, number2, number1 / number2);
 }
