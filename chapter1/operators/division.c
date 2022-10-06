@@ -13,7 +13,7 @@ int main(void)
     // Prompts the user for another number and saves it
     float second = get_float("Another number: ");
 
-    // Divide these two numbers and print the value
+    // Divide these two numbers and print the value rounding to three decimals with %.03
     printf("%0.3f divided by %0.3f is %0.3f\n", first, second, first / second);
 
 }
