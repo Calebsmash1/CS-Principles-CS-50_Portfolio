@@ -14,6 +14,6 @@ int main(void)
     float second = get_float("Another number: ");
 
     // Divide these two numbers and print the value
-    printf("%f divided by %f is %f\n", first, second, first / second);
+    printf("%0.3f divided by %0.3f is %0.3f\n", first, second, first / second);
 
 }
