@@ -9,9 +9,9 @@
 int main(void)
 {
     // Prompts the user for a temperature in Celsius
-    int number1 = get_int("Integer: ");
+    float number1 = get_float("Number: ");
 
     // Converts the user's input into farenheit and displays it
-    printf("%i plus %i is %i\n", number1, number2, number1 + number2);)
+    printf("%0.3f celsius is %0.3f\n", number1, number2, number1 + number2);)
 
 }
