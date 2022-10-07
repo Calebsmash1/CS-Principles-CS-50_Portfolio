@@ -12,6 +12,6 @@ int main(void)
     float number1 = get_float("C: ");
 
     // Converts the user's input into farenheit and displays it
-    printf("F")
+    printf("F: %0.3f\n", number1 * 5, )
 
 }
