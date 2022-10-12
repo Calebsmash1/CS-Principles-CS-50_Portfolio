@@ -11,10 +11,11 @@ int main(void)
     char answer = get_char("Answer (Y/N): ");
 
     // Confirming user's input
+    switch(answer)
     {
         case 'Y':
         case 'y':
-            printf("You said Yes\n"):
+            printf("You said Yes\n");
 
         case 'N':
         case 'n':
@@ -23,6 +24,4 @@ int main(void)
         default:
             printf("Error - please provide an appropriate response\n");
     }
-
-
 }
