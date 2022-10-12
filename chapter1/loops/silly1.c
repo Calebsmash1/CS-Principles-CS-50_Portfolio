@@ -3,6 +3,8 @@
 
 int main(void)
 {
+    /**
+
     int x = 0;
 
     while (x < 6)
@@ -10,4 +12,10 @@ int main(void)
         printf("hello, world\n");
         x++;
     }
+    */
+   //This is the for loop equivalent
+   for (int i = 0; i < 6; i++)
+   {
+        printf("hello, world\n");
+   }
 }
