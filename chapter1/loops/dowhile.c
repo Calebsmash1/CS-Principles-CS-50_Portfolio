@@ -5,5 +5,9 @@
 
 int main(void)
 {
-    int n = get_int("Positive integer: ")
+    do
+    {
+        int n = get_int("Positive integer: ");
+    }
+    while (n < 0);
 }
