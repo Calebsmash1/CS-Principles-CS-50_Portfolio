@@ -19,14 +19,15 @@ int main(void)
     while (change < 0);
 
     // Finds the least amount of coins that should be
-    // returned to the user
+    // returned to the user using floor decision
 
-    finalchange = change -- 
+    finalchange = change --
 
     //Returns change to user
     printf("%0.2f\n", finalchange);
 
     /**
-     *
+     *  // Floor division
+    printf("%i divided by %i is %i\n", number1, number2, number1 / number2);
     */
 }
