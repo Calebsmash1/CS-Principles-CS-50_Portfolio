@@ -11,8 +11,9 @@
 int main(void)
 {
     // Asks user for the amount of change owed
-    get_float
-    printf("How much change do I owe you?\n");
+    float change = get_float("How much change do I owe you?\n");
+
+    // Finds out how 
 
     /**
      * // Prompts the user for a temperature in Celsius
