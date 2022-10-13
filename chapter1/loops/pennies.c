@@ -2,6 +2,7 @@
 // If their change doubled every day for a month
 
 #include <cs50.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -13,7 +14,9 @@ int main(void)
     int days = get_int("Number of days in month: ");
 
     // Double the number of pennies for each of the days
+    pennies = pennies * math.pow(2, days);
 
 
     // Print the number of pennies after a month
+    printf("You will have %i pennies after one month!\n", pennies);
 }
