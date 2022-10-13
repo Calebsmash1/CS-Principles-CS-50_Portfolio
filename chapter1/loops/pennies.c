@@ -7,14 +7,14 @@
 
 int main(void)
 {
-    // Get starting change in pennies
+    // Get starting change in pennies (make sure the value is positive)
     long long pennies;
     do{
             pennies = get_long("Number of pennies to start: ");
     }
     while (pennies < 1);
 
-    // Get the number of days in the month
+    // Get the number of days in the month (make sure the value is between 28 and 31)
     int days;
     do
     {
