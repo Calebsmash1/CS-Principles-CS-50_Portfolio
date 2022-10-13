@@ -15,7 +15,7 @@ int main(void)
 
     // Finds the least amount of coins that should be
     // returned to the user
-    printf("\n");
+    printf("%0.2f\n", change);
 
     /**
      * // Prompts the user for a temperature in Celsius
