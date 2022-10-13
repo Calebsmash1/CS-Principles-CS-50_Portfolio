@@ -15,9 +15,10 @@ int main(void)
 
     // Finds the least amount of coins that should be
     // returned to the user
-    printf("%0.2f\n", change);
+    
 
     //Returns change to user
+    printf("%0.2f\n", finalchange);
 
     /**
      *
