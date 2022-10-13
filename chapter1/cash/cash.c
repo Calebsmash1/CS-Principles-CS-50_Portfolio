@@ -4,6 +4,10 @@
  * number of coins with which that change can be made
 */
 
+#include <cs50.h>
+#include <math.h>
+#include <stdio.h>
+
 int main(void)
 {
     // Asks user for the amount of change owed
