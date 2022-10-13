@@ -6,5 +6,6 @@
 
 int main(void)
 {
-    
+    // Asks user for the amount of change owed
+    printf("How much change do I owe you?")
 }
