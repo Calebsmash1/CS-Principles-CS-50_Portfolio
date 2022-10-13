@@ -22,7 +22,7 @@ int main(void)
 
 
     //Returns change to user
-    //printf("%0.2f\n", finalchange);
+    printf("%0.2f\n");
 
     /**
      *
