@@ -14,5 +14,6 @@ int main(void)
 
     // Double the number of pennies for each of the days
 
+
     // Print the number of pennies after a month
 }
