@@ -6,5 +6,7 @@
 
 int main(void)
 {
-    // Get 
+    // Get starting change in pennies
+
+    // Get
 }
