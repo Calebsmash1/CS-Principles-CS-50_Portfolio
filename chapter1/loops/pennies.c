@@ -8,7 +8,11 @@
 int main(void)
 {
     // Get starting change in pennies
-    long long pennies = get_long("Number of pennies to start: ");
+    long long pennies;
+    do{
+            pennies = get_long("Number of pennies to start: ");
+    }
+    while (pennies < 1);
 
     // Get the number of days in the month
     int days = get_int("Number of days in month: ");
