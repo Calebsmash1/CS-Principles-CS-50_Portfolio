@@ -17,6 +17,8 @@ int main(void)
     // returned to the user
     printf("%0.2f\n", change);
 
+    //Returns change to user
+
     /**
      * // Prompts the user for a temperature in Celsius
     float number1 = get_float("C: ");
