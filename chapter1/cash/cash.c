@@ -20,10 +20,6 @@ int main(void)
     //Returns change to user
 
     /**
-     * // Prompts the user for a temperature in Celsius
-    float number1 = get_float("C: ");
-
-    // Converts the user's input into farenheit and displays it
-    printf("F: %0.1f\n", number1 * 9 / 5 + 32);
+     *
     */
 }
