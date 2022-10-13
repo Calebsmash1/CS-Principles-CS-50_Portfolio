@@ -14,7 +14,7 @@ int main(void)
     int days = get_int("Number of days in month: ");
 
     // Double the number of pennies for each of the days
-    pennies = pennies * math.pow(2, days);
+    pennies = pennies * pow(2, days);
 
 
     // Print the number of pennies after a month
