@@ -8,7 +8,7 @@
 int main(void)
 {
     // Get starting change in pennies
-    int pennies = get_int("Number of pennies to start: ");
+    long pennies = get_int("Number of pennies to start: ");
 
     // Get the number of days in the month
     int days = get_int("Number of days in month: ");
@@ -18,5 +18,5 @@ int main(void)
 
 
     // Print the number of pennies after a month
-    printf("You will have %i pennies after one month!\n", pennies);
+    printf("You will have %li pennies after one month!\n", pennies);
 }
