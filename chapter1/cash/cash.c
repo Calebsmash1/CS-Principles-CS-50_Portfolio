@@ -13,7 +13,9 @@ int main(void)
     // Asks user for the amount of change owed
     float change = get_float("How much change do I owe you?\n");
 
-    // Finds out how 
+    // Finds the least amount of coins that should be
+    // returned to the user
+    
 
     /**
      * // Prompts the user for a temperature in Celsius
