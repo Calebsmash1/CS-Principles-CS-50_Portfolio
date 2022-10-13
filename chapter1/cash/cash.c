@@ -12,17 +12,18 @@ int main(void)
 {
     // Asks user for the amount of change owed
     float change;
-     do{
-            change = get_float("Change owed: ");
+    do
+    {
+        change = get_float("Change owed: ");
     }
-    while (change < 1);
+    while (change < 0);
 
     // Finds the least amount of coins that should be
     // returned to the user
 
 
     //Returns change to user
-    printf("%0.2f\n");
+    printf("%0.2f\n", change);
 
     /**
      *
