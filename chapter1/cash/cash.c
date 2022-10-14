@@ -11,7 +11,7 @@
 int main(void)
 {
     // Asks user for the amount of change owed
-    float change;
+    int change;
     do
     {
         change = get_float("Change owed: ");
