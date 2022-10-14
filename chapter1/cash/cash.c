@@ -17,7 +17,7 @@ int main(void)
         change = get_float("Change owed: ");
     }
     while (change < 0);
-    int coins = -3;
+    int coins = 0;
     do
     {
         coins = (coins + 1);
