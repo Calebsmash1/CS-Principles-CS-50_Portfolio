@@ -17,6 +17,7 @@ int main(void)
         change = get_float("Change owed: ");
     }
     while (change < 0);
+    int cents = round(dollars * 100);
 
     // Establishes available change options
     //int dollar = (1);
