@@ -20,8 +20,8 @@ int main(void)
 
     // Finds the least amount of coins that should be
     // returned to the user using floor decision
-
-    finalchange = change --
+    float finalchange;
+    finalchange = change / 1 / 0.25 / 0.10 / 0.5 / 0.1
 
     //Returns change to user
     printf("%0.2f\n", finalchange);
