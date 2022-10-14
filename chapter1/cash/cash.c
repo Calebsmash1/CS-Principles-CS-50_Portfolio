@@ -17,31 +17,32 @@ int main(void)
         change = get_float("Change owed: ");
     }
     while (change < 0);
-    int finalchange = 1;
+    int coins = -3;
     do
     {
-        finalchange = (finalchange + 1);
+        coins = (coins + 1);
         change = (change - 0.25);
     }
     while (change >= 0.25);
     do
     {
-        finalchange = (change + 1);
+        coins = (coins + 1);
         change = (change - 0.10);
     }
     while (change >= 0.10);
     do
     {
-        finalchange = (finalchange + 1);
+        coins = (coins + 1);
         change = (change - 0.05);
     }
     while (change >= 0.05);
     do
     {
-        finalchange = (finalchange + change);
+        coins = (coins + 1);
+        change = (change - 0.01);
     }
     while (change > 0.01);
 
     // Returns change to user
-    printf("%0.0i\n", finalchange);
+    printf("%0.0i\n", coins);
 }
