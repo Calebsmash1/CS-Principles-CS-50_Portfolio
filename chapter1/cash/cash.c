@@ -19,7 +19,7 @@ int main(void)
     while (change < 0);
     do
     {
-        change = get_float(change -- 1);
+        change = (change - 1);
     }
     while (change < 1);
     // Finds the least amount of coins that should be
