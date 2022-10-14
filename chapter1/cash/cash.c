@@ -19,7 +19,7 @@ int main(void)
     while (change < 0);
 
     // Establishes available change options
-    float dollar = (1);
+    int dollar = (1);
     float quarter = (0.25);
     float dime = (0.10);
     float nickel = (0.05);
@@ -28,7 +28,7 @@ int main(void)
     // returned to the user using floor decision
     // and displays it
 
-    printf("%0.0i\n", change / quarter);
+    printf("%0.0i\n", change / dollar);
 
     //Returns change to user
     // printf("%0.2f\n", finalchange);
