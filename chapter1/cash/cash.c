@@ -17,18 +17,14 @@ int main(void)
         change = get_float("Change owed: ");
     }
     while (change < 0);
+    do
+    {
 
+    }
+    
     // Finds the least amount of coins that should be
     // returned to the user using floor decision
     // and displays it
 
-    printf("%i\n", change / 0.25 + 1);
-
-    //Returns change to user
-    // printf("%0.2f\n", finalchange);
-
-    /**
-     *  // Floor division
-    printf("%i divided by %i is %i\n", number1, number2, number1 / number2);
-    */
+    printf("%0.0f\n", change);
 }
