@@ -18,7 +18,7 @@ int main(void)
     }
     while (change < 0);
     int coins = 0;
-    do
+    while (change >= 0.25);
     {
         coins = (coins + 1);
         change = (change - 0.25);
