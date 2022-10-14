@@ -11,19 +11,18 @@
 int main(void)
 {
     // Asks user for the amount of change owed
-    int change;
+    float change;
     do
     {
         change = get_float("Change owed: ");
     }
     while (change < 0);
-    int cents = round(dollars * 100);
 
     // Finds the least amount of coins that should be
     // returned to the user using floor decision
     // and displays it
 
-    printf("%0.0f\n", change / 0.25 + 1);
+    printf("%i\n", change / 0.25 + 1);
 
     //Returns change to user
     // printf("%0.2f\n", finalchange);
