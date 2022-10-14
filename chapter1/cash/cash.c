@@ -40,7 +40,7 @@ int main(void)
     {
         finalchange = (finalchange + change);
     }
-    while (change >= 0.01);
+    while (change > 0.01);
 
     // Returns change to user
     printf("%0.0i\n", finalchange);
