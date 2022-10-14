@@ -5,7 +5,7 @@
 */
 
 #include <cs50.h>
-#include <math.h>
+// #include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -22,7 +22,7 @@ int main(void)
     // returned to the user using floor decision
     // and displays it
 
-    printf("%0.2f\n", change / 1 / 0.25 / 0.10 / 0.5 / 0.01);
+    printf("%0.2f\n", change / 1);
 
     //Returns change to user
     // printf("%0.2f\n", finalchange);
