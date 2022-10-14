@@ -19,12 +19,6 @@ int main(void)
     while (change < 0);
     int cents = round(dollars * 100);
 
-    // Establishes available change options
-    //int dollar = (1);
-    //float quarter = (0.25);
-    //float dime = (0.10);
-    //float nickel = (0.05);
-    //float penny = (0.01);
     // Finds the least amount of coins that should be
     // returned to the user using floor decision
     // and displays it
