@@ -5,7 +5,7 @@
 */
 
 #include <cs50.h>
-// #include <math.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -19,9 +19,9 @@ int main(void)
     while (change < 0);
     do
     {
-
+        change = get_float(change -- 1);
     }
-    
+    while (change < 1);
     // Finds the least amount of coins that should be
     // returned to the user using floor decision
     // and displays it
