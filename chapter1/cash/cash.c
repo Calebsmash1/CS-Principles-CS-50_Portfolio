@@ -28,7 +28,7 @@ int main(void)
     // returned to the user using floor decision
     // and displays it
 
-    printf("%0.0f\n", change / dollar);
+    printf("%0.0f\n", change / quarter);
 
     //Returns change to user
     // printf("%0.2f\n", finalchange);
