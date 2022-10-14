@@ -18,30 +18,26 @@ int main(void)
     }
     while (change < 0);
     int coins = 0;
-    while (change >= 0.25);
+    while (change >= 0.25)
     {
         coins = (coins + 1);
         change = (change - 0.25);
     }
-    while (change >= 0.25);
-    do
+    while (change >= 0.10)
     {
         coins = (coins + 1);
         change = (change - 0.10);
     }
-    while (change >= 0.10);
-    do
+    while (change >= 0.05)
     {
         coins = (coins + 1);
         change = (change - 0.05);
     }
-    while (change >= 0.05);
-    do
+    while (change >= 0.01)
     {
         coins = (coins + 1);
         change = (change - 0.01);
     }
-    while (change > 0.01);
 
     // Returns change to user
     printf("%0.0i\n", coins);
