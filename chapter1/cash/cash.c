@@ -19,24 +19,24 @@ int main(void)
     while (change < 0);
     do
     {
-        change = (change / 0.25);
+        change = (change - 0.25);
     }
-    while (change >= 0.25);
+    while (change <= 0.25);
     do
     {
-        change = (change / 0.10);
+        change = (change - 0.10);
     }
-    while (change >= 0.10);
+    while (change <= 0.10);
     do
     {
         change = (change - 0.05);
     }
-    while (change >= 0.05);
+    while (change <= 0.05);
     do
     {
         change = (change - 0.01);
     }
-    while (change >= 0.01);
+    while (change <= 0.01);
     // Finds the least amount of coins that should be
     // returned to the user using floor decision
     // and displays it
