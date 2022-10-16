@@ -42,8 +42,7 @@ int main(void)
     }
     while (change > 0)
     {
-        coins = (coins + 1);
-        change = (change - .01);
+        coins = (coins + change);
     }
 
     // Returns change to user
