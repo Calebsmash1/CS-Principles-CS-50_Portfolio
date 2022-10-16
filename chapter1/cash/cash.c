@@ -48,5 +48,5 @@ int main(void)
     }
 
     // Returns change to user
-    printf("%0.0i\n", coins);
+    printf("%i\n", coins);
 }
