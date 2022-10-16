@@ -39,7 +39,7 @@ int main(void)
     }
     while (change >= 0.01)
     {
-        coins = (coins + change);
+        coins = (coins + 1);
         change = (change - change);
 
     }
