@@ -18,10 +18,13 @@ int main(void)
     }
     while (change < 0);
 
-
     // Finds out the least amount of coins that should
     // be returned to the user through while statements
     int coins = 0;
+    if (change > 1)
+    {
+        coins = (coins - 1);
+    }
     while (change >= 0.25)
     {
         coins = (coins + 1);
@@ -37,12 +40,10 @@ int main(void)
         coins = (coins + 1);
         change = (change - .05);
     }
-    coins = (coins + 1);
-    while (change > 0.01)
+    while (change > 0)
     {
         coins = (coins + 1);
         change = (change - .01);
-
     }
 
     // Returns change to user
