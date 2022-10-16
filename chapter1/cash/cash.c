@@ -44,6 +44,7 @@ int main(void)
     while (change == 0)
     {
         coins = (coins + 1);
+        change = (change - 0);
     }
 
     // Returns change to user
