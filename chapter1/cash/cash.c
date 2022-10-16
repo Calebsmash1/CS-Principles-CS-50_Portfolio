@@ -36,10 +36,6 @@ int main(void)
         coins = (coins + 1);
         change = (change - .05);
     }
-    while (change < 0.05)
-    {
-        coins = (coind + change * 100);
-    }
     while (change >= 0.01)
     {
         coins = (coins + 1);
