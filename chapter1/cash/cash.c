@@ -38,6 +38,7 @@ int main(void)
     while (change >= 0.01)
     {
         coins = (coins + 1);
+        int cents =round(change * 100);
     }
 
     // Returns change to user
