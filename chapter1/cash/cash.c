@@ -16,10 +16,9 @@ int main(void)
     {
         change = get_float("Change owed: ");
     }
-
+    while (change < 0);
     // Finds out the least amount of coins that should
     // be returned to the user through while statements
-    while (change < 0);
     int coins = 0;
     while (change >= 0.25)
     {
