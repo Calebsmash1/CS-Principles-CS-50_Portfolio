@@ -36,7 +36,7 @@ int main(void)
         coins = (coins + 1);
         change = (change - .05);
     }
-    while (change >= 0.01)
+    while (change >= 0)
     {
         coins = (coins + 1);
         change = (change - .01);
