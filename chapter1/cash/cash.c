@@ -41,11 +41,6 @@ int main(void)
         coins = (coins + 1);
         change = (change - 0.01);
     }
-    while (change == 0)
-    {
-        coins = (coins + 1);
-        change = (change - 0);
-    }
 
     // Returns change to user
     printf("%i\n", coins);
