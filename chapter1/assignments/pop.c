@@ -4,11 +4,12 @@
 int main(void)
 {
     // TODO: Prompt for start size
-    int size = get_int("Start size:)
+    int size = get_int("Start size: ");
 
     // TODO: Prompt for end size
 
     // TODO: Calculate number of years until we reach threshold
 
     // TODO: Print number of years
+    printf("%i\n", size);
 }
