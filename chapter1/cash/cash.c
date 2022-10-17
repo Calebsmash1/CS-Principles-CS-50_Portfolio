@@ -17,29 +17,31 @@ int main(void)
         change = get_float("Change owed: ");
     }
     while (change < 0);
+    int pennies = round(change * 100);
+
 
     // Finds out the least amount of coins that should
     // be returned to the user through while statements
     int coins = 0;
-    while (change >= 0.25)
+    while (pennies >= 25)
     {
         coins = (coins + 1);
-        change = (change - .25);
+        pennies = (pennies - 25);
     }
-    while (change >= 0.10)
+    while (pennies >= 10)
     {
         coins = (coins + 1);
-        change = (change - .10);
+        pennies = (pennies - 10);
     }
-    while (change >= 0.05)
+    while (pennies >= 5)
     {
         coins = (coins + 1);
-        change = (change - .05);
+        pennies = (pennies - 5);
     }
-    while (change >= 0.01)
+    while (pennies >= 1)
     {
         coins = (coins + 1);
-        change = (change - 0.01);
+        pennies = (pennies - 1);
     }
 
     // Returns change to user
