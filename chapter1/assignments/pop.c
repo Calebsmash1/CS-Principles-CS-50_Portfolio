@@ -12,15 +12,15 @@ int main(void)
     while (startsize < 9);
 
     // TODO: Prompt for end size
-    int size;
+    int endsize;
     do
     {
-        size = get_int("Start size: ");
+        endsize = get_int("End size: ");
     }
-    while (size < 9);
+    while (endsize < startsize);
 
     // TODO: Calculate number of years until we reach threshold
 
     // TODO: Print number of years
-    printf("Years:%0.1i\n", size);
+    printf("Years:");
 }
