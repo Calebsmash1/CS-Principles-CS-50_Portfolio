@@ -4,7 +4,7 @@
 int main(void)
 {
     // TODO: Prompt for start size
-    
+    int size = get_int("Start size:)
 
     // TODO: Prompt for end size
 
