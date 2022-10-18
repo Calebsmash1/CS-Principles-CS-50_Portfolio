@@ -21,12 +21,12 @@ int main(void)
     while (endsize < startsize);
 
     // TODO: Calculate number of years until we reach threshold
+    int years = 0;
     int born = (startsize / 3);
     int dead = (startsize / 4);
     int finalpop = (startsize + born - dead);
     do
     {
-        
     }
 
     // TODO: Print number of years
