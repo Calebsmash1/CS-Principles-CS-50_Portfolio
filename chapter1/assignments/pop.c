@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -20,8 +21,8 @@ int main(void)
     while (endsize < startsize);
 
     // TODO: Calculate number of years until we reach threshold
-    int years = (startsize )
+    int years = (startsize + startsize / 3 - startsize / 4);
 
     // TODO: Print number of years
-    printf("Years:\n");
+    printf("Years:%i\n", years);
 }
