@@ -24,8 +24,11 @@ int main(void)
     int years = 0;
     int born = (startsize / 3);
     int dead = (startsize / 4);
-    int finalpop = (startsize + born - dead);
-    
+    do
+    {
+        int finalpop = (startsize + born - dead);
+    }
+
     // TODO: Print number of years
     printf("Years:\n");
 }
