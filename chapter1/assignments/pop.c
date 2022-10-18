@@ -24,9 +24,10 @@ int main(void)
     int years = 0;
     int born = (startsize / 3);
     int dead = (startsize / 4);
-    do
+    while
     {
         int finalpop = (startsize + born - dead);
+        int years = (years + 1)
     }
 
     // TODO: Print number of years
