@@ -21,14 +21,13 @@ int main(void)
     while (endsize < startsize);
 
     // TODO: Calculate number of years until we reach threshold
+    int born = (startsize / 3);
+    int dead = (startsize / 4);
+    int finalpop = (startsize + born - dead);
     do
     {
         
     }
-    int born = (startsize / 3);
-    int dead = (startsize / 4);
-    int finalpop = (startsize + born - dead);
-
 
     // TODO: Print number of years
     printf("Years:\n");
