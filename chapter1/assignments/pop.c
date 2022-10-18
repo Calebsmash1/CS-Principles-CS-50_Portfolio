@@ -27,6 +27,7 @@ int main(void)
     int finalpop = (startsize + born - dead);
     do
     {
+        
     }
 
     // TODO: Print number of years
