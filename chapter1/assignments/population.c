@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    // TODO: Prompt for start size
+    // Prompts the user for start size
     int startsize;
     do
     {
@@ -12,7 +12,7 @@ int main(void)
     }
     while (startsize < 9);
 
-    // TODO: Prompt for end size
+    // Prompts the user for end size
     int endsize;
     do
     {
@@ -20,7 +20,7 @@ int main(void)
     }
     while (endsize < startsize);
 
-    // TODO: Calculate number of years until we reach threshold
+    // Calculate number of years until we reach threshold
     int years = 0;
     while (startsize < endsize)
     {
@@ -30,6 +30,6 @@ int main(void)
         years = (years + 1);
     }
 
-    // TODO: Print number of years
+    // Print number of years
     printf("Years: %i", years);
 }
