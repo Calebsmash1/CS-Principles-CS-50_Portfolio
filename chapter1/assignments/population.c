@@ -1,3 +1,8 @@
+/**
+ * Program that predicts how many years until
+ * a population grows to a certain size
+*/
+
 #include <cs50.h>
 #include <math.h>
 #include <stdio.h>
