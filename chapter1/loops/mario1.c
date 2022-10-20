@@ -6,11 +6,15 @@
 int main (void)
 {
     // Get the number of ? that the user wants
-    int 1 = get_int("Number: ");
-    for (int i = 0; i < 1; i++)
+    int q = get_int("Number: ");
+
+    // For each question mark
+    for (int i = 0; i < q; i++)
     {
+        // Print a ?
         printf("?");
     }
 
+    // Prints a new line
     printf("\n");
 }
