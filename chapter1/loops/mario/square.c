@@ -4,6 +4,7 @@
 
 int main (void)
 {
+    int height;
     do
     {
         height = get_int("Height: ");
@@ -16,10 +17,10 @@ int main (void)
         // For each column
         for (int j = 0; j < height; j++)
         {
-            printf("#")
+            printf("#");
         }
 
-        printf("\n";)
+        printf("\n");
     }
 
 }
