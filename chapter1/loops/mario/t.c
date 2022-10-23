@@ -18,19 +18,19 @@ int main(void)
     // For each row
     for (int row = 0; row < height; row++)
     {
-        // For each column
-        for (int col = -1; col < row; col++)
+        // For each blank space
+        int h = height;
+        int r = row - 1;
+        for(int blank = 0; blank < h - r; blank++)
         {
-            int h = height;
-            int r = row;
-            for(int blank = 0; blank < h - r; blank++)
-            {
-                printf(" ");
-            }
-            // Print a block
-            printf("#");
+            printf(" ");
         }
-
+            // For each column
+            for (int col = 0; col <= row; col++)
+            {
+                // Print a block
+                printf("#");
+            }
         // Print a new line to prepare for next row
         printf("\n");
     }
