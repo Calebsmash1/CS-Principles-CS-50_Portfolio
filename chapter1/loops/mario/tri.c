@@ -27,6 +27,6 @@ int main(void)
         }
 
         // Print a new line to prepare for next row
-        printf("\n");
+        printf("\n%i", blanks);
     }
 }
