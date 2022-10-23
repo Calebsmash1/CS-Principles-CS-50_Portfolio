@@ -2,6 +2,7 @@
 
 // Print a triangle of blocks
 #include <cs50.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -20,6 +21,12 @@ int main(void)
         // For each column
         for (int col = -1; col < row; col++)
         {
+            int h = height;
+            for(int blank = 0; blank < h - 1; blank++)
+            {
+                printf(" ");
+                h - 1;
+            }
             // Print a block
             printf("#");
         }
