@@ -13,6 +13,7 @@ int main(void)
     while (height <= 0);
 
     // For each row
+
     for (int row = 0; row < height; row++)
     {
         // For each column
