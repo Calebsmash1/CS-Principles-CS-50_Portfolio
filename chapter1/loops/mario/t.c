@@ -1,5 +1,3 @@
-
-
 // Print a triangle of blocks
 #include <cs50.h>
 #include <math.h>

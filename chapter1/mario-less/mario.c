@@ -1,25 +1,35 @@
+// Print a triangle of blocks
 #include <cs50.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void)
 {
-    // Prompts the user for height of pyramid
+    // Get a height from the user
     int height;
-    int length;
     do
     {
         height = get_int("Height: ");
     }
-    while (height <=0);
-    length = height;
+    while (height <= 0);
 
-    // Calculates how many spaces should exist and prints the triangle
-    for (int h = 0; h < height; h++)
+    // For each row
+    for (int row = 0; row < height; row++)
     {
-        for (int l = 0; l < length; l++)
+        // For each blank space
+        int h = height;
+        int r = row - 1;
+        for (int blank = 0; blank < h - r; blank++)
         {
-            printf("*");
+            printf(" ");
         }
-        printf("#\n");
+        // For each column
+        for (int col = 0; col <= row; col++)
+        {
+            // Print a block
+            printf("#");
+        }
+        // Print a new line to prepare for next row
+        printf("\n");
     }
 }
