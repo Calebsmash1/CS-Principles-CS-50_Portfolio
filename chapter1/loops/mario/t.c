@@ -20,10 +20,6 @@ int main(void)
         // For each column
         for (int col = -1; col < row; col++)
         {
-            for(int blank = 0; blank < height - 1; blank--)
-            {
-                printf(" ");
-            }
             // Print a block
             printf("#");
         }
