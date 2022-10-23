@@ -18,8 +18,8 @@ int main(void)
     {
         for (int l = 0; l < length; l++)
         {
-
+            printf("*");
         }
-        printf("*#\n");
+        printf("#\n");
     }
 }

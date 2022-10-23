@@ -16,7 +16,7 @@ int main(void)
     for (int row = 0; row < height; row++)
     {
         // For each column
-        for (int col = height - 1; col < height + row; col++)
+        for (int col = 0; col < height - row; col_)
         {
             // Print a block
             printf("#");
