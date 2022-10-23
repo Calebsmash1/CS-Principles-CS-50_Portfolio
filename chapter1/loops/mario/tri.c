@@ -15,6 +15,7 @@ int main(void)
     // For each row
     for (int row = 0; row < height; row++)
     {
+        printf(" ");
         // For each column
         for (int col = height - 1; col < height + row; col++)
         {
@@ -22,7 +23,6 @@ int main(void)
             printf("#");
         }
 
-        printf(" ");
         // Print a new line to prepare for next row
         printf("\n");
     }
