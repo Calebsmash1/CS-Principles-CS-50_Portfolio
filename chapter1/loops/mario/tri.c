@@ -15,7 +15,10 @@ int main(void)
     // For each row
     for (int row = 0; row < height; row++)
     {
-        printf(" ");
+        while (row < height)
+        {
+            printf(" ");
+        }
         // For each column
         for (int col = height - 1; col < height + row; col++)
         {
