@@ -22,10 +22,10 @@ int main(void)
         for (int col = -1; col < row; col++)
         {
             int h = height;
-            for(int blank = 1; blank < h - 1; blank++)
+            for(int blank = 1; blank < h - 1; blank++; h--)
             {
                 printf(" ");
-                h = h - 1;
+                // h = h - 1;
             }
             // Print a block
             printf("#");
