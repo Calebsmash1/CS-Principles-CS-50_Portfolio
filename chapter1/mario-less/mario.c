@@ -17,8 +17,8 @@ int main(void)
     for (int row = 0; row < height; row++)
     {
         // For each blank space
-        int h = height;
-        int r = row - 1;
+        int h = height - 1;
+        int r = row;
         for (int blank = 0; blank < h - r; blank++)
         {
             printf(" ");
