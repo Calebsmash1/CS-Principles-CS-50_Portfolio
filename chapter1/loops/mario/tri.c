@@ -11,12 +11,11 @@ int main(void)
         height = get_int("Height: ");
     }
     while (height <= 0);
-    int var = height;
-    // For each row
 
+    // For each row
     for (int row = 0; row < height; row++)
     {
-
+        for ()
         // For each column
         for (int col = height - 1; col < height + row; col++)
         {
