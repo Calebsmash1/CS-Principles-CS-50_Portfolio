@@ -19,6 +19,7 @@ int main(void)
         for (int col = height - 1; col < height + row; col++)
         {
             // Print a block
+            printf("");
             printf("#");
         }
 
