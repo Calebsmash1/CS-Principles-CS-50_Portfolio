@@ -26,9 +26,9 @@ int main(void)
             {
                 printf(" ");
                 h = h - 1;
+                printf("#");
             }
             // Print a block
-            printf("#");
         }
 
         // Print a new line to prepare for next row
