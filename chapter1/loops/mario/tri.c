@@ -13,10 +13,6 @@ int main(void)
     while (height <= 0);
 
     // For each row
-    for (int blank = 0; blank < height; blank++)
-    {
-            printf(" ");
-    }
     for (int row = 0; row < height; row++)
     {
         // For each column
@@ -25,8 +21,7 @@ int main(void)
             // Print a block
             printf("#");
         }
-int blanks = 0;
         // Print a new line to prepare for next row
-        printf("\n%i", blanks);
+        printf("\n");
     }
 }
