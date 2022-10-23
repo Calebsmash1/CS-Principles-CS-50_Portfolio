@@ -25,7 +25,7 @@ int main(void)
             // Print a block
             printf("#");
         }
-
+int blanks = 0;
         // Print a new line to prepare for next row
         printf("\n%i", blanks);
     }
