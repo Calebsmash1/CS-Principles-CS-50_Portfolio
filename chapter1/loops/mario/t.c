@@ -21,16 +21,16 @@ int main(void)
         // For each blank space
         int h = height;
         int r = row - 1;
-        for(int blank = 0; blank < h - r; blank++)
+        for (int blank = 0; blank < h - r; blank++)
         {
             printf(" ");
         }
-            // For each column
-            for (int col = 0; col <= row; col++)
-            {
-                // Print a block
-                printf("#");
-            }
+        // For each column
+        for (int col = 0; col <= row; col++)
+        {
+            // Print a block
+            printf("#");
+        }
         // Print a new line to prepare for next row
         printf("\n");
     }
