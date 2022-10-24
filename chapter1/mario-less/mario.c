@@ -11,7 +11,7 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while (height <= 0);
+    while (height <= 0 cd);
 
     // For each row
     for (int row = 0; row < height; row++)
