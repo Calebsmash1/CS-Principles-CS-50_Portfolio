@@ -1,8 +1,11 @@
 // Multiplies two floats using an integer
 
+#include <cs50.h>
 #include <stdio.h>
 #include <math.h>
-#include <cs50.h>
+
+// Function prototype
+float float_times_float(float one, float two);
 
 int main(void)
 {
@@ -14,7 +17,7 @@ int main(void)
     float mult = float_times_float(first, second);
 
     // Display result
-    printf("%f times %f is %f\n", first, second, mult);
+    printf("%0.3f times %0.3f is %0.3f\n", first, second, mult);
 }
 
 float float_times_float(float one, float two)
