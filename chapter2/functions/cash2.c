@@ -13,7 +13,6 @@ int main(void)
 {
     // Ask how many cents the customer is owed
     int cents = get_cents();
-    printf("%i\n", cents);
 
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
@@ -38,6 +37,9 @@ int main(void)
     printf("%i\n", coins);
 }
 
+/**
+ * Prompts the user for the change owed, ensuring it's positive, returns an int
+*/
 
 int get_cents(void)
 {
@@ -62,15 +64,27 @@ int calculate_quarters(int cents)
     return cents / 25;
 }
 
+/**
+ * Returns the number of dimes given the change
+*/
+
 int calculate_dimes(int cents)
 {
     return cents / 10;
 }
 
+/**
+ * Returns the number of nickels given the change
+*/
+
 int calculate_nickels(int cents)
 {
     return cents / 5;
 }
+
+/**
+ * Returns the number of cents given the change
+*/
 
 int calculate_pennies(int cents)
 {
