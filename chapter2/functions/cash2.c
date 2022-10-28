@@ -38,6 +38,7 @@ int main(void)
     printf("%i\n", coins);
 }
 
+
 int get_cents(void)
 {
     // Get a float from the user
@@ -52,24 +53,26 @@ int get_cents(void)
     return round(dollars * 100);
 }
 
+/**
+ * Returns the number of quarters given the change
+*/
+
 int calculate_quarters(int cents)
 {
-    return 0;
+    return cents / 25;
 }
 
 int calculate_dimes(int cents)
 {
-    return 0;
+    return cents / 10;
 }
 
 int calculate_nickels(int cents)
 {
-    // TODO
-    return 0;
+    return cents / 5;
 }
 
 int calculate_pennies(int cents)
 {
-    // TODO
-    return 0;
+    return cents;
 }
