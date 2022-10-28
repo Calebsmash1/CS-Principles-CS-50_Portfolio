@@ -49,8 +49,15 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
-    // TODO
-    return 0;
+    // Get a float from the user
+    do
+    {
+        dollars = get_float("Change owed; ");
+    }
+    while(dollars < 0);
+
+    // Convert to an int pennies
+    return round(dollars * 100);
 }
 
 int calculate_nickels(int cents)
