@@ -44,7 +44,7 @@ int get_cents(void)
     float dollars;
     do
     {
-        dollars = get_float("Change owed; ");
+        dollars = get_float("Change owed: ");
     }
     while(dollars < 0);
 
@@ -54,13 +54,12 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
-    // TODO
     return 0;
 }
 
 int calculate_dimes(int cents)
 {
-
+    return 0;
 }
 
 int calculate_nickels(int cents)
