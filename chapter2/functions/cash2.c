@@ -1,3 +1,4 @@
+
 #include <cs50.h>
 #include <math.h>
 #include <stdio.h>
@@ -12,6 +13,7 @@ int main(void)
 {
     // Ask how many cents the customer is owed
     int cents = get_cents();
+    printf("%i\n", cents);
 
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
@@ -38,8 +40,16 @@ int main(void)
 
 int get_cents(void)
 {
-    // TODO
-    return 0;
+    // Get a float from the user
+    float dollars;
+    do
+    {
+        dollars = get_float("Change owed; ");
+    }
+    while(dollars < 0);
+
+    // Convert to an int pennies
+    return round(dollars * 100);
 }
 
 int calculate_quarters(int cents)
@@ -50,15 +60,7 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
-    // Get a float from the user
-    do
-    {
-        dollars = get_float("Change owed; ");
-    }
-    while(dollars < 0);
 
-    // Convert to an int pennies
-    return round(dollars * 100);
 }
 
 int calculate_nickels(int cents)
