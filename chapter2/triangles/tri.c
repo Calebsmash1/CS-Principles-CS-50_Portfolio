@@ -18,6 +18,10 @@ int main(void)
 }
 
 // TODO: Function that checks to see if a valid triangle
+bool valid_triangle(float x, float y, float z)
+{
+    
+}
 
     // TODO: Check for all positive sides, return false if not
 
