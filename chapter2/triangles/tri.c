@@ -22,14 +22,18 @@ int main(void)
 bool valid_triangle(float x, float y, float z)
 {
 
-    // TODO: Check for all positive sides, return false if not
-    if(x || y || z < 0);
+    // Check for all positive sides, return false if not
+    if(x || y || z <= 0)
     {
         return false;
     }
     // TODO: Check that sum of any two sides greater than third, return false if not
-    if( x + y )
+   // if()
+    //{
+     //   return
+    //}
 
     // TODO: If we passed both tests, we're good!
+    return true;
 
 }
