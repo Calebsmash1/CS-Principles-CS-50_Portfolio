@@ -1,7 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-// TODO: function prototype
+// Function prototype
+int final_score(int goals, bool snitch_caught);
 
 int main(void)
 {
@@ -12,3 +13,15 @@ int main(void)
 }
 
 // TODO: function definition
+int final_score(int goals, bool snitch_caught)
+{
+    // Calculate the score - 10pts each goal, add 150pts if snitch caught
+    int score = 10 * goals;
+    if(snitch_caught)
+    {
+        score += 150;
+    }
+
+    // Return the score
+    return score;
+}
