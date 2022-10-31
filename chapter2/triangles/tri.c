@@ -14,7 +14,7 @@ int main(void)
     float side3 = get_float("3rd side: ");
 
     // TODO: Determine if a valid triangle by calling valid_triangle then print result "Valid!" or "Invalid!"
-    
+
 
 }
 
@@ -22,11 +22,11 @@ int main(void)
 bool valid_triangle(float x, float y, float z)
 {
 
-}
-
     // TODO: Check for all positive sides, return false if not
+    if()
 
     // TODO: Check that sum of any two sides greater than third, return false if not
 
     // TODO: If we passed both tests, we're good!
     return
+}
