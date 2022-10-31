@@ -14,6 +14,7 @@ int main(void)
     float side3 = get_float("3rd side: ");
 
     // TODO: Determine if a valid triangle by calling valid_triangle then print result "Valid!" or "Invalid!"
+    
 
 }
 

@@ -12,7 +12,7 @@ int main(void)
     printf("Your team's final score is: %d\n", score);
 }
 
-// TODO: function definition
+// Function definition
 int final_score(int goals, bool snitch_caught)
 {
     // Calculate the score - 10pts each goal, add 150pts if snitch caught
