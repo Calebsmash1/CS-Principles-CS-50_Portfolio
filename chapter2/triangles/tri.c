@@ -23,7 +23,7 @@ bool valid_triangle(float x, float y, float z)
 {
 
     // TODO: Check for all positive sides, return false if not
-    if()
+    if(x)
 
     // TODO: Check that sum of any two sides greater than third, return false if not
 
