@@ -29,7 +29,7 @@ bool valid_triangle(float x, float y, float z)
 {
 
     // Check for all positive sides, return false if not
-    if(x || y || z <= 0)
+    if(x <=0 || y <=0 || z <= 0)
     {
         return false;
     }
