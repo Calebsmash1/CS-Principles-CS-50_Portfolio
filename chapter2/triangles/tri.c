@@ -15,7 +15,10 @@ int main(void)
 
     // TODO: Determine if a valid triangle by calling valid_triangle
     // then print result "Valid!" or "Invalid!"
-    printf("!\n");
+    if (function ( x, y, z) == true)
+    {
+        print
+    }
 }
 
 // Function that checks to see if a valid triangle
