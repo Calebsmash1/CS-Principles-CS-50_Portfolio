@@ -15,13 +15,13 @@ int main(void)
 
     // TODO: Determine if a valid triangle by calling valid_triangle
     // then print result "Valid!" or "Invalid!"
-    if(valid_triangle()
+    if(valid_triangle(side1, side2, side3)
     {
-        printf("Invalid!\n")
+        printf("Valid!\n")
     }
     else
     {
-        printf("Valid!\n")
+        printf("Invalid!\n")
     }
 }
 // Function that checks to see if a valid triangle
