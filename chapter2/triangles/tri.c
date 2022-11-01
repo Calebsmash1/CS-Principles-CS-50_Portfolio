@@ -15,8 +15,12 @@ int main(void)
 
     // TODO: Determine if a valid triangle by calling valid_triangle
     // then print result "Valid!" or "Invalid!"
+    if(valid_triangle = false)
+    {
+        
+    }
 
-
+}
 // Function that checks to see if a valid triangle
 bool valid_triangle(float x, float y, float z)
 {
