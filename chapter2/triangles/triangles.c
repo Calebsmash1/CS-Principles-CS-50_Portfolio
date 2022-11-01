@@ -15,7 +15,7 @@ int main(void)
 
     // Determine if a valid triangle by calling valid_triangle
     // then print result "Valid!" or "Invalid!"
-    if(valid_triangle(side1, side2, side3))
+    if (valid_triangle(side1, side2, side3))
     {
         printf("Valid!\n");
     }
@@ -29,12 +29,12 @@ bool valid_triangle(float x, float y, float z)
 {
 
     // Check for all positive sides, return false if not
-    if(x <=0 || y <=0 || z <= 0)
+    if (x <= 0 || y <= 0 || z <= 0)
     {
         return false;
     }
     // Check that sum of any two sides greater than third, return false if not
-    if(x + y <= z || y + z <= x || x + z <= y)
+    if (x + y <= z || y + z <= x || x + z <= y)
     {
         return false;
     }
