@@ -13,9 +13,9 @@ int main(void)
     float side2 = get_float("2nd Side: ");
     float side3 = get_float("3rd side: ");
 
-    // TODO: Determine if a valid triangle by calling valid_triangle then print result "Valid!" or "Invalid!"
-
-
+    // TODO: Determine if a valid triangle by calling valid_triangle
+    // then print result "Valid!" or "Invalid!"
+    printf("");
 }
 
 // TODO: Function that checks to see if a valid triangle
