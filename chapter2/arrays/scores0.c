@@ -9,4 +9,10 @@ int main(void)
 {
     // Scores
     int scores[3];
+    scores[0] = 63;
+    scores[1] = 42;
+    scores[2] = 99;
+
+    // Print the average
+    printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3);
 }
