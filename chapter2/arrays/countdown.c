@@ -5,5 +5,6 @@
 
 int main(void)
 {
+    // Initialize an array to hold our counting values
     
 }
