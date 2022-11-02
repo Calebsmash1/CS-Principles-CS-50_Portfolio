@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
+#define COUNT 10
+
 int main(void)
 {
     // Initialize an array to hold our counting values
@@ -15,6 +17,6 @@ int main(void)
         printf("%i, ", countdown[i]);
         sleep(1);
     }
-    
+
     printf("\n");
 }
