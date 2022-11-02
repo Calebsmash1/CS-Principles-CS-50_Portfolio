@@ -11,6 +11,7 @@ int main(void)
     // Print out each element in the array
     for(int i = 0; i < 10; i++)
     {
-        
+        printf("%i, ", countdown[i]);
     }
+    printf("\n");
 }
