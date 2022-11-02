@@ -3,7 +3,6 @@
 #include <cs50.h>
 #include <stdio.h>
 
-
 int main(void)
 {
     // Let the user decide how many scores to enter
@@ -14,9 +13,8 @@ int main(void)
     for (int i = 0; i < n; i++)
     {
         scores[i] = get_int("Score: ");
-
     }
 
     // Print the average
-    printf("Average: %0.3f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
+    printf("Average: %0.3f\n", (scores[0] + scores[1] + scores[2]) / (float) n);
 }
