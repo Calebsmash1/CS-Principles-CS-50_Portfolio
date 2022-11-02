@@ -16,5 +16,15 @@ int main(void)
     }
 
     // Print the average
-    printf("Average: %0.3f\n", (scores[0] + scores[1] + scores[2]) / (float) n);
+    printf("Average: %0.3f\n",
+}
+
+float average(int length, int array[]);
+{
+    // Calculate the sum
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        
+    }
 }
