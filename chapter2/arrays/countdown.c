@@ -2,6 +2,7 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main(void)
 {
@@ -12,6 +13,7 @@ int main(void)
     for(int i = 0; i < 10; i++)
     {
         printf("%i, ", countdown[i]);
+        sleep(1);
     }
     printf("\n");
 }
