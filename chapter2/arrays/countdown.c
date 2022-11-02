@@ -15,5 +15,6 @@ int main(void)
         printf("%i, ", countdown[i]);
         sleep(1);
     }
+    
     printf("\n");
 }
