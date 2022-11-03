@@ -15,6 +15,10 @@ int main(Void)
     // Loop to fill in the rest
     for (int i = 2; i < N; i++)
     {
-        fibo[i] = 
+        // Add the previous two terms together
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
     }
+
+    // Print out the array
+    
 }
