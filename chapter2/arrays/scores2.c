@@ -26,7 +26,7 @@ float array_average(int length, int array[]);
 {
     // Calculate the sum
     int sum = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < length; i++)
     {
 
     }
