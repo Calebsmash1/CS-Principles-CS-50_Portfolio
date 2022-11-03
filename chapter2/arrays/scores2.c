@@ -19,7 +19,7 @@ int main(void)
     }
 
     // Print the average
-    printf("Average: %0.3f\n",
+    printf("Average: %0.3f\n", array_average(n, scores));
 }
 
 float array_average(int length, int array[]);
@@ -28,6 +28,10 @@ float array_average(int length, int array[]);
     int sum = 0;
     for (int i = 0; i < length; i++)
     {
-
+        // Open up each "locker" of the array and add to the sum
+        sum += array[i];
     }
+
+    // Find the average
+    return sum / (float) length;
 }
