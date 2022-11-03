@@ -22,7 +22,7 @@ int main(void)
     printf("Average: %0.3f\n", array_average(n, scores));
 }
 
-float array_average(int length, int array[]);
+float array_average(int length, int array[])
 {
     // Calculate the sum
     int sum = 0;
