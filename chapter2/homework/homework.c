@@ -13,10 +13,10 @@ int main(void)
     int course[n];
 
     // Prompt the user for their course names and store it in the array
-    int courses[n];
+    string courses[n];
     for (int i = 0; i < n; i++)
     {
-        courses[i] = get_char("Course: ");
+        courses[i] = get_string("Course: ");
     }
 
     // Initialize random number generator
