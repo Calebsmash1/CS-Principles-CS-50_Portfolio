@@ -9,10 +9,10 @@ int main(void)
     // Prompt the user for the number of courses that they have homework in
     int n = get_int("How many courses do you have homework in? ");
 
-    // TODO: Declare an array of courses with the correct number of elements
+    // Declare an array of courses with the correct number of elements
     int course[n];
 
-    // TODO: Prompt the user for their course names and store it in the array
+    // Prompt the user for their course names and store it in the array
     int courses[n];
     for (int i = 0; i < n; i++)
     {
