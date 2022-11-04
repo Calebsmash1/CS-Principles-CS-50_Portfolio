@@ -13,7 +13,7 @@ int main(void)
     for (int i = 0; i < strlen(s); i++)
     {
         // Print each ascii value with a new line to make it vertical
-        printf("%c\n", s[i]);
+        printf("%i\n", s[i]);
 
     }
 }
