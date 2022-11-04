@@ -13,6 +13,7 @@ int main(void)
     int course[n];
 
     // TODO: Prompt the user for their course names and store it in the array
+    
 
     // Initialize random number generator
     // (found info on https://www.tutorialspoint.com/c_standard_library/c_function_rand.htm)
