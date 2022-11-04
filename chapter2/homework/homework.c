@@ -10,7 +10,7 @@ int main(void)
     int n = get_int("How many courses do you have homework in? ");
 
     // TODO: Declare an array of courses with the correct number of elements
-    char course[]
+    int course[n]
 
     // TODO: Prompt the user for their course names and store it in the array
 
@@ -23,6 +23,6 @@ int main(void)
     int r = rand() % n;
 
     // TODO: Print out a random course number with index r
-    
+
 
 }
