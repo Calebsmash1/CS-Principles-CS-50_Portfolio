@@ -13,7 +13,11 @@ int main(void)
     int course[n];
 
     // TODO: Prompt the user for their course names and store it in the array
-    
+    int courses[n];
+    for (int i = 0; i < n; i++)
+    {
+        courses[i] = get_char("Course: ");
+    }
 
     // Initialize random number generator
     // (found info on https://www.tutorialspoint.com/c_standard_library/c_function_rand.htm)
