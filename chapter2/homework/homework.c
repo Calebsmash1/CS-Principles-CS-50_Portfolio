@@ -28,6 +28,6 @@ int main(void)
     int r = rand() % n;
 
     // TODO: Print out a random course number with index r
-    printf("%c\n", rand() % n);
+    printf("%d\n", rand() % r);
 
 }
