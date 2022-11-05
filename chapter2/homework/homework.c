@@ -28,7 +28,5 @@ int main(void)
     int r = rand() % n;
 
     // TODO: Print out a random course number with index r
-    printf("%d\n", rand);
-
 
 }
