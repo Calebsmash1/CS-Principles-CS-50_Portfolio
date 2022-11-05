@@ -28,6 +28,7 @@ int main(void)
     int r = rand() % n;
 
     // Print out a random course number with index r
+    // TODO: Change to print subject name instead of locker number
     printf("%d, I choose you!\n", rand() % n);
 
 }
