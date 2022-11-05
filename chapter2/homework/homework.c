@@ -25,9 +25,9 @@ int main(void)
     srand((unsigned) time(&t));
 
     // Find a random number
-    int r = rand() % n;
+    string r = rand() % n;
 
     // TODO: Print out a random course number with index r
-    printf("%d\n", rand() % r);
+    printf("%s\n", rand() % r);
 
 }
