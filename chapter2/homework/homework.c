@@ -20,7 +20,6 @@ int main(void)
     }
 
     // Initialize random number generator
-    // (found info on https://www.tutorialspoint.com/c_standard_library/c_function_rand.htm)
     time_t t;
     srand((unsigned) time(&t));
 
