@@ -30,4 +30,5 @@ int main(void)
     // TODO: Print out a random course number with index r
     printf("%d\n", rand() % n);
 
+    return(0);
 }
