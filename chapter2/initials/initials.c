@@ -7,14 +7,7 @@ int main(void)
 {
     string s = get_string("Full name: ");
 
-    // Initialize a counter
-    int counter = 0;
-
-    // Increasing the counter until we see the null terminator
-    while(s[counter] != ' ')
-    {
-        counter++;
-    }
-
-    printf("Length of first name: %i\n", counter);
+    // Prints first initial
+    printf("%c\n", s[i]);
+    
 }
