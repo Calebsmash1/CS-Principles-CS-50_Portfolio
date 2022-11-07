@@ -16,6 +16,9 @@ int main(void)
 
     }
 
+    // Initializes a counter
+    int counter = 0
+
     
 
 }
