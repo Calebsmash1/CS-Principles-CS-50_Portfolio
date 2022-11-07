@@ -21,7 +21,7 @@ int main(void)
 
     while(s[counter] != ' ')
     {
-        printf("counter++");
+        printf("");
     }
 
 }
