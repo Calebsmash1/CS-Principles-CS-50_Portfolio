@@ -11,7 +11,7 @@ int main(void)
     int counter = 0;
 
     // Increasing the counter until we see the null terminator
-    while(s[counter] != '_')
+    while(s[counter] != ' ')
     {
         counter++;
     }
