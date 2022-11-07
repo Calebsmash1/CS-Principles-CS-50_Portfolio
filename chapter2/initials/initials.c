@@ -9,6 +9,13 @@ int main(void)
     string s = get_string("Full name: ");
 
     // Prints first initial
-    printf("%c\n", s[i]);
+    for (int i = 0; i < 1; i++)
+    {
+        // Print each character with a new line to make it vertical
+        printf("%c\n", s[i]);
+
+    }
+
+    
 
 }
