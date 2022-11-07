@@ -24,8 +24,8 @@ int main(void)
         counter++;
     }
 
-    counter++;
+    counter = counter + 1;
 
-    printf("%s", s[counter]);
+    printf("%c", s[counter]);
 
 }
