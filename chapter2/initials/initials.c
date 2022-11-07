@@ -5,9 +5,10 @@
 
 int main(void)
 {
+    // Get string (Full name) from user
     string s = get_string("Full name: ");
 
     // Prints first initial
     printf("%c\n", s[i]);
-    
+
 }
