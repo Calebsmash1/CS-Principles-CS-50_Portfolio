@@ -21,7 +21,10 @@ int main(void)
 
     for (int i = 1; i < strlen(s); i++)
     {
-        printf("%c", s[i]);
+        if (s[i] == ' ')
+        {
+            printf("%c", s[i + 1]);
+        }
     }
 
 
