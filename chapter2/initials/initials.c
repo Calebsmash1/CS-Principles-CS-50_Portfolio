@@ -19,7 +19,7 @@ int main(void)
     // Initializes a counter
     int counter = 0;
 
-    while(s[counter] != ' ')
+    for(counter;  '')
     {
         counter++;
     }
