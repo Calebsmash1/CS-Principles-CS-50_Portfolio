@@ -2,6 +2,7 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -17,15 +18,13 @@ int main(void)
     }
 
     // Initializes a counter
-    int counter = 0;
 
-    for(counter;  '')
+    for (int i = 1; i < strlen(s); i++)
     {
-        counter++;
+        
+        printf("%c", s[i]);
     }
 
-    counter++;
 
-    printf("%c\n", s[counter]);
-
+    printf("\n");
 }
