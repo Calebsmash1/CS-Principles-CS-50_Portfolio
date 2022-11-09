@@ -12,7 +12,7 @@ int main(void)
     for (int i = 0; i < 1; i++)
     {
         // Print each character with a new line to make it vertical
-        printf("%c\n", s[i]);
+        printf("%c", s[i]);
 
     }
 
@@ -26,6 +26,6 @@ int main(void)
 
     counter++;
 
-    printf("%c", s[counter]);
+    printf("%c\n", s[counter]);
 
 }
