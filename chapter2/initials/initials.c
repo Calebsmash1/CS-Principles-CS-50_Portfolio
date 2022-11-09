@@ -21,7 +21,6 @@ int main(void)
 
     for (int i = 1; i < strlen(s); i++)
     {
-        
         printf("%c", s[i]);
     }
 
