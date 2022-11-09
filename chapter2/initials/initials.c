@@ -10,15 +10,9 @@ int main(void)
     string s = get_string("Full name: ");
 
     // Prints first initial
-    for (int i = 0; i < 1; i++)
-    {
-        // Print each character with a new line to make it vertical
-        printf("%c", s[i]);
+    printf("%c", s[0]);
 
-    }
-
-    // Initializes a counter
-
+    // Print the character inside the locker after a space.
     for (int i = 1; i < strlen(s); i++)
     {
         if (s[i] == ' ')
@@ -27,6 +21,6 @@ int main(void)
         }
     }
 
-
+    // Prints a new line
     printf("\n");
 }
