@@ -45,9 +45,8 @@ int count_letters(string s)
             // Add 1 to the counter
             counter++;
         }
-
-    // Returm the value of the counter/the number of letters
     }
+    // Returm the value of the counter/the number of letters
     int letters = counter;
     return letters;
 
