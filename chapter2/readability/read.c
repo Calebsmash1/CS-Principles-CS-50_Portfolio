@@ -22,7 +22,7 @@ int main(void)
     // TODO: Calculate the Coleman-Liau index
 
     // TODO: Print the reading level
-    printf("Letters: %s", s);
+    printf("Letters: %i", letters;
     printf("\n");
 
 }
@@ -48,8 +48,8 @@ int count_letters(string s)
 
     // Returm the value of the counter/the number of letters
     }
-
-    return counter;
+    int letters = counter;
+    return letters;
 
 /**
  * A function that returns the number of words
