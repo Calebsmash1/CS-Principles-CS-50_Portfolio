@@ -31,16 +31,17 @@ int main(void)
     float averages = (float)sentences / words * 100;
 
     // Rounding
-    float averagel = 
+    float nearest = roundf(averagel * 100) / 100;
+    float nearestk = roundf(averages * 100) / 100;
 
     // TODO: Calculate the Coleman-Liau index
-    int level = (0.0588 * averagel - 0.296 * averages - 15.8);
+    int level = (0.0588 * nearest - 0.296 * nearestk - 15.8);
 
     // TODO: Print the reading level
     printf("Letters: %i\n", letters);
     printf("Words: %i\n", words);
     printf("Sentences: %i\n", sentences);
-    printf("Average: %f : %f\n", averagel, averages);
+    printf("Average: %f : %f\n", nearest, nearestk);
     printf("Grade %i\n", level);
 }
 
