@@ -26,7 +26,8 @@ int main(void)
     int sentences = count_sentences(text);
 
     // Calculate average letters
-    float average = (float)letters / words * 100;
+    float averagel = (float)letters / words * 100;
+    float averagew = (float)sentences / words * 100;
 
     // Rounding
 
