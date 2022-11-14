@@ -22,7 +22,7 @@ int main(void)
     // TODO: Calculate the Coleman-Liau index
 
     // TODO: Print the reading level
-    printf("Letters: %i", counter);
+    printf("Letters:");
     printf("\n");
 
 }
