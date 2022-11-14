@@ -28,6 +28,9 @@ int main(void)
     // Calculate average letters
     float average = (float)letters / words * 100;
 
+    // Rounding
+    
+
     // TODO: Calculate the Coleman-Liau index
     int level = (0.0588 * average - 0.296 * sentences - 15.8);
 
