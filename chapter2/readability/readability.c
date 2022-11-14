@@ -2,6 +2,7 @@
 
 #include <cs50.h>
 #include <ctype.h>
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -30,7 +31,8 @@ int main(void)
     float averagew = (float)sentences / words * 100;
 
     // Rounding
-
+    round(averagel);
+    round(averagew);
 
     // TODO: Calculate the Coleman-Liau index
     int level = (0.0588 * average - 0.296 * sentences - 15.8);
