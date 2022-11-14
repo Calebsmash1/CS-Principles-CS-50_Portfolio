@@ -27,21 +27,19 @@ int main(void)
     int sentences = count_sentences(text);
 
     // Calculate average letters
-    float averagel = (float)letters / words * 100;
-    float averagew = (float)sentences / words * 100;
+    float averagel = trunc((float)letters / words * 100);
+    float averages = trunc((float)sentences / words * 100);
 
     // Rounding
-    roundf(averagel);
-    roundf(averagew);
 
     // TODO: Calculate the Coleman-Liau index
-    int level = (0.0588 * average - 0.296 * sentences - 15.8);
+    int level = (0.0588 * averagel - 0.296 * averages - 15.8);
 
     // TODO: Print the reading level
     printf("Letters: %i\n", letters);
     printf("Words: %i\n", words);
     printf("Sentences: %i\n", sentences);
-    printf("Average: %f\n", average);
+    printf("Average: %f : %f\n", averagel, averages);
     printf("Grade %i\n", level);
 }
 
