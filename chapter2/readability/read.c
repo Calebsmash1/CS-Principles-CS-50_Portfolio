@@ -14,7 +14,7 @@ int main(void)
     // Ask the user for some text
     string text = get_string("Text: ");
 
-    // TODO: Call a function to count the number of letters
+    // Call a function to count the number of letters
     int letters = count_letters(text);
 
     // TODO: Call a function to count the number of words
@@ -40,7 +40,7 @@ int count_letters(string text)
     while(text[counter] != '\0')
     {
         // If a letter (isalpha)
-        for (int i = 1; i < strlen(text); i++)
+        for (int i = 0; i < strlen(text); i++)
         {
             if(isalpha(text[i]))
             {
