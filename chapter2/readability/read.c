@@ -41,9 +41,11 @@ int count_letters(string s)
         // If a letter (isalpha)
         for (int i = 1; i < strlen(s); i++)
         {
-
+            if(isalpha(s))
+            {
             // Add 1 to the counter
             counter++;
+            }
         }
     }
     // Returm the value of the counter/the number of letters
