@@ -6,7 +6,7 @@
 #include <string.h>
 
 // Function prototype
-int count_letters(string letter);
+int count_letters(string s);
 
 int main(void)
 {
@@ -30,20 +30,22 @@ int main(void)
 /**
  * A function that returns the number of letters
 */
-int count_letters(string letter)
+int count_letters(string s)
 {
     // Initialize a counter
     int counter = 0;
 
     // Loop through the text
-    while(letter[counter] != '\0')
+    while(s[counter] != '\0')
     {
         // If a letter (isalpha)
-        for (int i = 1; i < strlen(letter); i++)
+        for(int i = 1; i < strlen(s); i++)
         {
-
-            // Add 1 to the counter
-            counter++;
+            if(isalpha(s))
+            {
+                // Add 1 to the counter
+                counter++;
+            }
         }
     }
     // Returm the value of the counter/the number of letters
