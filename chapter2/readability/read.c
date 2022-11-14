@@ -7,6 +7,8 @@
 
 // Function prototype
 int count_letters(string text);
+int count_words(string text);
+int count_sentences(string text);
 
 // Program start
 int main(void)
@@ -17,15 +19,23 @@ int main(void)
     // Call a function to count the number of letters
     int letters = count_letters(text);
 
-    // TODO: Call a function to count the number of words
+    // Call a function to count the number of words
+    int words = count_words(text);
 
-    // TODO: Call a function to count the number of sentences
+    // Call a function to count the number of sentences
+    int sentences = count_sentences(text);
+
+    // Calculate average letters
+    float average = (float)letters / words * 100;
 
     // TODO: Calculate the Coleman-Liau index
+    int level = (0.0588 * average - 0.296 * sentences - 15.8);
 
     // TODO: Print the reading level
-    printf("Letters: %i", letters);
-    printf("\n");
+    printf("Letters: %i\n", letters);
+    printf("Words: %i\n", words);
+    printf("Sentences: %i\n", sentences);
+    printf("Grade %i\n", level);
 }
 
 /**
@@ -49,14 +59,44 @@ int count_letters(string text)
             }
         }
     }
-    // Returm the value of the counter/the number of letters
+    // Return the value of the counter/the number of letters
+    counter = counter / 2;
     return counter;
-
+}
 /**
  * A function that returns the number of words
 */
+int count_words(string text)
+{
+    // Initializes counter
+    int counter = 1;
+
+    // Loops through text
+    for (int i = 1; i < strlen(text); i++)
+    {
+        if (text[i] == ' ')
+        {
+            counter++;
+        }
+    }
+    return counter;
+}
 
 /**
  * A function that returns the number of sentences
 */
+int count_sentences(string text)
+{
+    // Initializes counter
+    int counter = 0;
+
+    // Loops through text
+    for (int i = 1; i < strlen(text); i++)
+    {
+        if (text[i] == '.' || text[i] == '?' || text[i] == '!')
+        {
+            counter++;
+        }
+    }
+    return counter;
 }
