@@ -8,6 +8,7 @@
 // Function prototype
 int count_letters(string s);
 
+// Program start
 int main(void)
 {
     // Ask the user for some text
@@ -24,7 +25,6 @@ int main(void)
     // TODO: Print the reading level
     printf("Letters:");
     printf("\n");
-
 }
 
 /**
