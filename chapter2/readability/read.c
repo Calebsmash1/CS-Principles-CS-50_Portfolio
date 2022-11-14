@@ -29,7 +29,7 @@ int main(void)
     float average = (float)letters / words * 100;
 
     // TODO: Calculate the Coleman-Liau index
-    int level = (0.0588 * average - 0.296 * sentences - 15.8);
+    int level = (0.0588 * average - 0.296 * sentences - 22.8);
 
     // TODO: Print the reading level
     printf("Letters: %i\n", letters);
