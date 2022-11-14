@@ -42,7 +42,7 @@ int count_letters(string text)
         // If a letter (isalpha)
         for (int i = 1; i < strlen(text); i++)
         {
-            if(isalpha(text))
+            if(isalpha(str[text]))
             {
             // Add 1 to the counter
             counter++;
