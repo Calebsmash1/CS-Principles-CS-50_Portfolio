@@ -6,7 +6,7 @@
 #include <string.h>
 
 // Function prototype
-int count_letters(string s);
+int count_letters(string letter);
 
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
     // TODO: Calculate the Coleman-Liau index
 
     // TODO: Print the reading level
-    printf("Letters: %i", counter);
+    printf("Letters: %s", s);
     printf("\n");
 
 }
@@ -30,16 +30,16 @@ int main(void)
 /**
  * A function that returns the number of letters
 */
-int count_letters(string s)
+int count_letters(string letter)
 {
     // Initialize a counter
     int counter = 0;
 
     // Loop through the text
-    while(s[counter] != '\0')
+    while(letter[counter] != '\0')
     {
         // If a letter (isalpha)
-        for (int i = 1; i < strlen(s); i++)
+        for (int i = 1; i < strlen(letter); i++)
         {
 
             // Add 1 to the counter
