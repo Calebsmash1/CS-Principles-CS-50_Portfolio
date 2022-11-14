@@ -12,9 +12,10 @@ int count_letters(string s);
 int main(void)
 {
     // Ask the user for some text
-    string s = get_string("Text: ");
+    string text = get_string("Text: ");
 
     // TODO: Call a function to count the number of letters
+
 
     // TODO: Call a function to count the number of words
 
@@ -23,20 +24,21 @@ int main(void)
     // TODO: Calculate the Coleman-Liau index
 
     // TODO: Print the reading level
-    printf("Letters:");
+    printf("Letters: %i", letters);
     printf("\n");
 }
 
 /**
  * A function that returns the number of letters
 */
-int count_letters(string s)
+int count_letters(string text)
 {
     // Initialize a counter
     int counter = 0;
+    int letters = 0;
 
     // Loop through the text
-    while(s[counter] != '\0')
+    while(text[counter] != '\0')
     {
         // If a letter (isalpha)
         for (int i = 1; i < strlen(s); i++)
@@ -45,6 +47,7 @@ int count_letters(string s)
             {
             // Add 1 to the counter
             counter++;
+            letters = letters + 1;
             }
         }
     }
