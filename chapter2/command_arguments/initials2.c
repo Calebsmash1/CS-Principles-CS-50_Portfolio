@@ -12,18 +12,16 @@ int main(int argc, string argv[])
 {
     if (argc > 1)
     {
+        // Start printing hello
+        printf("hello, ");
+
         // Loop through each command line argument
         for (int i = 1; i < argc; i++)
         {
-        printf("%c", toupper(argv[i][0]));
+        printf("%c.", toupper(argv[i][0]));
         }
     }
-    else if (argc == 2)
-    {
-        printf("hello world, %c.\n", toupper(argv[1][0]));
-    }
-    else
-    {
-        printf("hello, world\n");
-    }
+
+    // New line
+    
 }
