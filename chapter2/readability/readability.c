@@ -30,21 +30,30 @@ int main(void)
     float averagel = (float)letters / words * 100;
     float averages = (float)sentences / words * 100;
 
-    // Rounding
-    float nearest = roundf(averagel * 100) / 100;
-    float nearestk = roundf(averages * 100) / 100;
+    // Calculate the Coleman-Liau index
+    int level = (0.0588 * averagel - 0.296 * averages - 15.8);
 
-    // TODO: Calculate the Coleman-Liau index
-    int level = (0.0588 * nearest - 0.296 * nearestk - 15.8);
+    // TODO: Rounds the grade level
+    level = level + 1;
 
-    // TODO: Print the reading level
-    printf("Letters: %i\n", letters);
-    printf("Words: %i\n", words);
-    printf("Sentences: %i\n", sentences);
-    printf("Average: %f : %f\n", nearest, nearestk);
-    printf("Grade %i\n", level);
+    // Print the reading level
+    //printf("Letters: %i\n", letters);
+    //printf("Words: %i\n", words);
+    //printf("Sentences: %i\n", sentences);
+    //printf("Average: %f : %f\n", averagel, averages);
+    if (level <= 0)
+    {
+        printf("Before Grade 1\n");
+    }
+    if (level >= 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("Grade %i\n", level);
+    }
 }
-
 /**
  * A function that returns the number of letters
 */
@@ -54,15 +63,15 @@ int count_letters(string text)
     int counter = 0;
 
     // Loop through the text
-    while(text[counter] != '\0')
+    while (text[counter] != '\0')
     {
         // If a letter (isalpha)
         for (int i = 0; i < strlen(text); i++)
         {
-            if(isalpha(text[i]))
+            if (isalpha(text[i]))
             {
-            // Add 1 to the counter
-            counter++;
+                // Add 1 to the counter
+                counter++;
             }
         }
     }
@@ -81,14 +90,16 @@ int count_words(string text)
     // Loops through text
     for (int i = 1; i < strlen(text); i++)
     {
+        // Checks for spaces (begginning of new words) and
+        // adds one to the counter
         if (text[i] == ' ')
         {
             counter++;
         }
     }
+    // Returns the counter
     return counter;
 }
-
 /**
  * A function that returns the number of sentences
 */
@@ -100,10 +111,13 @@ int count_sentences(string text)
     // Loops through text
     for (int i = 1; i < strlen(text); i++)
     {
+        // Checks for any new sentence begginings through
+        // punctuation marks
         if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             counter++;
         }
     }
+    // Returns counter
     return counter;
 }
