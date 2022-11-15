@@ -5,17 +5,22 @@
 */
 
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 
 int main(int argc, string argv[])
 {
-    if (argc == 3)
+    if (argc > 1)
     {
-        printf("hello, %s %s\n", argv[1], argv[2]);
+        // Loop through each command line argument
+        for (int i = 1; i < argc; i++)
+        {
+        printf("%c", toupper(argv[i][0]));
+        }
     }
     else if (argc == 2)
     {
-        printf("hello, %s\n", argv[1]);
+        printf("hello, %c.\n", toupper(argv[1][0]));
     }
     else
     {
