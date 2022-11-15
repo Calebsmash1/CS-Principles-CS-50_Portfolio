@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     }
     else if (argc == 2)
     {
-        printf("hello, %c.\n", toupper(argv[1][0]));
+        printf("hello world, %c.\n", toupper(argv[1][0]));
     }
     else
     {
