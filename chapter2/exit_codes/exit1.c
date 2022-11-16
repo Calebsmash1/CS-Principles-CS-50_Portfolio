@@ -20,9 +20,9 @@ int main(int argc, string argv[])
 
     // Tally the number of characters in their first name
     int tally = 0;
-    for (int i = 0; i < )
+    while (argv[1][tally] != '\0')
     {
-
+        tally++;
     }
 
     // Return a success for main
