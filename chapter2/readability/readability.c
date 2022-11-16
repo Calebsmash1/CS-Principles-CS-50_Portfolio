@@ -43,13 +43,13 @@ int main(void)
     //printf("Words: %i\n", words);
     //printf("Sentences: %i\n", sentences);
     //printf("Average: %f : %f\n", averagel, averages);
-    if (grade_1(level))
+    if (grade_1(1))
     {
         printf("Before Grade 1\n");
-    }
-    if (level >= 16)
-    {
-        printf("Grade 16+\n");
+        if (grade_16(1))
+        {
+            printf("Grade 16+\n");
+        }
     }
     else
     {
