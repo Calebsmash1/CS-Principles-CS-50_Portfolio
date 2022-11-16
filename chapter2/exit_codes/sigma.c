@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     int sum = 0;
     for (int i = 1; i < argc; i++)
     {
-        sum = sum +argv[i];
+        sum = sum + argv[i];
     }
 
     // Print the sum
