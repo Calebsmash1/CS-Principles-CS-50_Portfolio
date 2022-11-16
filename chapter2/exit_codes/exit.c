@@ -8,11 +8,11 @@
 int main(int argc, string argv[])
 {
     // Check to see if the requirements have been met
-    // Essentially ensure "./initials <first name>"
+    // Essentially ensure "./exit <first name>"
     if (argc != 2)
     {
         // Print a usage error
-        printf("Usage: ./initials <first name>\n");
+        printf("Usage: ./exit <first name>\n");
 
         // Return an int for main, program stops running
         return 1;
