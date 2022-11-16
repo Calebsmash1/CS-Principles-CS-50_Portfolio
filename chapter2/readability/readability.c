@@ -40,7 +40,7 @@ int main(void)
     //printf("Letters: %i\n", letters);
     //printf("Words: %i\n", words);
     //printf("Sentences: %i\n", sentences);
-    //printf("Average: %f : %f\n", averagel, averages);
+    printf("Average: %f : %f\n", averagel, averages);
     if (level <= 0)
     {
         printf("Before Grade 1\n");
