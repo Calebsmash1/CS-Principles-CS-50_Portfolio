@@ -7,8 +7,6 @@
 #include <string.h>
 
 // Function prototype
-bool grade_1(int level);
-bool grade_16(int level);
 int count_letters(string text);
 int count_words(string text);
 int count_sentences(string text);
@@ -43,13 +41,13 @@ int main(void)
     //printf("Words: %i\n", words);
     //printf("Sentences: %i\n", sentences);
     //printf("Average: %f : %f\n", averagel, averages);
-    if (grade_1(1))
+    if (level <= 0)
     {
         printf("Before Grade 1\n");
-        if (grade_16(1))
-        {
-            printf("Grade 16+\n");
-        }
+    }
+    if (level >= 16)
+    {
+        printf("Grade 16+\n");
     }
     else
     {
@@ -122,36 +120,4 @@ int count_sentences(string text)
     }
     // Returns counter
     return counter;
-}
-/**
- * A function that checks if grade level is below 1
-*/
-bool grade_1(int level)
-{
-
-    // Checks if grade level is less than 1
-    if (level <= 1)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-/**
- * A function that checks if grade  level is higher than 16
-*/
-bool grade_16(int level)
-{
-
-    // Checks if grade level is 16 or greater
-    if (level >= 16)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
 }
