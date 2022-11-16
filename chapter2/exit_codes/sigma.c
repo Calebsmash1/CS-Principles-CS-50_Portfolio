@@ -13,15 +13,18 @@ int main(int argc, string argv[])
     if (argc < 2)
     {
         printf("Usage: ./sigma <list of integers\n":)
-        reutnr1; I<
+        return 1;
     }
 
     // Read each of the arguments as ints and save to a running sum
     int sum = 0;
-    for (int i = 1; )
+    for (int i = 1; i < argc; i++)
+    {
+        sum = sum +argv[i];
+    }
 
     // Print the sum
-
+    printf("The sum is %i\n", sum);
 
     // Success
 }
