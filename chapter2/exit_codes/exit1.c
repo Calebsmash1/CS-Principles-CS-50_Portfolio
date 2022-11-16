@@ -25,6 +25,9 @@ int main(int argc, string argv[])
         tally++;
     }
 
+    // Print the name length
+    printf("Your first name has %i characters\n", tally);
+
     // Return a success for main
     return 0;
 }
