@@ -6,13 +6,14 @@
  */
 #include <cs50.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
     // Input verification. If not proper input, print usage error and stop program
     if (argc < 2)
     {
-        printf("Usage: ./sigma <list of integers\n":)
+        printf("Usage: ./sigma <list of integers\n");
         return 1;
     }
 
