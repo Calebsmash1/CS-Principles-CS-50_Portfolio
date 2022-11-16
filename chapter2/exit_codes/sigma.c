@@ -10,10 +10,15 @@
 int main(int argc, string argv[])
 {
     // Input verification. If not proper input, print usage error and stop program
-
+    if (argc < 2)
+    {
+        printf("Usage: ./sigma <list of integers\n":)
+        reutnr1; I<
+    }
 
     // Read each of the arguments as ints and save to a running sum
-
+    int sum = 0;
+    for (int i = 1; )
 
     // Print the sum
 
