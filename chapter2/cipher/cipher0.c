@@ -16,5 +16,9 @@ int main(int argc, string argv[])
         // Go back 5 ASCII characters
         printf("%c", message[i] - 5);
     }
+    // New line
+    printf("\n");
 
+    // Return success
+    return 0;
 }
