@@ -11,6 +11,10 @@ int main(int argc, string argv[])
     printf("The hidden message is: ");
 
     // For each character in the message
-    
+    for (int i = 0; i < strl(message); i++)
+    {
+        // Go back 5 ASCII characters
+        printf("%c", message[i] - 5);
+    }
 
 }
