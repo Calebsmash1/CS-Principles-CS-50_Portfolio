@@ -6,14 +6,15 @@
 
 int main(void)
 {
-    // TODO: Program was run with just one command-line argument
-    
+    // TODO: Program was run with just one command-line argument DO LAST
 
-    // TODO: Every character in argv[1] is a digit
+    // TODO: Every character in argv[1] is a digit DO VERY LAST
 
     // TODO: Convert argv[1] from a `string` to an `int`
+    int key =
 
     // TODO: Prompt user for plaintext
+
 
     // TODO: For each character in the plaintext:
 
