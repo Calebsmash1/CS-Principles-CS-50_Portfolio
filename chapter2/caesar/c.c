@@ -1,6 +1,7 @@
 // Cipher a message by how many characters the user wants
 
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -19,7 +20,7 @@ int main(int argc, string argv[])
     if (argc = 0)
     {
         // Print a usage error
-        printf("Usage: ./exit <first name>\n");
+        printf("Usage: ./caesar <message>\n");
 
         // Return an int for main, program stops running
         return 1;
