@@ -11,10 +11,10 @@ int main(int argc, string argv[])
     // TODO: Every character in argv[1] is a digit DO VERY LAST
 
     // TODO: Convert argv[1] from a `string` to an `int`
-    int key =
+    //int key =
 
     // TODO: Prompt user for plaintext
-    
+
 
     // TODO: For each character in the plaintext:
 
