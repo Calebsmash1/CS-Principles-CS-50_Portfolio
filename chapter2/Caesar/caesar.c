@@ -4,14 +4,14 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
     // TODO: Program was run with just one command-line argument DO LAST
 
     // TODO: Every character in argv[1] is a digit DO VERY LAST
 
     // TODO: Convert argv[1] from a `string` to an `int`
-    int key =
+    int key = 
 
     // TODO: Prompt user for plaintext
 
