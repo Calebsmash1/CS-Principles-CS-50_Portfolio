@@ -11,10 +11,19 @@ int main(int argc, string argv[])
     // TODO: Every character in argv[1] is a digit DO VERY LAST
 
     // TODO: Convert argv[1] from a `string` to an `int`
-    //int key =
+    // int key =
 
     // TODO: Prompt user for plaintext
+        // Check to see if the requirements have been met
+    // Essentially ensure "./exit <first name>"
+    if (argc != 2)
+    {
+        // Print a usage error
+        printf("Usage: ./exit <first name>\n");
 
+        // Return an int for main, program stops running
+        return 1;
+    }
 
     // TODO: For each character in the plaintext:
 
