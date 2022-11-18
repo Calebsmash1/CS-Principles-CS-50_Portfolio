@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     // TODO: Prompt user for plaintext
         // Check to see if the requirements have been met
     // Essentially ensure "./exit <first name>"
-    if (argc != 2)
+    if (argc = 0)
     {
         // Print a usage error
         printf("Usage: ./exit <first name>\n");
