@@ -1,4 +1,4 @@
-// Cipher a message 
+// Cipher a message by how many characters the user wants
 
 #include <cs50.h>
 #include <stdio.h>
@@ -7,6 +7,7 @@
 int main(void)
 {
     // TODO: Program was run with just one command-line argument
+    
 
     // TODO: Every character in argv[1] is a digit
 
