@@ -16,7 +16,7 @@ int main(int argc, string argv[])
 
     // TODO: Prompt user for plaintext
         // Check to see if the requirements have been met
-    // Essentially ensure "./exit <first name>"
+    // Essentially ensure "./exit <message>"
     if (argc != 2)
     {
         // Print a usage error
@@ -29,4 +29,7 @@ int main(int argc, string argv[])
     // TODO: For each character in the plaintext:
 
         // TODO: Rotate the character if it's a letter
+
+        // TODO: Print ciphered message
+        printf(")
 }
