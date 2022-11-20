@@ -27,9 +27,23 @@ int main(int argc, string argv[])
     }
 
     // TODO: For each character in the plaintext:
+        if (argc > 1)
+    {
+        //
+        printf("1");
+
+        // Loop through each command line argument
+        for (int i = 1; i < argc; i++)
+        {
+        printf("%c.", toupper(argv[i][0]));
+        }
+    }
 
         // TODO: Rotate the character if it's a letter
 
         // TODO: Print ciphered message
-        printf(")
+        printf("nice\n");
+
+
+    return 0;
 }
