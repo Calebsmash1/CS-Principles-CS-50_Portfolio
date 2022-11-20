@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     // TODO: Prompt user for plaintext
         // Check to see if the requirements have been met
     // Essentially ensure "./exit <message>"
-    if (argc == 0)
+    if (argc <= 2)
     {
         // Print a usage error
         printf("Usage: ./caesar <message>\n");
@@ -27,17 +27,7 @@ int main(int argc, string argv[])
     }
 
     // TODO: For each character in the plaintext:
-        if (argc > 1)
-    {
-        //
-        printf("1");
 
-        // Loop through each command line argument
-        for (int i = 1; i < argc; i++)
-        {
-        printf("%c.", toupper(argv[i][0]));
-        }
-    }
 
         // TODO: Rotate the character if it's a letter
 
