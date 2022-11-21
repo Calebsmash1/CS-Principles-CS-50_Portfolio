@@ -7,11 +7,12 @@
 
 int main(void)
 {
-    // TODO: Make sure program was run with just one command-line argument
+    // TODO: Make sure program was run with just one command-line argument (2nd to Last)
 
-    // TODO: Make sure every character in argv[1] is a digit
+    // TODO: Make sure every character in argv[1] is a digit (Last)
 
     // TODO: Convert argv[1] from a `string` to an `int`
+    
 
     // TODO: Prompt user for plaintext
 
