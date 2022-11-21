@@ -3,6 +3,7 @@
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main(int argc, string argv[])
@@ -22,7 +23,7 @@ int main(int argc, string argv[])
 
     // TODO: Convert argv[1] from a `string` to an `int`
 
-    int key = argv[1]
+    atoi (argv[1]);
 
     // TODO: Prompt user for plaintext
 
