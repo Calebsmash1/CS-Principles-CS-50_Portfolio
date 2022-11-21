@@ -30,4 +30,7 @@ int main(int argc, string argv[])
     // TODO: For each character in the plaintext:
 
         // TODO: Rotate the character if it's a letter
+
+    // Returns 0 to end program
+    return 0;
 }
