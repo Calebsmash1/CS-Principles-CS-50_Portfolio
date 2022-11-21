@@ -23,7 +23,7 @@ int main(int argc, string argv[])
 
     // TODO: Convert argv[1] from a `string` to an `int`
 
-    atoi (argv[1]);
+    int atoi (argv[1]);
 
     // TODO: Prompt user for plaintext
 
