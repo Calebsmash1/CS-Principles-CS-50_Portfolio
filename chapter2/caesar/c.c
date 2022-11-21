@@ -28,7 +28,7 @@ int main(int argc, string argv[])
 
     // TODO: For each character in the plaintext:
 
-    for (int i = 0; i < strlen(message); i++)
+    for (int i = 0; i < strlen(argv); i++)
     {
         // Go back 5 ASCII characters with "wrapping" (Only works for upper case)
         printf("%c", (argc[i] + 5 - 'a') % 26 + 'a');
