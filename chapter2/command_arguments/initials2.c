@@ -23,5 +23,5 @@ int main(int argc, string argv[])
     }
 
     // New line
-    
+
 }
