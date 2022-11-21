@@ -27,15 +27,23 @@ int main(int argc, string argv[])
     }
 
     // TODO: For each character in the plaintext:
+
+    for (int i = 0; i < strlen(message); i++)
+    {
+        // Go back 5 ASCII characters with "wrapping" (Only works for upper case)
+        printf("%c", (argc[i] + 5 - 'a') % 26 + 'a');
+    }
+
+
     if (argc == 1)
     {
         for (int i = 0; i < strlen(argv[1]); i++)
         {
-            if (int isalpha(char c));
-            {
+            //if (int isalpha(char c));
+            //{
             // Scramble
-            printf("%s", argv[1] + 5);
-            }
+            //printf("%s", argv[1] + 5);
+            //}
         }
     }
     argc++;
@@ -47,7 +55,7 @@ int main(int argc, string argv[])
             //if (int isalpha(char c));
             //{
             // Scramble
-            printf("%s", argv[2] + 5);
+            //printf("%s", argv[2] + 5);
             //}
         }
     }
@@ -60,7 +68,7 @@ int main(int argc, string argv[])
             //if (int isalpha(char c));
             //{
             // Scramble
-            printf("%s", argv[3] + 5);
+            //printf("%s", argv[3] + 5);
             //}
         }
     }
