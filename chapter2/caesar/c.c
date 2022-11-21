@@ -31,11 +31,11 @@ int main(int argc, string argv[])
     {
         for (int i = 0; i < strlen(argv[1]); i++)
         {
-            //if (int isalpha(char c));
-            //{
+            if (int isalpha(char c));
+            {
             // Scramble
             printf("%s", argv[1] + 5);
-            //}
+            }
         }
     }
     argc++;
