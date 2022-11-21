@@ -12,7 +12,7 @@ int main(void)
     // TODO: Make sure every character in argv[1] is a digit (Last)
 
     // TODO: Convert argv[1] from a `string` to an `int`
-    
+    int key = argv[i]
 
     // TODO: Prompt user for plaintext
 
