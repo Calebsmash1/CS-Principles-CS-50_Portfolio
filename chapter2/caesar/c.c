@@ -22,30 +22,30 @@ int main(int argc, string argv[])
     // TODO: Make sure every character in argv[1] is a digit (Last)
 
     // TODO: Convert argv[1] from a `string` to an `int`
+string word1 = argv[1];
 
-    int key = atoi (argv[1]);
+    int key1 = atoi (argv[1]);
 
     if (argc <= 2)
     {
-        int key = atoi (argv[2]);
+        int key2 = atoi (argv[2]);
     }
 
     if (argc <= 3)
     {
-        int key = atoi (argv[3]);
+        int key3 = atoi (argv[3]);
     }
 
     // TODO: Prompt user for plaintext
-    
+
 
     // TODO: For each character in the plaintext:
-    for (int i = 0; i < strlen(argc); i++)
-    {
-        // Go back 5 ASCII characters with "wrapping" (Only works for upper case)
-        printf("%c", (argc)[i] + 5 - 'a') % 26 + 'a');
-    }
 
         // TODO: Rotate the character if it's a letter
+
+    // Prints out hidden message
+    printf("%s", word1);
+    printf("\n");
 
     // Returns 0 to end program
     return 0;
