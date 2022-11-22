@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     }
 
     // Make sure program only accepts numbers
-    if (isalpha())
+    if (isalpha(argc[1]))
     {
         // Print a usage error
         printf("Usage: ./caesar <key>\n");
