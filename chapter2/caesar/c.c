@@ -25,7 +25,6 @@ int main(int argc, string argv[])
 
     if (isdigit(key))
     {
-
         // Prompt user for plaintext
         string message = get_string("plaintext: ");
 
@@ -49,7 +48,7 @@ int main(int argc, string argv[])
     else
     {
         // Print a usage error
-        printf("Usage: ./caesar <key>\n");
+        printf("Usage2: ./caesar <key>\n");
 
         // Return an int for main, program stops running
         return 1;
