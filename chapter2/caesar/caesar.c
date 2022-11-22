@@ -18,15 +18,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // Make sure program only accepts numbers
-    if (isalpha(argc[1]))
-    {
-        // Print a usage error
-        printf("Usage: ./caesar <key>\n");
-
-        // Return an int for main, program stops running
-        return 1;
-    }
+    // TODO: Make sure program only accepts numbers (DO LAST)
 
     // Convert argv[1] from a `string` to an `int`
     int key = atoi(argv[1]);
