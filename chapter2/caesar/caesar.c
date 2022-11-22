@@ -19,47 +19,52 @@ int main(int argc, string argv[])
     }
 
     // Make sure program only accepts numbers
-    if (isdigit(argv[1]))
+    if (isalpha())
     {
-        // Convert argv[1] from a `string` to an `int`
-        int key = atoi(argv[1]);
+        // Print a usage error
+        printf("Usage: ./caesar <key>\n");
 
-        // Prompt user for plaintext
-        string message = get_string("plaintext: ");
+        // Return an int for main, program stops running
+        return 1;
+    }
 
-        // Begins the printing process for the ciphered message
-        printf("ciphertext: ");
+    // Convert argv[1] from a `string` to an `int`
+    int key = atoi(argv[1]);
 
-        // For each character in the plaintext:
-        for (int i = 0; i < strlen(message); i++)
+    // Prompt user for plaintext
+    string message = get_string("plaintext: ");
+
+    // Begins the printing process for the ciphered message
+    printf("ciphertext: ");
+
+    // For each character in the plaintext:
+    for (int i = 0; i < strlen(message); i++)
+    {
+        // Rotate the character if it's a letter
+        if (isalpha(message[i]))
         {
-            // Rotate the character if it's a letter
-            if (isalpha(message[i]))
+            // Rotates characters differently depending if they
+            // are upper case, or lower case
+            if (isupper(message[i]))
             {
-                // Rotates characters differently depending if they
-                // are upper case, or lower case
-                if (isupper(message[i]))
-                {
-                    printf("%c", (message[i] + key - 'A') % 26 + 'A');
-                }
-                else
-                {
-                    printf("%c", (message[i] + key - 'a') % 26 + 'a');
-                }
+                printf("%c", (message[i] + key - 'A') % 26 + 'A');
             }
-
-            // Prints non alphabetical characters as they are
             else
             {
-                printf("%c", message[i]);
+                printf("%c", (message[i] + key - 'a') % 26 + 'a');
             }
         }
 
-        // Prints new line
-        printf("\n");
-
-        // Returns 0 to end program
-        return 0;
+        // Prints non alphabetical characters as they are
+        else
+        {
+            printf("%c", message[i]);
+        }
     }
-    // 
+
+    // Prints new line
+    printf("\n");
+
+    // Returns 0 to end program
+    return 0;
 }
