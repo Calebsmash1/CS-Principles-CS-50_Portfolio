@@ -24,6 +24,7 @@ int main(int argc, string argv[])
     // TODO: Convert argv[1] from a `string` to an `int`
 
     int key = atoi (argv[1]);
+
     if (argc <= 2)
     {
         int key = atoi (argv[2]);
@@ -31,11 +32,11 @@ int main(int argc, string argv[])
 
     if (argc <= 3)
     {
-        int key = atoi (argv[3 ]);
+        int key = atoi (argv[3]);
     }
 
     // TODO: Prompt user for plaintext
-
+    
 
     // TODO: For each character in the plaintext:
     for (int i = 0; i < strlen(argc); i++)
