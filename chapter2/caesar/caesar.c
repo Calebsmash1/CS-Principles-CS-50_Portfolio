@@ -22,7 +22,7 @@ int main(int argc, string argv[])
 
 
     // Convert argv[1] from a `string` to an `int`
-    int key = atoi (argv[1]);
+    int key = atoi(argv[1]);
 
     // Prompt user for plaintext
     string message = get_string("plaintext: ");
@@ -39,11 +39,11 @@ int main(int argc, string argv[])
             // are upper case, or lowe case
             if (isupper(message[i]))
             {
-                printf("%c", (message[i] + key - 'A') %26 + 'A');
+                printf("%c", (message[i] + key - 'A') % 26 + 'A');
             }
             else
             {
-                printf("%c", (message[i] + key - 'a') %26 +'a');
+                printf("%c", (message[i] + key - 'a') % 26 + 'a');
             }
         }
     }
