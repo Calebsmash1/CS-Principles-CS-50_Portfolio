@@ -8,7 +8,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc <= 1)
+    if (argc == 1)
     {
         // Print a usage error
         printf("Usage: ./caesar <message>\n");
@@ -33,7 +33,7 @@ int main(int argc, string argv[])
         // TODO: Rotate the character if it's a letter
 
     // Prints out hidden message
-    printf("%s", word1);
+
     printf("\n");
 
     // Returns 0 to end program
