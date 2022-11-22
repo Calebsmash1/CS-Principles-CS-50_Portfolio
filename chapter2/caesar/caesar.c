@@ -19,40 +19,33 @@ int main(int argc, string argv[])
     }
 
     // Make sure every character in argv[1] is a digit
+    
 
     // Convert argv[1] from a `string` to an `int`
     int key = atoi (argv[1]);
 
-    //if (isdigit(key))
-    //{
-        // Prompt user for plaintext
-        string message = get_string("plaintext: ");
+    // Prompt user for plaintext
+    string message = get_string("plaintext: ");
 
-        printf("ciphertext: ");
+    printf("ciphertext: ");
 
-        // For each character in the plaintext:
-        for (int i = 0; i < strlen(message); i++)
+    // For each character in the plaintext:
+    for (int i = 0; i < strlen(message); i++)
+    {
+        // Rotate the character if it's a letter
+        if (isalpha(message[i]))
         {
-            // Rotate the character if it's a letter
-            if (isalpha(message[i]))
-            {
-                // Prints ciphered message letter by letter
-                printf("%c", (message[i] + key) %26);
-            }
+            // Prints ciphered message letter by letter
+            printf("%c", (message[i] + key %26));
         }
+    }
 
-        // Prints new line
-        printf("\n");
+    // Prints new line
+    printf("\n");
 
-        // Returns 0 to end program
-        return 0;
-    //}
-    //else
-    //{
-        // Print a usage error
-       // printf("Usage2: ./caesar <key>\n");
+    // Returns 0 to end program
+    return 0;
 
-        // Return an int for main, program stops running
-        return 1;
-    //}
+    // Return an int for main, program stops running
+    return 1;
 }
