@@ -23,8 +23,8 @@ int main(int argc, string argv[])
     // Convert argv[1] from a `string` to an `int`
     int key = atoi (argv[1]);
 
-    if (isdigit(key))
-    {
+    //if (isdigit(key))
+    //{
         // Prompt user for plaintext
         string message = get_string("plaintext: ");
 
@@ -44,13 +44,13 @@ int main(int argc, string argv[])
 
         // Returns 0 to end program
         return 0;
-    }
-    else
-    {
+    //}
+    //else
+    //{
         // Print a usage error
-        printf("Usage2: ./caesar <key>\n");
+       // printf("Usage2: ./caesar <key>\n");
 
         // Return an int for main, program stops running
         return 1;
-    }
+    //}
 }
