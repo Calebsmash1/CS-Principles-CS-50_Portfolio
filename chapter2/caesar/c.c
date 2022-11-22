@@ -44,5 +44,12 @@ int main(int argc, string argv[])
         // Returns 0 to end program
         return 0;
     }
-    
+    else
+    {
+        // Print a usage error
+        printf("Usage: ./caesar <message>\n");
+
+        // Return an int for main, program stops running
+        return 1;
+    }
 }
