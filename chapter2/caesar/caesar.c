@@ -18,8 +18,25 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // Make sure every character in argv[1] is a digit
-    if (argc !=)
+    // Make sure program was run with just one command-line argument
+    if (argc != 2)
+    {
+        // Print a usage error
+        printf("Usage: ./caesar <key>\n");
+
+        // Return an int for main, program stops running
+        return 1;
+    }
+
+    // Make sure program was run with just one command-line argument
+    if (isalpha())
+    {
+        // Print a usage error
+        printf("Usage: ./caesar <key>\n");
+
+        // Return an int for main, program stops running
+        return 1;
+    }
 
 
     // Convert argv[1] from a `string` to an `int`
