@@ -17,15 +17,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    if (isalpha(argv))
-    {
-        // Print a usage error
-        printf("Usage: ./caesar <message>\n");
-
-        // Return an int for main, program stops running
-        return 1;
-    }
-
     // TODO: Make sure program was run with just one command-line argument (2nd to Last)
 
     // TODO: Make sure every character in argv[1] is a digit (Last)
@@ -35,9 +26,14 @@ int main(int argc, string argv[])
     int key = atoi (argv[1]);
 
     // TODO: Prompt user for plaintext
-
+    string message = get_string(plaintext:);
 
     // TODO: For each character in the plaintext:
+    for (int i = 0; i < strlen(message); i++)
+    {
+        // Go back 5 ASCII characters with "wrapping" (Only works for upper case)
+        printf("%c", (message[i] + 5 - 'a') % 26 + 'a');
+    }
 
         // TODO: Rotate the character if it's a letter
 
