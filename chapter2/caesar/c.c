@@ -8,7 +8,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc == 1)
+    if (argc == 1; isnum)
     {
         // Print a usage error
         printf("Usage: ./caesar <message>\n");
