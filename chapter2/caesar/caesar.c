@@ -45,7 +45,7 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("c", message[i]);
+            printf("%c", message[i]);
         }
     }
 
