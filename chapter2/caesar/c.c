@@ -22,19 +22,8 @@ int main(int argc, string argv[])
     // TODO: Make sure every character in argv[1] is a digit (Last)
 
     // TODO: Convert argv[1] from a `string` to an `int`
-string word1 = argv[1];
 
-    int key1 = atoi (argv[1]);
-
-    if (argc <= 2)
-    {
-        int key2 = atoi (argv[2]);
-    }
-
-    if (argc <= 3)
-    {
-        int key3 = atoi (argv[3]);
-    }
+    int key = atoi (argv[1]);
 
     // TODO: Prompt user for plaintext
 
