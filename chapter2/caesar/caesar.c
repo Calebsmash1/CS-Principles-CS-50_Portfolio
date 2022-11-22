@@ -28,6 +28,8 @@ int main(int argc, string argv[])
         // Prompt user for plaintext
         string message = get_string("plaintext: ");
 
+        printf("ciphertext: ");
+
         // For each character in the plaintext:
         for (int i = 0; i < strlen(message); i++)
         {
