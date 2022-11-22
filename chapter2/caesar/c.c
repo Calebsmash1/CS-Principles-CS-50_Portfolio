@@ -26,16 +26,17 @@ int main(int argc, string argv[])
     int key = atoi (argv[1]);
 
     // TODO: Prompt user for plaintext
-    string message = get_string(plaintext:);
+    string message = get_string("plaintext: ");
 
     // TODO: For each character in the plaintext:
     for (int i = 0; i < strlen(message); i++)
     {
-        // Go back 5 ASCII characters with "wrapping" (Only works for upper case)
-        printf("%c", (message[i] + 5 - 'a') % 26 + 'a');
-    }
-
         // TODO: Rotate the character if it's a letter
+        if (isalpha(message[i]))
+        {
+            printf("%c", (message[i] + 5 - 'a') % 26 + 'a');
+        }
+    }
 
     // Prints out hidden message
 
