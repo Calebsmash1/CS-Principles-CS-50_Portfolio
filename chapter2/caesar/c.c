@@ -31,7 +31,7 @@ int main(int argc, string argv[])
 
     if (argc <= 3)
     {
-        int key = atoi (argv[3]);
+        int key = atoi (argv[3 ]);
     }
 
     // TODO: Prompt user for plaintext
