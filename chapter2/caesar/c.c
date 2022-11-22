@@ -12,7 +12,7 @@ int main(int argc, string argv[])
     if (argc != 2)
     {
         // Print a usage error
-        printf("Usage: ./caesar <message>\n");
+        printf("Usage: ./caesar <key>\n");
 
         // Return an int for main, program stops running
         return 1;
@@ -47,7 +47,7 @@ int main(int argc, string argv[])
     else
     {
         // Print a usage error
-        printf("Usage: ./caesar <message>\n");
+        printf("Usage: ./caesar <key>\n");
 
         // Return an int for main, program stops running
         return 1;
