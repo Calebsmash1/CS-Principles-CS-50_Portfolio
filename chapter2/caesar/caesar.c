@@ -18,12 +18,16 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    // Make sure program only accepts numbers
+
+
     // Convert argv[1] from a `string` to an `int`
     int key = atoi(argv[1]);
 
     // Prompt user for plaintext
     string message = get_string("plaintext: ");
 
+    // Begins the printing process for the ciphered message
     printf("ciphertext: ");
 
     // For each character in the plaintext:
