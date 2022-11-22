@@ -19,46 +19,47 @@ int main(int argc, string argv[])
     }
 
     // Make sure program only accepts numbers
-
-
-    // Convert argv[1] from a `string` to an `int`
-    int key = atoi(argv[1]);
-
-    // Prompt user for plaintext
-    string message = get_string("plaintext: ");
-
-    // Begins the printing process for the ciphered message
-    printf("ciphertext: ");
-
-    // For each character in the plaintext:
-    for (int i = 0; i < strlen(message); i++)
+    if (isdigit(argv[1]))
     {
-        // Rotate the character if it's a letter
-        if (isalpha(message[i]))
+        // Convert argv[1] from a `string` to an `int`
+        int key = atoi(argv[1]);
+
+        // Prompt user for plaintext
+        string message = get_string("plaintext: ");
+
+        // Begins the printing process for the ciphered message
+        printf("ciphertext: ");
+
+        // For each character in the plaintext:
+        for (int i = 0; i < strlen(message); i++)
         {
-            // Rotates characters differently depending if they
-            // are upper case, or lowe case
-            if (isupper(message[i]))
+            // Rotate the character if it's a letter
+            if (isalpha(message[i]))
             {
-                printf("%c", (message[i] + key - 'A') % 26 + 'A');
+                // Rotates characters differently depending if they
+                // are upper case, or lower case
+                if (isupper(message[i]))
+                {
+                    printf("%c", (message[i] + key - 'A') % 26 + 'A');
+                }
+                else
+                {
+                    printf("%c", (message[i] + key - 'a') % 26 + 'a');
+                }
             }
+
+            // Prints non alphabetical characters as they are
             else
             {
-                printf("%c", (message[i] + key - 'a') % 26 + 'a');
+                printf("%c", message[i]);
             }
         }
-        else
-        {
-            printf("%c", message[i]);
-        }
+
+        // Prints new line
+        printf("\n");
+
+        // Returns 0 to end program
+        return 0;
     }
-
-    // Prints new line
-    printf("\n");
-
-    // Returns 0 to end program
-    return 0;
-
-    // Return an int for main, program stops running
-    return 1;
+    // 
 }
