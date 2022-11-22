@@ -17,7 +17,14 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    if (argc)
+    if (isalpha(argv))
+    {
+        // Print a usage error
+        printf("Usage: ./caesar <message>\n");
+
+        // Return an int for main, program stops running
+        return 1;
+    }
 
     // TODO: Make sure program was run with just one command-line argument (2nd to Last)
 
