@@ -35,8 +35,16 @@ int main(int argc, string argv[])
         // Rotate the character if it's a letter
         if (isalpha(message[i]))
         {
-            // Prints ciphered message letter by letter
-            printf("%c", (message[i] + key) %26 + 'a');
+            // Rotates characters differently depending if they
+            // are upper case, or lowe case
+            if (isupper(message[i]))
+            {
+                printf("%c", (message[i] + key - 'A') %26 + 'A');
+            }
+            else
+            {
+                printf("%c", (message[i] + key - 'a') %26 +'a');
+            }
         }
     }
 
