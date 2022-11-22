@@ -18,15 +18,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    if (isalpha(argv[1]))
-    {
-        // Print a usage error
-        printf("Usage: ./caesar <key>\n");
-
-        // Return an int for main, program stops running
-        return 1;
-    }
-    
     // Convert argv[1] from a `string` to an `int`
     int key = atoi(argv[1]);
 
@@ -51,6 +42,10 @@ int main(int argc, string argv[])
             {
                 printf("%c", (message[i] + key - 'a') % 26 + 'a');
             }
+        }
+        else
+        {
+            printf("c", message[i]);
         }
     }
 
