@@ -23,11 +23,17 @@ int main(int argc, string argv[])
 
     // TODO: Convert argv[1] from a `string` to an `int`
 
-    atoi (argv[1]);
+    int key = atoi (argv[1]);
 
     // TODO: Prompt user for plaintext
 
+
     // TODO: For each character in the plaintext:
+    for (int i = 0; i < strlen(arg; i++)
+    {
+        // Go back 5 ASCII characters with "wrapping" (Only works for upper case)
+        printf("%c", (argv[i] + 5 - 'a') % 26 + 'a');
+    }
 
         // TODO: Rotate the character if it's a letter
 
