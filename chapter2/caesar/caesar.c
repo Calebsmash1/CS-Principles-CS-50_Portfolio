@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     }
 
     // Make sure every character in argv[1] is a digit
-    
+
 
     // Convert argv[1] from a `string` to an `int`
     int key = atoi (argv[1]);
@@ -36,7 +36,7 @@ int main(int argc, string argv[])
         if (isalpha(message[i]))
         {
             // Prints ciphered message letter by letter
-            printf("%c", (message[i] + key %26));
+            printf("%c", (message[i] + key) %26 + 'a');
         }
     }
 
