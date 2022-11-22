@@ -37,7 +37,7 @@ int main(int argc, string argv[])
             if (isalpha(message[i]))
             {
                 // Prints ciphered message letter by letter
-                printf("%c", (message[i] + key - 'a') % 26 + 'a');
+                printf("%c", (message[i] + key));
             }
         }
 
