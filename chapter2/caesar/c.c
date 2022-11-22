@@ -34,7 +34,7 @@ int main(int argc, string argv[])
         // TODO: Rotate the character if it's a letter
         if (isalpha(message[i]))
         {
-            printf("%c", (message[i] + argv[1] - 'a') % 26 + 'a');
+            printf("%c", (message[i] + key - 'a') % 26 + 'a');
         }
     }
 
