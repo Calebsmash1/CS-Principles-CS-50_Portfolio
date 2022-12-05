@@ -4,6 +4,7 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -13,7 +14,7 @@ int main(void)
     // Search for Tyler
     for (int i = 0; i < 5; i++)
     {
-        if (names[i] == "Tyler")
+        if (strcmp(names[i], "John") == 0)
         {
             printf("Found at index %i\n", i);
             return 0;
