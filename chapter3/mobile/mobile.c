@@ -22,7 +22,7 @@ int main (void)
     test.carrier = "AT&T";
     test.name = "Brandon Price";
     test.number = 4134589582;
-    test.incoming_mins = 134.2;
+    test.incoming_mins = 143.2;
     test.outgoing_mins = 256.1;
     test.incoming_txts = 4050;
     test.outgoing_txts = 2539;
