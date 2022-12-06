@@ -2,6 +2,18 @@
 #include <stdio.h>
 
 // TODO: define the user_info struct below
+typedefstruct
+{
+    string carrier;
+    string name;
+    long number
+    float incoming_mins;
+    float outgoing_mins;
+    float incoming_mins;
+    float outgoing_mins;
+}
+user_info;
+
 
 int main (void)
 {
