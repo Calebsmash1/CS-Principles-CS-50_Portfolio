@@ -1,5 +1,5 @@
 /**
- * 
+ * Structure the entries to a user in a cell carrier's data base.
 */
 
 #include <cs50.h>
@@ -18,8 +18,8 @@ typedef struct
 }
 user_info;
 
-
-int main (void)
+// Gets the program running
+int main(void)
 {
     // Test use of this struct
     user_info test;
@@ -41,5 +41,6 @@ int main (void)
     printf("incoming text messages: %.0f\n", test.incoming_txts);
     printf("outgoing text messages: %.0f\n", test.outgoing_txts);
 
+    // Ends the program
     return 0;
 }
