@@ -6,7 +6,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-typedefstruct
+
+typedef struct
 {
     string name;
     float gpa;
@@ -24,6 +25,6 @@ int main(void)
     // Prompt for students' name and gpa
     for (int i = 0; i < enrollment; i++)
     {
-        
+
     }
 }

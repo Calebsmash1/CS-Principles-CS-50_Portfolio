@@ -1,16 +1,20 @@
+/**
+ * 
+*/
+
 #include <cs50.h>
 #include <stdio.h>
 
-// TODO: define the user_info struct below
-typedefstruct
+// Define the user_info struct below
+typedef struct
 {
     string carrier;
     string name;
-    long number
+    long number;
     float incoming_mins;
     float outgoing_mins;
-    float incoming_mins;
-    float outgoing_mins;
+    float incoming_txts;
+    float outgoing_txts;
 }
 user_info;
 
@@ -32,10 +36,10 @@ int main (void)
     printf("carrier: %s\n", test.carrier);
     printf("name: %s\n", test.name);
     printf("number: %li\n", test.number);
-    printf("incoming minutes: %.2f\n", test.incoming_mins);
-    printf("outgoing minutes: %.2f\n", test.outgoing_mins);
-    printf("incoming text messages: %i\n", test.incoming_txts);
-    printf("outgoing text messages: %i\n", test.outgoing_txts);
+    printf("incoming minutes: %.1f\n", test.incoming_mins);
+    printf("outgoing minutes: %.1f\n", test.outgoing_mins);
+    printf("incoming text messages: %.0f\n", test.incoming_txts);
+    printf("outgoing text messages: %.0f\n", test.outgoing_txts);
 
     return 0;
 }
