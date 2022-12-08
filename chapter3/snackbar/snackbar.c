@@ -74,16 +74,35 @@ int main(void)
 void add_items(void)
 {
 
-Burger: $9.5
-Vegan Burger: $11
-Hot Dog: $5
-Cheese Dog: $7
-Fries: $5
-Cheese Fries: $6
-Cold Pressed Juice: $7
-Cold Brew: $3
-Water: $2
-Soda: $2
+    menu[1].item = "Burger"
+    menu[1].price = 9.5
+
+    menu[2].item = "Vegan Burger
+    menu[2].price = 11
+
+    menu[3].item = "Hot Dog"
+    menu[3].price = 5
+
+    menu[4].item = "Cheese Dog
+    menu[4].price = 7
+
+    menu[5].item = "Fries"
+    menu[5].price = 5
+
+    menu[6].item = "Cheese Fries"
+    menu[6].price = 6
+
+    menu[7].item = "Cold Pressed Juice"
+    menu[7].price = 7
+
+    menu[8].item = "Cold Brew"
+    menu[8].price = 3
+
+    menu[9].item = "Water"
+    menu[9].price = 2
+
+    menu[10].item = "Soda"
+    menu[10].price = 2
 
 
     return;
