@@ -111,12 +111,11 @@ float get_cost(string item)
 {
     for (int i = 0; i < 5; i++)
     {
-        if (strcasecmp(people[i].name  == 0)
+        if (strcasecmp(menu[i].item, item)  == 0)
         {
-            printf("Found %s\n", people[i].number);
-            return 0;
+            return menu[i].price;
         }
     }
-    
+
     return 0.0;
 }
