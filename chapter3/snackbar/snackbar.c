@@ -21,38 +21,6 @@
 #include <strings.h>
 
 // Number of menu items
-menu item[10];
-
-    menu[0].item = ;
-    menu[0].price = ;
-
-    menu[1].item = ;
-    menu[1].price = ;
-
-    menu[2].item = ;
-    menu[2].price = ;
-
-    menu[3].item = ;
-    menu[3].price = ;
-
-    menu[4].item = ;
-    menu[4].price = ;
-
-    menu[5].item = ;
-    menu[5].price = ;
-
-    menu[6].item = ;
-    menu[6].price = ;
-
-    menu[7].item = ;
-    menu[7].price = ;
-
-    menu[8].item = ;
-    menu[8].price = ;
-
-    menu[9].item = ;
-    menu[9].price = 2.00;
-
 // Adjust this value (10) to number of items input below
 #define NUM_ITEMS 10
 
@@ -102,19 +70,15 @@ int main(void)
     printf("Your total cost is: $%.2f\n", total);
 }
 
-// Add at least the first for items to the menu array
+// Add items to the menu array
 void add_items(void)
 {
-    // TODO
+    
     return;
 }
 
 // Search through the menu array to find an item's cost
 float get_cost(string item)
 {
-    // TODO Linear search for the item
-        // TODO If found, return the price
-
-    // TODO Item was not found
     return 0.0;
 }
