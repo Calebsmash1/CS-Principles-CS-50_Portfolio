@@ -68,6 +68,7 @@ bool vote(string name)
 {
     // TODO
     // Look for name in candidates
+    
         // If found
             // Add 1 to votes
             // Retunr true
