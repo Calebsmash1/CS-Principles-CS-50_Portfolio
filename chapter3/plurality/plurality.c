@@ -73,7 +73,7 @@ bool vote(string name)
         // If found
         if (strcasecmp(candidates[i].name  == 0)
         {
-            vote
+            printf("good");
         }
     }
 
