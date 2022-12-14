@@ -68,7 +68,7 @@ bool vote(string name)
 {
     // TODO
     // Look for name in candidates
-    for (int i = 0; i < candidate.count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // If found
         if (strcasecmp(candidates[i].name  == 0)
