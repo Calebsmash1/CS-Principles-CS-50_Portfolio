@@ -128,6 +128,11 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
+    // Look for a candidate called name (Linear search for name in candidates)
+        // If candidate found
+            // Update preferences
+            // Return true
+    // Otherwise, candidate not found
     return false;
 }
 

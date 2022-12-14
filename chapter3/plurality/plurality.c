@@ -71,13 +71,13 @@ bool vote(string name)
     for (int i = 0; i < candidate_count; i++)
     {
         // If found
-        if (candidates[i].name  == 0)
+        if (candidates[i].name  == )
         {
             // Add 1 to votes
             candidates[i].votes++;
 
             // Return true
-            
+
         }
     }
     return false;
