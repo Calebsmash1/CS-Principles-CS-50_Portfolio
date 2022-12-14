@@ -73,18 +73,12 @@ bool vote(string name)
         // If found
         if (strcasecmp(candidates[i].name  == 0)
         {
+            // Add 1 to votes
             printf("good");
+
+            // Return true
         }
     }
-
-
-            // Add 1 to votes
-
-            //Return true
-
-        // If found
-            // Add 1 to votes
-            // Return true
     return false;
 }
 
@@ -93,6 +87,8 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
+
     // Print out the candidate(s) with the largest number of votes
+    
     return;
 }
