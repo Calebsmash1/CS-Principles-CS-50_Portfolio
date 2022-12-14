@@ -23,12 +23,12 @@ int main(int argc, string argv[])
 
     // Print array to the screen
     printf("Printed 2D Array:/n");
-    for (int i = 0; i < row;i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            printf("%i/t", array [i][j]);
+            printf("%i\t", array [i][j]);
         }
-        printf("/n");
+        printf("\n");
     }
 }
