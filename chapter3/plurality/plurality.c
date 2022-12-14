@@ -71,10 +71,9 @@ bool vote(string name)
     for (int i = 0; i < 10; i++)
     {
         // If found
-        if (strcasecmp(people[i].name  == 0)
+        if (strcasecmp(candidates[i].name  == 0)
         {
-            printf("Found %s\n", people[i].number);
-            return 0;
+            vote
         }
     }
 
