@@ -151,6 +151,12 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     // TODO
+    // For each row/voter in prefereces[][]
+        // For each col/candidate in preferences[][]
+            // If candidate vote in preferences[][] is not eliminatedin candidates[]
+                // Update vote count in candidates[]
+                // Break out of the most recent for loop
+
     return;
 }
 
