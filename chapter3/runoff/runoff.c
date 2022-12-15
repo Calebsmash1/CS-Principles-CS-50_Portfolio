@@ -82,14 +82,13 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
-   // Print array to the screem
-       // Print array to the screen
-    printf("Printed 2D Array:/n");
+    // Print array to the screen
+    printf("Printed Preferences 2D Array:\n");
     for (int i = 0; i < voter_count; i++)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-            printf("%i\t", preferences [i][j]);
+            printf("%i\t", preferences[i][j]);
         }
         printf("\n");
     }
@@ -140,11 +139,11 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    // Look for a candidate called name (Linear search for name in candidates)
+    // Look for a candidate called name (linear search for name in candidates[])
         // If candidate found
             // Update preferences
             // Return true
-    // Otherwise, candidate not found
+    // Otherwsie, candidate not found
     return false;
 }
 
