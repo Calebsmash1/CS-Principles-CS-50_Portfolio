@@ -77,6 +77,7 @@ bool vote(string name)
             candidates[i].votes++;
 
             // Return true
+            return true;
 
         }
     }
@@ -89,6 +90,7 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
+    
 
     // Print out the candidate(s) with the largest number of votes
 
