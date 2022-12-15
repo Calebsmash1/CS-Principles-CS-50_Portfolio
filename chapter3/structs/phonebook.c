@@ -40,7 +40,7 @@ int main(void)
 
     for (int i = 0; i < 5; i++)
     {
-       2 if (strcasecmp(people[i].name  == 0)
+        if (strcasecmp(people[i].name  == 0)
         {
             printf("Found %s\n", people[i].number);
             return 0;
