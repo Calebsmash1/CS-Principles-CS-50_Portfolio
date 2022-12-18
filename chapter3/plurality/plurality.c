@@ -81,7 +81,6 @@ bool vote(string name)
 
         }
     }
-    return false;
 }
 
 
@@ -90,7 +89,7 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
-    
+
 
     // Print out the candidate(s) with the largest number of votes
 
