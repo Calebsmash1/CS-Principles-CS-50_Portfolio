@@ -89,13 +89,11 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
-    if(candidate[i].votes > voter_count / 2)
+    if (candidate[i].votes > voter_count / 2)
     {
+        // Print out the candidate(s) with the largest number of votes
         printf("%s", candidate[i].name)
     }
-
-
-    // Print out the candidate(s) with the largest number of votes
 
     return;
 }
