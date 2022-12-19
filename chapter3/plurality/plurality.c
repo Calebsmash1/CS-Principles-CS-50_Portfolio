@@ -20,9 +20,6 @@ candidate candidates[MAX];
 // Number of candidates
 int candidate_count;
 
-// Number of voters
-int voter_count;
-
 // Function prototypes
 bool vote(string name);
 void print_winner(void);
@@ -95,7 +92,7 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes >  / 2)
+        if (int g = 0; candidates[i].votes > 2)
         {
         // Print out the candidate(s) with the largest number of votes
         printf("%s", candidates[i].name);
