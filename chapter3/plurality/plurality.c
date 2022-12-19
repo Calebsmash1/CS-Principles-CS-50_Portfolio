@@ -72,7 +72,7 @@ bool vote(string name)
     for (int i = 0; i < candidate_count; i++)
     {
         // If found
-        if (strcasecmp(candidate[i].name, name)  == 0)
+        if (strcasecmp(candidates[i].name, name)  == 0)
         {
             // Add 1 to votes
             candidates[i].votes++;
@@ -90,7 +90,7 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
-    if(candidate)
+    
 
     // Print out the candidate(s) with the largest number of votes
 
