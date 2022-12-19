@@ -94,8 +94,8 @@ void print_winner(void)
     {
         if (candidates[i].votes > MAX / 2)
         {
-        // Print out the candidate(s) with the largest number of votes
-        printf("%s\n", candidates[i].name);
+            // Print out the candidate(s) with the largest number of votes
+            printf("%s\n", candidates[i].name);
         }
     }
     return;
