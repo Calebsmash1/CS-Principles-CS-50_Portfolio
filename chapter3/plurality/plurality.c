@@ -70,19 +70,15 @@ bool vote(string name)
     // Look for name in candidates
     for (int i = 0; i < candidate_count; i++)
     {
+        string name = get_string("Vote: ");
         // If found
-        if (candidates[i].name == 0)
+        if (candidates[i].name == candidates[1].name)
         {
             // Add 1 to votes
             candidates[i].votes++;
 
             // Return true
             return true;
-
-        }
-        else
-        {
-            return false;
         }
     }
     return true;
@@ -94,7 +90,7 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
-
+    if(candidate)
 
     // Print out the candidate(s) with the largest number of votes
 
