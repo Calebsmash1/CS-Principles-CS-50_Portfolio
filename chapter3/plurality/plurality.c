@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 
 // Max number of candidates
 #define MAX 9
@@ -70,9 +71,8 @@ bool vote(string name)
     // Look for name in candidates
     for (int i = 0; i < candidate_count; i++)
     {
-        string name = get_string("Vote: ");
         // If found
-        if (candidates[i].name == candidates[1].name)
+        if (strcasecmp(candidates[i].name, name)  == 0)
         {
             // Add 1 to votes
             candidates[i].votes++;
