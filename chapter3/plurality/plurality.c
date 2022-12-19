@@ -67,7 +67,6 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
     // Look for name in candidates
     for (int i = 0; i < candidate_count; i++)
     {
@@ -81,7 +80,7 @@ bool vote(string name)
             return true;
         }
     }
-    return true;
+    return false;
 }
 
 
@@ -90,7 +89,8 @@ void print_winner(void)
 {
     // TODO
     // Determine the value of the largest number of votes
-    
+    if()
+
 
     // Print out the candidate(s) with the largest number of votes
 
