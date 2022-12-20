@@ -140,9 +140,12 @@ bool vote(int voter, int rank, string name)
 {
     // TODO
     // Look for a candidate called name (linear search for name in candidates[])
+    for (int i = 0; i < candidate_count; i++)
+    {
         // If candidate found
             // Update preferences[][]
             // Return true
+    
     // Otherwsie, candidate not found
     return false;
 }
