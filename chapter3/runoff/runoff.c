@@ -143,11 +143,19 @@ bool vote(int voter, int rank, string name)
     for (int i = 0; i < candidate_count; i++)
     {
         // If candidate found
+        if (strcasecmp(candidates[i].name, name)  == 0)
+        {
             // Update preferences[][]
+
             // Return true
-    
-    // Otherwsie, candidate not found
-    return false;
+            return true;
+        }
+        // Otherwsie, candidate not found
+        else
+        {
+        return false;
+        }
+    }
 }
 
 // Tabulate votes for non-eliminated candidates
