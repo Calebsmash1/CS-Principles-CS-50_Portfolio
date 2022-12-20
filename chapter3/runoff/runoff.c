@@ -1,5 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <strings.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -146,7 +148,7 @@ bool vote(int voter, int rank, string name)
         if (strcasecmp(candidates[i].name, name)  == 0)
         {
             // Update preferences[][]
-
+            preferences[i][j]++;
             // Return true
             return true;
         }
