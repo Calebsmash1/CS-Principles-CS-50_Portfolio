@@ -148,7 +148,7 @@ bool vote(int voter, int rank, string name)
         if (strcasecmp(candidates[i].name, name)  == 0)
         {
             // Update preferences[][]
-            preferences[i][j]++;
+            preferences[i][j];
             // Return true
             return true;
         }
