@@ -153,9 +153,9 @@ bool vote(int voter, int rank, string name)
             // Return true
             return true;
         }
-        // Otherwsie, candidate not found
-        return false;
     }
+    // Otherwsie, candidate not found
+    return false;
 }
 
 // Tabulate votes for non-eliminated candidates
@@ -163,11 +163,14 @@ void tabulate(void)
 {
     // TODO
     // For each row/voter in preferences[][]
+    for (int i = 0; i < voter_count; i++)
+    {
         // For each col/candidate in preferences[][]
+        for (int i = 0; i < candidate_count; i++)
             // If candidate vote in preferences[][] is not elimated in candidates[]
                 // Update vote count in candidates[]
                 // break out of the most recent for loop
-
+    }
     return;
 }
 
