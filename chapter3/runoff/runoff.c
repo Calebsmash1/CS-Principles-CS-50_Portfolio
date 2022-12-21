@@ -154,10 +154,7 @@ bool vote(int voter, int rank, string name)
             return true;
         }
         // Otherwsie, candidate not found
-        else
-        {
         return false;
-        }
     }
 }
 
