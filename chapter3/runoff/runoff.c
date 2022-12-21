@@ -166,15 +166,15 @@ void tabulate(void)
     for (int i = 0; i < voter_count; i++)
     {
         // For each col/candidate in preferences[][]
-        for (int p = 0;  < candidate_count; p++)
+        for (int j = 0; j < candidate_count; j++)
         {
             // If candidate vote in preferences[][] is not elimated in candidates[]
-            if (candidates[i][p].eliminated  == false)
+            if (candidates[preferences[i][j]].eliminated  == false)
             {
                 // Update vote count in candidates[]
-                vote_count++;
+                candidates[preferences[i][j]].votes++;
                 // break out of the most recent for loop
-                return true;
+                ;
             }
         }
     }
