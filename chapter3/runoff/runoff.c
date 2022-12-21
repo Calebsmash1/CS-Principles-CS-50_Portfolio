@@ -185,8 +185,19 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    // Prints winner of election
-    
+    // Checks if there is a winner
+    // Determine the value of the largest number of votes
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes > MAX / 2)
+        {
+            // Print out the candidate(s) with the largest number of votes
+            printf("%s\n", candidates[i].name);
+        }
+    }
+    return;
+
+
     return false;
 }
 
