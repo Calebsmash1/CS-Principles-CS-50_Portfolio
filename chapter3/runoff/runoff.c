@@ -174,7 +174,7 @@ void tabulate(void)
                 // Update vote count in candidates[]
                 candidates[preferences[i][j]].votes++;
                 // break out of the most recent for loop
-                ;
+                break;
             }
         }
     }
