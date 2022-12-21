@@ -185,6 +185,8 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
+    // Prints winner of election
+    
     return false;
 }
 
