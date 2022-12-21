@@ -186,18 +186,20 @@ bool print_winner(void)
 {
     // TODO
     // Checks if there is a winner
-    // Determine the value of the largest number of votes
+    // For each candidate
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes > MAX / 2)
+        // Checks to see if they have majority
+        if (candidates[i].votes > MAX_VOTERS / 2)
         {
             // Print out the candidate(s) with the largest number of votes
             printf("%s\n", candidates[i].name);
+
+            // Returns true
+            return true;
         }
     }
-    return;
-
-
+    // Returns if not
     return false;
 }
 
@@ -205,6 +207,9 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
+    
+
+    // Returns 0
     return 0;
 }
 
