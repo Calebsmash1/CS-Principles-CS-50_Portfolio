@@ -190,7 +190,7 @@ bool print_winner(void)
     for (int i = 0; i < candidate_count; i++)
     {
         // Checks to see if they have majority
-        if (candidates[i].votes > MAX_VOTERS / 2 - 1)
+        if (candidates[i].votes > MAX_VOTERS / 2)
         {
             // Print out the candidate(s) with the largest number of votes
             printf("%s\n", candidates[i].name);
