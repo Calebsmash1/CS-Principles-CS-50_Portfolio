@@ -149,7 +149,7 @@ bool vote(int voter, int rank, string name)
         if (strcasecmp(candidates[i].name, name)  == 0)
         {
             // Update preferences[][]
-            preferences[voter][rank]= i;
+            preferences[voter][rank] = i;
             // Return true
             return true;
         }
@@ -253,6 +253,6 @@ void eliminate(int min)
             candidates[i].eliminated = true;
         }
     return;
-    
+
     }
 }
