@@ -166,13 +166,13 @@ void tabulate(void)
     for (int i = 0; i < voter_count; i++)
     {
         // For each col/candidate in preferences[][]
-        for (int j = 0; j < candidate_count; j++)
+        for (int p = 0; p < candidate_count; p++)
         {
             // If candidate vote in preferences[][] is not elimated in candidates[]
-            if (candidates[preferences[i][j]].eliminated  == false)
+            if (candidates[preferences[i][p]].eliminated  == false)
             {
                 // Update vote count in candidates[]
-                candidates[preferences[i][j]].votes++;
+                candidates[preferences[i][p]].votes++;
                 // break out of the most recent for loop
                 break;
             }
@@ -207,7 +207,7 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
-    
+
 
     // Returns 0
     return 0;
