@@ -211,7 +211,11 @@ int find_min(void)
     for(int i = 0; i < candidate_count; i++)
     {
         // Checks which candidate has least amount of votes (which was eliminated)
-        if ()
+        if (candidates[i].votes < MAX_VOTERS /3)
+        {
+            // Returns the minimum number of votes any remaining candidate has
+            
+        }
     }
 
     // Returns 0
