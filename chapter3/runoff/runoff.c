@@ -247,7 +247,7 @@ void eliminate(int min)
     for (int i = 0; i < candidate_count; i++)
     {
         // Checks which candidate has least amount of votes (which one will be eliminated)
-        if (candidates[i].votes < MAX_VOTERS / 3)
+        if (candidates[i].votes < candidates[i + 1].votes)
         {
             // Eliminates them
             candidates[i].eliminated = true;
