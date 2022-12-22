@@ -187,7 +187,7 @@ bool print_winner(void)
     // TODO
     // Checks if there is a winner
     // For each candidate
-     for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // Checks to see if they have majority
         if (candidates[i].votes > MAX_VOTERS / 2)
@@ -208,7 +208,7 @@ int find_min(void)
 {
     // TODO
     // For each candidate
-    for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // Checks which candidate has least amount of votes (which was eliminated)
         if (candidates[i].votes < MAX_VOTERS /3)
@@ -226,10 +226,10 @@ int find_min(void)
 bool is_tie(int min)
 {
     // TODO
-    for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // Checks if candidates have equal number of votes
-        if (candidates[i].votes == candidates[i+1].votes)
+        if (candidates[i].votes == candidates[i + 1].votes)
         {
             // If so, returns true
             return true;
@@ -244,15 +244,15 @@ void eliminate(int min)
 {
     // TODO
     // For each candidate
-    for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // Checks which candidate has least amount of votes (which one will be eliminated)
-        if (candidates[i].votes < MAX_VOTERS /3)
+        if (candidates[i].votes < MAX_VOTERS / 3)
         {
             // Eliminates them
             candidates[i].eliminated = true;
         }
-    return;
+        return;
 
     }
 }
