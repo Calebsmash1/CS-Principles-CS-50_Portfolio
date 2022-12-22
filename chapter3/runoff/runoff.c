@@ -195,8 +195,8 @@ bool print_winner(void)
             // Print out the candidate(s) with the largest number of votes
             printf("%s\n", candidates[i].name);
 
-            // Returns true
-            return true;
+            // Returns
+            return false;
         }
     }
     // Returns if not
