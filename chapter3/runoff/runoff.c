@@ -187,7 +187,7 @@ bool print_winner(void)
     // TODO
     // Checks if there is a winner
     // For each candidate
-    for (int i = 0; i < candidate_count; i++)
+     for(int i = 0; i < candidate_count; i++)
     {
         // Checks to see if they have majority
         if (candidates[i].votes > MAX_VOTERS / 2)
@@ -207,7 +207,12 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
-
+    // For each candidate
+    for(int i = 0; i < candidate_count; i++)
+    {
+        // Checks which candidate has least amount of votes (which was eliminated)
+        if ()
+    }
 
     // Returns 0
     return 0;
