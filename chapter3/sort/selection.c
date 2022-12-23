@@ -35,11 +35,14 @@ int main (void)
     {
         // Find the smallest element between i'th and n-1'th
         int smallest = array[first_unsorted_index];
+        int smallest_index = first_unsorted_index;
         for (int i = first_unsorted_index + 1; i < n; i++)
         {
             if (array[i] < smallest)
             {
                 smallest = array[i];
+                smallest_index = 
+
             }
         }
 
