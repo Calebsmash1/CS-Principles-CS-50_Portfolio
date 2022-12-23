@@ -41,7 +41,7 @@ int main (void)
             if (array[i] < smallest)
             {
                 smallest = array[i];
-                smallest_index = 
+                smallest_index = i;
 
             }
         }
