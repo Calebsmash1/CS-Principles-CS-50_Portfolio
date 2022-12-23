@@ -49,6 +49,9 @@ int main (void)
         // Swap smallest with i'th element if first unsorted index isn't the smallest
         int temp = array[first_unsorted_index];
         array[first_unsorted_index] = array[smallest_index];
+        
+        array[smallest_index] = array[first_unsorted_index];
+        array[first_unsorted_index] = smallest;
 
     }
 
