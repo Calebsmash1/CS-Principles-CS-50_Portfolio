@@ -29,6 +29,23 @@ int main (void)
     printf("\n");
 
     // TODO: Bubble Sort
+    // Set swap counter to a non-zero value
+    int swap_counter = -1;
+
+    // Repeat until the swap counter is 0
+    while(swap_counter != 0)
+    {
+        // Reset swap counter to 0
+        swap_counter = 0;
+
+        // Look at each adjacent pair
+        for (int i = 0; i < N - 1; i++)
+        {
+            // If two adjacent elements are not in order
+            
+            // Swap them and add one the swap counter
+        }
+    }
 
 
     // Display sorted array
