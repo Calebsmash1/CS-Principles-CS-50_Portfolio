@@ -42,8 +42,11 @@ int main (void)
         for (int i = 0; i < N - 1; i++)
         {
             // If two adjacent elements are not in order
-            
-            // Swap them and add one the swap counter
+            if (array[i] > array[i + 1])
+            {
+                // Swap them and add one the swap counter
+                
+            }
         }
     }
 
