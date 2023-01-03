@@ -39,13 +39,18 @@ int main (void)
         swap_counter = 0;
 
         // Look at each adjacent pair
-        for (int i = 0; i < N - 1; i++)
+        for (int i = 0; i < n - 1; i++)
         {
             // If two adjacent elements are not in order
             if (array[i] > array[i + 1])
             {
                 // Swap them and add one the swap counter
-                
+                int temp = array[i];
+                array[i] = array[i +1];
+                array[i + 1] = temp;
+
+                // Add one to the swap counter
+                swap_counter++;
             }
         }
     }
