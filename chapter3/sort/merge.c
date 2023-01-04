@@ -31,8 +31,8 @@ int main (void)
     }
     printf("\n");
 
-    // TODO: Merge Sort
-    merge_sort(array)
+    // Merge Sort
+    merge_sort(array, 0, n - 1);
 
 
     // Display sorted array
@@ -46,21 +46,23 @@ int main (void)
     return 0;
 }
 
-// Incomplete implementation of merge sort
+// Implementation of merge sort
 void merge_sort(int a[], int start, int end)
 {
-    // Find the middle of the array
-    int middle = (start + end) / 2;
+    if (end > start)
+    {
+        // Find the middle of the array
+        int middle = (start + end) / 2;
 
-    // Merge sort the left half
-    merge_sort(a, start, middle);
+        // Merge sort the left half
+        merge_sort(a, start, middle);
 
-    // Merge sort the right half
-    merge_sort(a, middle + 1, end);
+        // Merge sort the right half
+        merge_sort(a, middle + 1, end);
 
-    // Merge the two halfs together
-    merge(a, start, middle, middle + 1, end);
-
+        // Merge the two halfs together
+        merge(a, start, middle, middle + 1, end);
+    }
 
 }
 
