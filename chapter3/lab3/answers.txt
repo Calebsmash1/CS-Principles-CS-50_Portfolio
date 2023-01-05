@@ -6,6 +6,6 @@ sort2 uses: Binary
 
 How do you know?: TODO
 
-sort3 uses: Merge
+sort3 uses: Bubble
 
 How do you know?: TODO
