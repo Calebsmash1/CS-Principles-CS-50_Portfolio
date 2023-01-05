@@ -1,11 +1,11 @@
-sort1 uses: Binary
-
+sort1 uses:
+Binary
 How do you know?: TODO
 
-sort2 uses: Merge
-
+sort2 uses:
+Merge
 How do you know?: TODO
 
-sort3 uses: Bubble
-
+sort3 uses:
+Bubble
 How do you know?: TODO
