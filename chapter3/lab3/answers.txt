@@ -4,7 +4,7 @@ How do you know?: It was the slowest in all tests, only getting 2nd place in the
 
 sort2 uses: Merge sort
 
-How do you know?: 
+How do you know?: Really fast overall, especially in reversed
 
 sort3 uses: Selection sort
 
