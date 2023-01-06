@@ -12,8 +12,8 @@ int main(void)
     // Get the needle for user
     int n = get_int("Needle: ");
 
-    // TODO: Search haystack for needle and print result
-    if ("")
+    // Search haystack for needle and print result
+    if (binary_search(n, haystack, 8))
     {
         printf("Needle is in the haystack.\n");
     }
@@ -28,17 +28,22 @@ int main(void)
 bool binary_search(int needle, int haystack[], int size)
 {
     // Initialize start, middle, and end
+    int start = 0;
+    int end = size - 1;
+    int mid;
 
     // While still a valid search
-
+    while(start <= end)
+    {
         // Calculate the middle
+        mid = 
 
         // If the target is at the middle, stop
 
         // Otherwise, if the target is less, change end to left of middle
 
         // Otherwise, the target is greater, change the start to right of middle
-
+    }
     // If start !<= end, target not found
 
 return 0;
