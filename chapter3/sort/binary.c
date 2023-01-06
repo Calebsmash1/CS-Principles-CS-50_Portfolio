@@ -33,18 +33,29 @@ bool binary_search(int needle, int haystack[], int size)
     int mid;
 
     // While still a valid search
-    while(start <= end)
+    while (start <= end)
     {
         // Calculate the middle
-        mid = 
+        mid = (start + end) / 2;
 
         // If the target is at the middle, stop
+        if (haystack [mid] == needle)
+        {
+            return true;
+        }
 
         // Otherwise, if the target is less, change end to left of middle
+        else if (needle < haystack[mid])
+        {
+            end = mid - 1;
+        }
 
         // Otherwise, the target is greater, change the start to right of middle
+        else
+        {
+            start = mid + 1;
+        }
     }
     // If start !<= end, target not found
-
-return 0;
+    return false;
 }
