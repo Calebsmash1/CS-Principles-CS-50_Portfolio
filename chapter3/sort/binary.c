@@ -13,7 +13,7 @@ int main(void)
     int n = get_int("Needle: ");
 
     // TODO: Search haystack for needle and print result
-    if ()
+    if ("")
     {
         printf("Needle is in the haystack.\n");
     }
@@ -41,4 +41,5 @@ bool binary_search(int needle, int haystack[], int size)
 
     // If start !<= end, target not found
 
+return 0;
 }
