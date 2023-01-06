@@ -24,7 +24,7 @@ int main(void)
 
 }
 
-// TDOD: Binary search function
+// Binary search function
 bool binary_search(int needle, int haystack[], int size)
 {
     // Initialize start, middle, and end
