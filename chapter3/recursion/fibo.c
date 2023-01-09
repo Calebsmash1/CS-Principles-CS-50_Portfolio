@@ -4,7 +4,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-#define N 25
+#define N 
 
 int main(void)
 {
