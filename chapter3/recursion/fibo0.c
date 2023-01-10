@@ -21,5 +21,7 @@ int main(void)
 */
 int fibo(int n)
 {
-    
+    // Base case
+
+    // Recursive case
 }
