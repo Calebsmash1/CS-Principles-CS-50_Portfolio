@@ -27,16 +27,8 @@ int main(void)
 int fibo(int n)
 {
     // Base case #0
-    if (n == 0)
-    {
-        return 0;
-    }
-
-    // Base case #1
-    if (n == 1)
-    {
-        return 1;
-    }
+    if (n <= 1)
+        return n;
 
     // Recursive case
     else
