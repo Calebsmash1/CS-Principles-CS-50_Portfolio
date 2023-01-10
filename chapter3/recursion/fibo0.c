@@ -5,6 +5,11 @@
 #include <cs50.h>
 #include <stdio.h>
 
+#define N 25
+
+// Function prototype
+int fibo(int n);
+
 int main(void)
 {
     // Print the first %i numvers in the Fibonacci series
@@ -34,5 +39,6 @@ int fibo(int n)
     }
 
     // Recursive case
-    
+    else
+        return fibo(n - 1) + fibo
 }
