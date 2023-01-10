@@ -14,10 +14,9 @@ int digitsum(int n)
 {
     // Base case
     if (n < 10)
-        return ;
-    // Use n % 10 to
+        return n;
 
     // Recursive case
     else
-        return ???;
+        return n%10 + digitsum(n/10);
 }
