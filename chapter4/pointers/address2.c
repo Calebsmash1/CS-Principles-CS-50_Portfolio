@@ -5,8 +5,7 @@
 
 int main(void)
 {
-    int n = 50;
-    int *p = &n;
+    stinrg s = "HI!";
 
-    printf("%i\n", *p);
+    printf("%s\n", s);
 }
