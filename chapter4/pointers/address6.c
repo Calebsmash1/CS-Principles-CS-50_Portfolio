@@ -1,5 +1,4 @@
-// Store and print an integers address
-#include <cs50.h>
+// Print a string
 #include <stdio.h>
 
 int main(void)
