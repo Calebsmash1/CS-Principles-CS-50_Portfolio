@@ -23,6 +23,8 @@ int main(void)
         ch = fgetc(txt);
     }
 
+    printf("\n");
+
     // Close file
     fclose(txt);
 }
