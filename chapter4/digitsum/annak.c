@@ -41,5 +41,5 @@ int main(int argc, char* argv[])
     }
 
     // You leak memory if you forget to close your files that you opened!
-    ???
+    fclose()
 }
