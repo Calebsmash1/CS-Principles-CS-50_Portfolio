@@ -11,9 +11,9 @@ int main(int argc, char* argv[])
     }
 
     // Open up the source file
-    FILE *source = ???;
+    FILE *source = fopen("anna.txt", "r");
     // If cannot open
-    if (???)
+    if (!source)
     {
         printf("Cannot open a source file called %s\n", argv[1]);
         return 2;
@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
     for (???)
     {
         // Write the character to the destination file!
-        // Hint* you will need to find a function that will print/put a character in the destination file. 
+        // Hint* you will need to find a function that will print/put a character in the destination file.
         ???
     }
 
