@@ -6,7 +6,7 @@
 int main(void)
 {
     // Open a .csv file
-    FILE *fonebook = fopen("phonebook.csv", "w");
+    FILE *fonebook = fopen("phonebook.csv", "a");
     if(!fonebook)
 
     // Check to see if file opened successfully
