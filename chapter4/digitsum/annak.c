@@ -20,12 +20,12 @@ int main(int argc, char* argv[])
     }
 
     // Now open up the destination file
-    FILE *dest = ???;
+    FILE *dest = fopen("anna_copy.txt", "w");
     // If cannot open
-    if (???)
+    if (!dest)
     {
         // Make sure to close the source file that's already open before exiting!
-        ???
+        fclose(dest);
 
         printf("Cannot open file called %s for writing\n", argv[2]);
         return 3;
