@@ -1,5 +1,6 @@
 // Save names and numbers to a CSV file
 
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
@@ -15,7 +16,8 @@ int main(void)
     }
 
     // Get name and number
-
+    char *name = get_string("Name: ");
+    char *number = get_string("Number: ");
 
     // Write to the file
 
