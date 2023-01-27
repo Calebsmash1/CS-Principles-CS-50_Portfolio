@@ -5,11 +5,11 @@
 int main(void)
 {
     // Open .txt file
+    FILE *txt = fopen("cs50.txt", "r");
 
     // Check if opened successfully
-
-
-
+    if (!txt)
+    {
         return 1;
     }
 
