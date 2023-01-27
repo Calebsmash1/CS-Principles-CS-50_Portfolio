@@ -8,7 +8,21 @@ int main(void)
 
     // Check if opened successfully
 
+
+
+        return 1;
+    }
+
     // Read the .txt file
+    char ch = fgetc(txt);
 
     // Print every character
+    while (ch ! = EOF)
+    {
+        printf("%c", ch);
+        ch = fgetc(txt);
+    }
+
+    // Close file
+    fclose(txt);
 }
