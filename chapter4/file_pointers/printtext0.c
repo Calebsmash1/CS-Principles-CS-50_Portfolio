@@ -14,7 +14,7 @@ int main(void)
     }
 
     // For every character in the file
-    for (char ch = fget(txt); ch != EOF; ch = fgetc(txt))
+    for (char ch = fgetc(txt); ch != EOF; ch = fgetc(txt))
     {
         // Print the character
         printf("%c", ch);

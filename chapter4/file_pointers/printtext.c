@@ -5,7 +5,7 @@
 int main(void)
 {
     // Open .txt file
-    FILE *txt = fopen("Chapter3.Quiz.docx", "r");
+    FILE *txt = fopen("cs50.txt", "r");
 
     // Check if opened successfully
     if (!txt)
