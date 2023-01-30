@@ -20,6 +20,7 @@ int main(void)
         // Print the character
         printf("%c", ch);
     }
+    printf("\n");
 
 
     // Close file
