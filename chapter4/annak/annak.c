@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     }
 
     // Open up the source file
-    FILE *source = fopen("agrv[1]", "r");
+    FILE *source = fopen(argv[1], "r");
     // If cannot open
     if (!source)
     {
@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
     }
 
     // Now open up the destination file
-    FILE *dest = fopen("argv[2]", "w");
+    FILE *dest = fopen(argv[2], "w");
     // If cannot open
     if (!dest)
     {
@@ -37,8 +37,7 @@ int main(int argc, char* argv[])
     {
         // Write the character to the destination file!
         // Hint* you will need to find a function that will print/put a character in the destination file.
-        int fputc(int c, FILE *dest);
-        ch = fgetc(dest);
+        fputc(int c, FILE *dest);
 
     }
 
