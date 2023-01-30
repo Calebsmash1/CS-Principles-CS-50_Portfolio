@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 
     // Read the contents of the source file one char (int!) at a time
     // Remember to use int so that the c != EOF comparison is reliable
-    for (???)
+    for (char ch = fgetc(txt); ch != EOF; ch = fgetc(txt))
     {
         // Write the character to the destination file!
         // Hint* you will need to find a function that will print/put a character in the destination file.
