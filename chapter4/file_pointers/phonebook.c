@@ -7,9 +7,9 @@ int main(void)
 {
     // Open a .csv file
     FILE *fonebook = fopen("phonebook.csv", "a");
-    if(!fonebook)
 
     // Check to see if file opened successfully
+    if(!fonebook)
     {
         printf("Error loading file\n");
         return 1;
@@ -20,6 +20,8 @@ int main(void)
     char *number = get_string("Number: ");
 
     // Write to the file
+    fprintf(fonebook, "%s,%s\n", name, number);
 
     // Close the file
+    fclose(fonebook);
 }
