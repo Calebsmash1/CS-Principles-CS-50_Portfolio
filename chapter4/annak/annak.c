@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
     }
 
     // Now open up the destination file
-    FILE *dest = fopen("anna_copy.txt", "w");
+    FILE *dest = fopen("argv[2]", "w");
     // If cannot open
     if (!dest)
     {
@@ -38,7 +38,6 @@ int main(int argc, char* argv[])
         // Write the character to the destination file!
         // Hint* you will need to find a function that will print/put a character in the destination file.
         int fputc(int c, FILE *dest);
-        printf("%c", ch);
         ch = fgetc(dest);
 
     }
