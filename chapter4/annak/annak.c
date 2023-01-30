@@ -37,7 +37,7 @@ int main(int argc, char* argv[])
     {
         // Write the character to the destination file!
         // Hint* you will need to find a function that will print/put a character in the destination file.
-        int fputc(int ch, FILE *dest);
+        fputc(ch, dest);
 
     }
 
