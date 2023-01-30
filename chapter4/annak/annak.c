@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     }
 
     // Open up the source file
-    FILE *source = argv[1];
+    FILE *source = fopen("agrv[1]", "r");
     // If cannot open
     if (!source)
     {
