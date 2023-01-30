@@ -14,6 +14,7 @@ int main(void)
     }
 
     // For every character in the file
+    // Note* saving the char as an int for a reliable EOF comparison
     for (char ch = fgetc(txt); ch != EOF; ch = fgetc(txt))
     {
         // Print the character
