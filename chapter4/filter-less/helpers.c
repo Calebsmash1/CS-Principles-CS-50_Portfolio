@@ -3,6 +3,7 @@
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     int avrg = 1;
+
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
     for (int i = 0; i < height; i++)
@@ -12,9 +13,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
          {
             // Find the "average" of the pixel
             avrg = (image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed);
-
+            avrg = (avrg / 3.0);
 
             // Update Red, Green, and Blue so that it is grey Rounding
+            update 
 
          }
     }
