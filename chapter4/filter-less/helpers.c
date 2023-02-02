@@ -9,6 +9,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
+    // For each row
+        // Calculate new color value using the Sepia formula
+        // Ensure the result is an integer between 0 and 255, inclusive
+        // Update the color values
     return;
 }
 
@@ -16,7 +20,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     // For each row
-        // Swap pixels on, horizontally, opposite sides
+        // For 1/2 the width
+        // Swap pixels on horizontally opposite sides
+        // Note* image [i][j] swaps with image [i][width - 1 - j]
     return;
 }
 
