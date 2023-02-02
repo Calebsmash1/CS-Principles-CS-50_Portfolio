@@ -1,8 +1,8 @@
 #include "bmp.h"
-
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
+    avrg = 1
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
     for (int i = 0; i < height; i++)
@@ -11,10 +11,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
          for (int j = 0; j < width; j++)
          {
             // Find the "average" of the pixel
-            image[i][j].rgbtBlue
-            image[i][j].rgbtGreen
-            image[i][j].rgbtRed
-            average = image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed
+            avrg = image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed
+
 
             // Update Red, Green, and Blue so that it is grey Rounding
 
