@@ -1,9 +1,14 @@
-#include "helpers.h"
+#include "bmp.h"
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    
+    // Loop over every pixel Hint** look at yesterday's filter file helpers.c
+    // For each row
+    for()
+        // For each column
+            // Find the "average" of the pixel
+            // Update Red, Green, and Blue so that it is grey
     return;
 }
 
