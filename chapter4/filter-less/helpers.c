@@ -5,10 +5,17 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
-    for()
+    for (int i = 0; i < height; i++)
+    {
         // For each column
+         for (int j = 0; j < width; j++)
+         {
             // Find the "average" of the pixel
+
             // Update Red, Green, and Blue so that it is grey
+            
+         }
+    }
     return;
 }
 
