@@ -11,7 +11,11 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
          for (int j = 0; j < width; j++)
          {
             // Find the "average" of the pixel
-            int average = RGBTRIPLE image[i][j] / 3
+            image[i][j].rgbtBlue
+            image[i][j].rgbtGreen
+            image[i][j].rgbtRed
+            average = image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed
+            
 
             // Update Red, Green, and Blue so that it is grey Rounding
 
