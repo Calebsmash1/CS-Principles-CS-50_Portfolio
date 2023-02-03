@@ -1,9 +1,10 @@
 #include "bmp.h"
+#include <math.h>
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    int avrg;
-    
+    float avrg;
+
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
     for (int i = 0; i < height; i++)
