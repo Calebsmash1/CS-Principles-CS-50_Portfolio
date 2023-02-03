@@ -3,9 +3,7 @@
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     int avrg = 1;
-    int roundedBlue = 1;
-    int roundedGreen = 1;
-    int roundedRed = 1;
+    int greyRounding = 1;
 
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
@@ -19,9 +17,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             avrg = (avrg / 3.0);
 
             // Update Red, Green, and Blue so that it is grey Rounding
-            roundedBlue = avrg;
-            roundedGreen = avrg;
-            roundedRed = avrg;
+            greyRounding = image[i][j].rgbtBlue
+            greyRounding = image[i][j].rgbtGreen
+            greyRounding = image[i][j].rgbtRed
 
          }
     }
@@ -32,9 +30,13 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     // For each row
+    for (int i = 0; i < height; i++)
+    {
         // Calculate new color value using the Sepia formula
+        
         // Ensure the result is an integer between 0 and 255, inclusive
         // Update the color values
+    }
     return;
 }
 
