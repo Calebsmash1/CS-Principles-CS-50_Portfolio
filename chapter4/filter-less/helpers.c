@@ -69,6 +69,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         // For each collumn
             // Creating a temp image
             // RGBTRIPLE temp_image[height][width];
-            //
+            // Loop through original image
+                // Find the average RGB from surrounding pixels
+                // Update value in temp_image
+            // Copy temp_image to image
     return;
 }
