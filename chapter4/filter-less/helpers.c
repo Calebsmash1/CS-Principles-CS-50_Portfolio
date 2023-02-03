@@ -15,9 +15,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             float roundedAvrg = (round(avrg / 3.0));
 
             // Update Red, Green, and Blue so that it is grey Rounding
-            float updatedRed = roundedAvrg;
-            float updatedGreen = roundedAvrg;
-            float updatedBlue = roundedAvrg;
+            image[i][j].rgbtRed = roundedAvrg;
+            image[i][j].rgbtGreen = roundedAvrg;
+            image[i][j].rgbtBlue = roundedAvrg;
 
          }
     }
