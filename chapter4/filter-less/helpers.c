@@ -38,6 +38,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             //sepiaBlue = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue;
 
             // Ensure the result is an integer between 0 and 255, inclusive
+            
 
             // Update the color values
 
