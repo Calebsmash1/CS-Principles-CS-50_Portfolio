@@ -4,6 +4,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     int avrg = 1;
     int greyRounding = 1;
+    int sepiaRed = 1;
+    int sepiaGreen = 1;
+    int sepiaBlue = 1;
 
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
@@ -17,9 +20,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             avrg = (avrg / 3.0);
 
             // Update Red, Green, and Blue so that it is grey Rounding
-            greyRounding = image[i][j].rgbtBlue
-            greyRounding = image[i][j].rgbtGreen
-            greyRounding = image[i][j].rgbtRed
+            greyRounding = image[i][j].rgbtBlue;
+            greyRounding = image[i][j].rgbtGreen;
+            greyRounding = image[i][j].rgbtRed;
 
          }
     }
@@ -32,15 +35,19 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     // For each row
     for (int i = 0; i < height; i++)
     {
-        // Calculate new color value using the Sepia formula
-        sepiaRed = .393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue
-        sepiaGreen = .349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue
-        sepiaBlue = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue
+        //For each column
+        for (int j = 0; j < width; j++)
+        {
+            // Calculate new color value using the Sepia formula
+            sepiaRed = .393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue;
+            sepiaGreen = .349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue;
+            sepiaBlue = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue;
 
-        // Ensure the result is an integer between 0 and 255, inclusive
-        if (image[i][j].rgbtRed)
+            // Ensure the result is an integer between 0 and 255, inclusive
 
-        // Update the color values
+            // Update the color values
+
+        }
     }
     return;
 }
