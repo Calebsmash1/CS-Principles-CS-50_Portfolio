@@ -70,9 +70,16 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     // For each row
-        // For 1/2 the width
-        // Swap pixels on horizontally opposite sides
-        // Note* image [i][j] swaps with image [i][width - 1 - j]
+    for (int i = 0; i < height; i++)
+    {
+        //For each column (HALF)
+        for (int j = 0; j < width / 2; j++)
+        {
+            // Swap pixels on horizontally opposite sides
+            
+            // Note* image [i][j] swaps with image [i][width - 1 - j]
+        }
+    }
     return;
 }
 
