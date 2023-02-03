@@ -38,10 +38,29 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             float sepiaGreen = .349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue;
             float sepiaBlue = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue;
 
-            // Ensure the result is an integer between 0 and 255, inclusive
+            // Round to make sure the hex value is usable
+            sepiaBlue = round(sepiaBlue);
+            sepiaGreen = round(sepiaGreen);
+            sepiaRed = round(sepiaRed);
 
+            // Ensure the result is an integer between 0 and 255, inclusive
+            if (sepiaBlue > 255)
+            {
+                sepiaBlue = 255;
+            }
+            if (sepiaGreen > 255)
+            {
+                sepiaGreen = 255;
+            }
+            if (sepiaRed > 255)
+            {
+                sepiaRed = 255;
+            }
 
             // Update the color values
+            image[i][j].rgbtRed = sepiaRed;
+            image[i][j].rgbtGreen = sepiaGreen;
+            image[i][j].rgbtBlue = sepiaBlue;
 
         }
     }
