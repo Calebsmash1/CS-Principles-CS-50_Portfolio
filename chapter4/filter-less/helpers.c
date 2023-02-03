@@ -2,11 +2,11 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    int avrg = 1;
-    int greyRounding = 1;
-    int sepiaRed = 1;
-    int sepiaGreen = 1;
-    int sepiaBlue = 1;
+    int avrg;
+    int greyRounding;
+    int sepiaRed;
+    int sepiaGreen;
+    int sepiaBlue;
 
     // Loop over every pixel Hint** look at yesterday's filter file helpers.c
     // For each row
