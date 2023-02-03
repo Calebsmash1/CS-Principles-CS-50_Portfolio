@@ -65,5 +65,10 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    // For each row
+        // For each collumn
+            // Creating a temp image
+            // RGBTRIPLE temp_image[height][width];
+            //
     return;
 }
