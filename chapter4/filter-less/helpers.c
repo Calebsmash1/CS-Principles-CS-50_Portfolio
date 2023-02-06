@@ -76,9 +76,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         //For each column (HALF)
         for (int j = 0; j < width / 2; j++)
         {
+            RGBTRIPLE updatedflip;
             // Swap pixels on horizontally opposite sides
             // Note* image [i][j] swaps with image [i][width - 1 - j]
             image[i][j] = image[i][width - 1 - j];
+            image[i][width - 1 - j] = updatedflip;
         }
     }
     return;
