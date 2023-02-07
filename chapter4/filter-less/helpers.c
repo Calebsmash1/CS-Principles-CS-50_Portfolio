@@ -108,8 +108,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         {
             // Find the average RGB from surrounding pixels
             blur_averageRed = ((temp_image[i][j].rgbtRed + temp_image[i + 1][j].rgbtRed + temp_image[i + 1][j + 1].rgbtRed + temp_image[i][j + 1].rgbtRed + temp_image[i - 1][j + 1].rgbtRed + temp_image[i - 1][j].rgbtRed + temp_image[i - 1][j - 1].rgbtRed + temp_image[i][j - 1].rgbtRed + temp_image[i + 1][j - 1].rgbtRed) / 8);
-            blur_averageBlue =
-            blur_averageGreen =
+            blur_averageBlue = ((temp_image[i][j].rgbtBlue + temp_image[i + 1][j].rgbtBlue + temp_image[i + 1][j + 1].rgbtBlue + temp_image[i][j + 1].rgbtBlue + temp_image[i - 1][j + 1].rgbtBlue + temp_image[i - 1][j].rgbtBlue + temp_image[i - 1][j - 1].rgbtBlue + temp_image[i][j - 1].rgbtBlue + temp_image[i + 1][j - 1].rgbtBlue) / 8);
+            blur_averageGreen = ((temp_image[i][j].rgbtGreen + temp_image[i + 1][j].rgbtGreen + temp_image[i + 1][j + 1].rgbtGreen + temp_image[i][j + 1].rgbtGreen + temp_image[i - 1][j + 1].rgbtGreen + temp_image[i - 1][j].rgbtGreen + temp_image[i - 1][j - 1].rgbtGreen + temp_image[i][j - 1].rgbtGreen + temp_image[i + 1][j - 1].rgbtGreen) / 8);
 
             // Rounds it all
             blur_averageRed = round(blur_averageRed);
