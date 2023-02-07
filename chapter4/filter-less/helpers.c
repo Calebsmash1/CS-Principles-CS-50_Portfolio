@@ -10,8 +10,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     for (int i = 0; i < height; i++)
     {
         // For each column
-         for (int j = 0; j < width; j++)
-         {
+        for (int j = 0; j < width; j++)
+        {
             // Find the "average" of the pixel
             float avrg = (image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed);
             float roundedAvrg = (round(avrg / 3.0));
@@ -20,7 +20,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             image[i][j].rgbtRed = roundedAvrg;
             image[i][j].rgbtGreen = roundedAvrg;
             image[i][j].rgbtBlue = roundedAvrg;
-         }
+        }
     }
     return;
 }
@@ -95,17 +95,17 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     float blur_averageBlue;
     float blur_averageGreen;
 
-            // Creating a temp image
-            // RGBTRIPLE temp_image[height][width];
-            RGBTRIPLE temp_image[height][width];
+    // Creating a temp image
+    // RGBTRIPLE temp_image[height][width];
+    RGBTRIPLE temp_image[height][width];
 
-        // Loop through each pixel of the original image
-        // For each row
-        for (int i = 0; i < height; i++)
+    // Loop through each pixel of the original image
+    // For each row
+    for (int i = 0; i < height; i++)
+    {
+        //For each column
+        for (int j = 0; j < width; j++)
         {
-            //For each column
-            for (int j = 0; j < width; j++)
-            {
             // Find the average RGB from surrounding pixels
             blur_averageRed = ((temp_image[i][j].rgbtRed + temp_image[i + 1][j].rgbtRed + temp_image[i - 1][j].rgbtRed) / 3);
             blur_averageBlue = ((temp_image[i][j].rgbtBlue + temp_image[i + 1][j].rgbtBlue + temp_image[i - 1][j].rgbtBlue) / 3);
@@ -125,7 +125,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             image[i][j].rgbtRed = temp_image[i][j].rgbtRed;
             image[i][j].rgbtGreen = temp_image[i][j].rgbtGreen;
             image[i][j].rgbtBlue = temp_image[i][j].rgbtBlue;
-            }
         }
+    }
     return;
 }
