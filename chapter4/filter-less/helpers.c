@@ -95,17 +95,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     float blur_averageBlue;
     float blur_averageGreen;
 
-    // For each row
-    for (int i = 0; i < height; i++)
-    {
-        //For each column
-        for (int j = 0; j < width; j++)
-        {
             // Creating a temp image
             // RGBTRIPLE temp_image[height][width];
-            RGBTRIPLE temp_image[i][j];
-        }
-    }
+            RGBTRIPLE temp_image[height][width];
+
         // Loop through each pixel of the original image
         // For each row
         for (int i = 0; i < height; i++)
