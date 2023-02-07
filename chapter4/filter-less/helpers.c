@@ -91,7 +91,10 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    float blur_average;
+    float blur_averageRed;
+    float blur_averageBlue;
+    float blur_averageGreen;
+
     // For each row
     for (int i = 0; i < height; i++)
     {
@@ -111,13 +114,23 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             for (int j = 0; j < width; j++)
             {
             // Find the average RGB from surrounding pixels
-            blur_average = ((temp_image[i][j].rgbtRed + temp_image[i + 1][j + 1].rgbtRed) / 3);
-            round (blue_average);
-            
+            blur_averageRed = ((temp_image[i][j].rgbtRed + temp_image[i + 1][j + 1].rgbtRed) / 2);
+            blur_averageBlue = ((temp_image[i][j].rgbtBlue + temp_image[i + 1][j + 1].rgbtBlue) / 2);
+            blur_averageGreen = ((temp_image[i][j].rgbtGreen + temp_image[i + 1][j + 1].rgbtGreen) / 2);
+            round (blur_averageRed);
+            round (blur_averageBlue);
+            round (blur_averageGreen);
+
             // Update value in temp_image
-            image[i][j].
-        // Copy temp_image to image
+            temp_image[i][j].rgbtRed = blur_averageRed;
+            temp_image[i][j].rgbtGreen = blur_averageGreen;
+            temp_image[i][j].rgbtBlue = blur_averageBlue;
+
+            // Copy temp_image to image
+            image[i][j].rgbtRed = blur_averageRed;
+            image[i][j].rgbtGreen = blur_averageGreen;
+            image[i][j].rgbtBlue = blur_averageBlue;
+            }
         }
-    }
     return;
 }
