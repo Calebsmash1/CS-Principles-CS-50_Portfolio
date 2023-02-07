@@ -127,9 +127,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             temp_image[i][j].rgbtBlue = blur_averageBlue;
 
             // Copy temp_image to image
-            image[i][j].rgbtRed = blur_averageRed;
-            image[i][j].rgbtGreen = blur_averageGreen;
-            image[i][j].rgbtBlue = blur_averageBlue;
+            image[i][j].rgbtRed = temp_image[i][j].rgbtRed;
+            image[i][j].rgbtGreen = temp_image[i][j].rgbtGreen;
+            image[i][j].rgbtBlue = temp_image[i][j].rgbtBlue;
             }
         }
     return;
