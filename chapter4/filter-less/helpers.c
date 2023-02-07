@@ -91,6 +91,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    float blur_average;
     // For each row
     for (int i = 0; i < height; i++)
     {
@@ -100,12 +101,22 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             // Creating a temp image
             // RGBTRIPLE temp_image[height][width];
             RGBTRIPLE temp_image[i][j];
-
-            // Loop through each pixel of the original image
-
-                // Find the average RGB from surrounding pixels
-                // Update value in temp_image
-            // Copy temp_image to image
+        }
+    }
+        // Loop through each pixel of the original image
+        // For each row
+        for (int i = 0; i < height; i++)
+        {
+            //For each column
+            for (int j = 0; j < width; j++)
+            {
+            // Find the average RGB from surrounding pixels
+            blur_average = ((temp_image[i][j].rgbtRed + temp_image[i + 1][j + 1].rgbtRed) / 3);
+            round (blue_average);
+            
+            // Update value in temp_image
+            image[i][j].
+        // Copy temp_image to image
         }
     }
     return;
