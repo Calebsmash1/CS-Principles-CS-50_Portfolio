@@ -110,9 +110,11 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             blur_averageRed = ((temp_image[i][j].rgbtRed + temp_image[i + 1][j + 1].rgbtRed) / 2);
             blur_averageBlue = ((temp_image[i][j].rgbtBlue + temp_image[i + 1][j + 1].rgbtBlue) / 2);
             blur_averageGreen = ((temp_image[i][j].rgbtGreen + temp_image[i + 1][j + 1].rgbtGreen) / 2);
-            round (blur_averageRed);
-            round (blur_averageBlue);
-            round (blur_averageGreen);
+
+            // Rounds it all
+            blur_averageRed = round(blur_averageRed);
+            blur_averageBlue = round(blur_averageBlue);
+            blur_averageGreen = round(blur_averageGreen);
 
             // Update value in temp_image
             temp_image[i][j].rgbtRed = blur_averageRed;
