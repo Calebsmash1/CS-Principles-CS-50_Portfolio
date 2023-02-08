@@ -11,4 +11,4 @@ print(f"x plus y is {x + y}")
 print(f"x divided by y is {x / y}")
 
 # Floor division
-print(f"x)
+print(f"x floor)
