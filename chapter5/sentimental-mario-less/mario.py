@@ -7,5 +7,4 @@ h = get_int("Height: ")
 for i in range(h):
     print("#")
 
-# Print block
-for i in range(h - 1):
+#P
