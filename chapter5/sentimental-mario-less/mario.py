@@ -5,6 +5,5 @@ h = get_int("Height: ")
 
 # Print block vertically
 for i in range(h):
-    print("#")
-
-#P
+    for j in range(n):
+        
