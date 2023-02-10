@@ -5,7 +5,7 @@ def main():
     n = get_height()
 
     # Print square
-    for i in range(n):
+    for i in range(n - 1):
         for k in range()
             for j in range(n):
                 print("#", end="")
