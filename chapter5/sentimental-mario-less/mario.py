@@ -1,9 +1,20 @@
 from cs50 import get_int
+def main():
 
-# Get the height from the user
-h = get_int("Height: ")
+    # Get the height from the user
+    n = get_height()
 
-# Print block vertically
-for i in range(h):
-    for j in range(n):
-        
+    # Print square
+    for i in range(n):
+        for j in range(n):
+            print("#", end="")
+        print()
+
+def get_height():
+    while True:
+        n = get_int("Height: ")
+        if n > 0:
+            break
+    return n
+
+main()
