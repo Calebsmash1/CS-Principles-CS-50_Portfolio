@@ -6,9 +6,10 @@ def main():
 
     # Print square
     for i in range(n):
-        for j in range(n):
-            print("#", end="")
-        print()
+        for k in range()
+            for j in range(n):
+                print("#", end="")
+            print()
 
 def get_height():
     while True:
