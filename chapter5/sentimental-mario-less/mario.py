@@ -3,13 +3,18 @@ def main():
 
     # Get the height from the user
     n = get_height()
+    r = n
 
-    # Print square
+    # For each row
     for i in range(n - 1):
-        for k in range()
-            for j in range(n):
-                print("#", end="")
-            print()
+    
+        # For each blank space
+        for k in range():
+
+
+                for j in range(n):
+                    print("#", end="")
+                print()
 
 def get_height():
     while True:
