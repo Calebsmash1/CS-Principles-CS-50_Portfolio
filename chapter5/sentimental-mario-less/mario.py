@@ -20,7 +20,7 @@ def main():
 def get_height():
     while True:
         n = get_int("Height: ")
-        if 0 < n < 10:
+        if 0 < n < 9:
             break
     return n
 
