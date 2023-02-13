@@ -4,8 +4,12 @@ def main():
     # Get the height from the user
     n = get_height()
 
-    # For each row
-    for i in range(n - 1):
+    # Print square
+    for i in range(n):
+        for j in range(n):
+            print("#", end="")
+        print()
+
 
 
 def get_height():
