@@ -16,11 +16,13 @@ def main():
                 print("#", end="")
         print()
 
+
 def get_height():
     while True:
         n = get_int("Height: ")
         if 0 < n < 10:
             break
     return n
+
 
 main()
