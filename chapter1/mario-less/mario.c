@@ -12,10 +12,10 @@ int main(void)
     while (height < 1 || height > 8);
 
     // Iterate over pyramid's rows
-    for (int j = 0; j < height; j++)
+    for (int i = 0; i < height; i++)
     {
         // Iterate over pyramid colum
-        for (int j = 0; j < height; i++)
+        for (int j = 0; j < height; j++)
         {
             // Space
             if (j < height - i - 1)
@@ -31,6 +31,6 @@ int main(void)
         }
 
         // Newline
-        prinf("\n");
+        printf("\n");
     }
 }
