@@ -1,22 +1,33 @@
-from cs50 import get_int
-def main():
+#include <cs50.h>
+#include <stdio.h>
 
-    # Get the height from the user
-    n = get_height()
+int main(void)
+{
+    // Prompt for height
+    int height;
+    do
+    {
+        height = get_int("Height: ");
+    }
+    while (height < 1 || height > 8);
 
-    # Print square
-    for i in range(n):
-        for j in range(n):
-            print("#", end="")
-        print()
+    // Iterate over pyramid's rows
+    for (int j = 0; j < height; j++)
+    {
+        // Space
+        if (j < height - i - 1)
+        {
+            printf(" ");
+        }
 
+        // Has
+        else
+        {
+            printf("#");
+        }
+    }
 
-
-def get_height():
-    while True:
-        n = get_int("Height: ")
-        if n > 0:
-            break
-    return n
-
-main()
+    // Newline
+    prinf("\n");
+    
+}
