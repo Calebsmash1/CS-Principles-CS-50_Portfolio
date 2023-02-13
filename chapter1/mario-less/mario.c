@@ -14,20 +14,23 @@ int main(void)
     // Iterate over pyramid's rows
     for (int j = 0; j < height; j++)
     {
-        // Space
-        if (j < height - i - 1)
+        // Iterate over pyramid colum
+        for (int j = 0; j < height; i++)
         {
-            printf(" ");
+            // Space
+            if (j < height - i - 1)
+            {
+                printf(" ");
+            }
+
+            // Has
+            else
+            {
+                printf("#");
+            }
         }
 
-        // Has
-        else
-        {
-            printf("#");
-        }
+        // Newline
+        prinf("\n");
     }
-
-    // Newline
-    prinf("\n");
-    
 }
