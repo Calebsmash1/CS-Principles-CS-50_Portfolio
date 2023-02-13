@@ -1,35 +1,22 @@
-// Print a triangle of blocks
-#include <cs50.h>
-#include <math.h>
-#include <stdio.h>
+from cs50 import get_int
+def main():
 
-int main(void)
-{
-    // Get a height from the user
-    int height;
-    do
-    {
-        height = get_int("Height: ");
-    }
-    while (height <= 0 || height >= 9);
+    # Get the height from the user
+    n = get_height()
 
-    // For each row
-    for (int row = 0; row < height; row++)
-    {
-        // For each blank space
-        int h = height - 1;
-        int r = row;
-        for (int blank = 0; blank < h - r; blank++)
-        {
-            printf(" ");
-        }
-        // For each column
-        for (int col = 0; col <= row; col++)
-        {
-            // Print a block
-            printf("#");
-        }
-        // Print a new line to prepare for next row
-        printf("\n");
-    }
-}
+    # Print square
+    for i in range(n):
+        for j in range(n):
+            print("#", end="")
+        print()
+
+
+
+def get_height():
+    while True:
+        n = get_int("Height: ")
+        if n > 0:
+            break
+    return n
+
+main()
