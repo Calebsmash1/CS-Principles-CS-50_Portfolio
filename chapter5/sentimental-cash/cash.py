@@ -6,15 +6,19 @@ def main():
     cents = get_cents()
 
     # Checks how many quarters are owed
+    quarters = calculate_quarters(cents)
     cents = cents - quarters * 25
 
     # Check how many dimes are owed
+    dimes = calculate_dimes(cents)
     cents = cents - dimes * 10
 
     # Check how many nickels are owed
+    nickels = calculate_nickels(cents)
     cents = cents - nickels * 5
 
     # Check how many pennies are owed
+    pennies = calculate_pennies(cents)
     cents = cents - pennies
 
     # Adds them all
@@ -50,3 +54,5 @@ def calculate_nickels(cents):
 def calculate_pennies(cents):
     # Returns the remainder (Total number of pennies)
     return cents / 1
+
+main()
