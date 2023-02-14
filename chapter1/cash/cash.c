@@ -1,49 +1,73 @@
-/**
- * A program that first asks the user how much
- * change is owed and then prints the minmum
- * number of coins with which that change can be made
-*/
-
 #include <cs50.h>
-#include <math.h>
 #include <stdio.h>
+
+int get_cents(void);
+int calculate_quarters(int cents);
+int calculate_dimes(int cents);
+int calculate_nickels(int cents);
+int calculate_pennies(int cents);
 
 int main(void)
 {
-    // Asks user for the amount of change owed
-    float change;
+    // Ask how many cents the customer is owed
+    int cents = get_cents();
+
+    // Calculate the number of quarters to give the customer
+    int quarters = calculate_quarters(cents);
+    cents = cents - quarters * 25;
+
+    // Calculate the number of dimes to give the customer
+    int dimes = calculate_dimes(cents);
+    cents = cents- dimes* 10;
+
+    // Calculate the number of nickels to give the customer
+    int nickels = calculate_nickels(cents);
+    cents = cents - nickels * 5;
+
+    // Calculate the number of pennies to give the customer
+    int pennies = calculate_pennies(cents);
+    cents = cents - pennies * 1;
+
+    // Sum coins
+    int coins = quarters + dimes + nickels + pennies;
+
+    // Print total number of coins to give the customer
+    printf("%i\n", coins);
+}
+
+int get_cents(void)
+{
+    // Prompt user for integer cents, rejecting negative values
+    int cents;
     do
     {
-        change = get_float("Change owed: ");
+        cents = get_int("Cents? ");
     }
-    while (change < 0);
-    int pennies = round(change * 100);
+    while(cents<0);
 
+    return cents;
+}
 
-    // Finds out the least amount of coins that should
-    // be returned to the user through while statements
-    int coins = 0;
-    while (pennies >= 25)
-    {
-        coins = (coins + 1);
-        pennies = (pennies - 25);
-    }
-    while (pennies >= 10)
-    {
-        coins = (coins + 1);
-        pennies = (pennies - 10);
-    }
-    while (pennies >= 5)
-    {
-        coins = (coins + 1);
-        pennies = (pennies - 5);
-    }
-    while (pennies >= 1)
-    {
-        coins = (coins + 1);
-        pennies = (pennies - 1);
-    }
+int calculate_quarters(int cents)
+{
+    // Divide cents by 25, using integer division (which rounds down)
+    return cents / 25;
+}
 
-    // Returns change to user
-    printf("%i\n", coins);
+int calculate_dimes(int cents)
+{
+    // Divide cents by 10, using integer division (which rounds down)
+    return cents / 10;
+}
+
+int calculate_nickels(int cents)
+{
+    // Divide cents by 5, using integer division (which rounds down)
+    return cents / 5;
+}
+
+int calculate_pennies(int cents)
+{
+    // Return same number of cents, since pennies are worth 1 cent
+    return cents;
 }
