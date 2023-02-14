@@ -34,7 +34,6 @@ def get_cents():
         if cents > 0:
             break
         cents = cents * 100
-        int(cents)
     return cents
 
 
