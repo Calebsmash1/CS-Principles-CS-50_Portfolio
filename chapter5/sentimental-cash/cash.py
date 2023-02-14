@@ -53,6 +53,6 @@ def calculate_nickels(cents):
 
 def calculate_pennies(cents):
     # Returns the remainder (Total number of pennies)
-    return cents // 1
+    return cents / 1
 
 main()
