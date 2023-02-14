@@ -7,8 +7,8 @@ y = get_int("y: ")
 # Add
 print(f"x plus y is {x + y}")
 
-# Division (note* int / int will be a double)
-print(f"x divided by y is {x / y}")
+# Division (note* int / int will be a double!!)
+print(f"x divided by y is {x / y:.3f}")
 
 # Floor division
-print(f"x floor)
+print(f"x floor divided by y is {x // y}")

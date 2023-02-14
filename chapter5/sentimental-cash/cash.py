@@ -38,21 +38,21 @@ def get_cents():
 
 def calculate_quarters(cents):
     # Divide by 25 (value of a quarter) for rounding
-    return cents / 25
+    return cents // 25
 
 
 def calculate_dimes(cents):
     # Divide by 10 (value of a dime) for rounding
-    return cents / 10
+    return cents // 10
 
 
 def calculate_nickels(cents):
     # Divide by 5 (value of a nickel) for rounding
-    return cents / 5
+    return cents // 5
 
 
 def calculate_pennies(cents):
     # Returns the remainder (Total number of pennies)
-    return cents / 1
+    return cents // 1
 
 main()
