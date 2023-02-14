@@ -15,7 +15,13 @@ def main():
     c = c - nickels * 5
 
     # Check how many pennies are owed
-    c = 
+    c = c - pennies
+
+    # Adds them all
+    coins = quarters + dimes + nicke;s + pennies
+
+    # Gives back money
+    print(f)
 
 
 def get_cents():
