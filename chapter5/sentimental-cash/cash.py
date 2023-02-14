@@ -23,6 +23,7 @@ def main():
 
     # Adds them all
     coins = quarters + dimes + nickels + pennies
+    int(coins)
 
     # Gives back money
     print(f"{coins}")
