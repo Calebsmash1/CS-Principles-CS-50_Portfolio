@@ -33,8 +33,8 @@ def get_cents():
         cents = get_float("Cents? ")
         if cents > 0:
             break
-        int(cents)
         cents = cents * 100
+        int(cents)
     return cents
 
 
