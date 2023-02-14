@@ -1,4 +1,4 @@
-from cs50 import get_int
+from cs50 import get_float
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
 
 def get_cents():
     while True:
-        c = get_int("Cents? ")
+        c = get_float("Cents? ")
         if c > 0:
             break
     return c
