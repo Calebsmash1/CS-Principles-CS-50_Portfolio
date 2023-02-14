@@ -1,12 +1,6 @@
 from cs50 import get_int
 
 
-get_cents()
-calculate_quarters(cents)
-calculate_dimes(cents)
-calculate_nickels(cents)
-calculate_pennies(cents)
-
 def main():
     # Asks how many cents the customer needs
     cents = get_cents()
