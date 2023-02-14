@@ -33,7 +33,7 @@ def get_cents():
         cents = get_float("Cents? ")
         if cents > 0:
             break
-        cents = cents * 100
+        cents = round(cents * 100, 0)
     return cents
 
 
