@@ -25,7 +25,7 @@ def main():
     coins = quarters + dimes + nickels + pennies
 
     # Gives back money
-    print(f"{coins}")
+    print(f"{coins / 100}")
 
 
 def get_cents():
