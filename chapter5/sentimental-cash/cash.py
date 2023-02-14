@@ -6,7 +6,16 @@ def main():
     c = get_cents()
 
     # Checks how many quarters are owed
-    c = c - quarters * 25;
+    c = c - quarters * 25
+
+    # Check how many dimes are owed
+    c = c - dimes * 10
+
+    # Check how many nickels are owed
+    c = c - nickels * 5
+
+    # Check how many pennies are owed
+    c = 
 
 
 def get_cents():
