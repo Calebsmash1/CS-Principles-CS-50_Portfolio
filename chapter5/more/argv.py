@@ -1,9 +1,6 @@
 from sys import argv
 
-if len(argv) >= 2:
-    print(f"Hello, ", end="")
-    for arg in argv[1:]:
-        print(f"{arg} ", end="")
-    print()
+if len(argv) == 2:
+    print(f"Hello, {argv[1]}")
 else:
     print("Hello, world")
