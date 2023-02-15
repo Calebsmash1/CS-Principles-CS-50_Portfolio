@@ -1,8 +1,6 @@
-# string1.py without a loop
 
 before = input("Before : ")
-print("After: ", end="")
+print("After: ")
 # Print each character of before 1 at a time
 for c in before:
-    print(c.upper(), end="")
-print()
+    print(c.upper())
