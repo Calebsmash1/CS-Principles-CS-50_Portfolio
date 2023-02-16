@@ -1,6 +1,5 @@
-# string1.py without a loop
 
-before = input("Before : ")
+before = input("Before: ")
 print("After: ", end="")
 # Print each character of before 1 at a time
 for c in before:
