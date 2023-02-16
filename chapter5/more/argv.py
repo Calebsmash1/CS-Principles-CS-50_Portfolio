@@ -1,12 +1,6 @@
-# Say hello to a user given their name in command line
 from sys import argv
 
-# If there is at least one name
-if len(argv) >= 2:
-    print("hello, ", end ="")
-    # Print every name after argv[0] (which is the program name)
-    for arg in argv[1:]:
-        print(f"{arg} ", end="")
-    print()
+if len(argv) == 2:
+    print(f"Hello, {argv[1]}")
 else:
-    print("hello, world")
+    print("Hello, world")
