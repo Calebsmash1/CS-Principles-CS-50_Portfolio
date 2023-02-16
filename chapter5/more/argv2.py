@@ -15,5 +15,3 @@ print("hello, ", end ="")
 for arg in argv[1:]:
     print(f"{arg} ", end="")
 print()
-else:
-print("hello, world")
