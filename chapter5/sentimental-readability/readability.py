@@ -4,4 +4,19 @@
 def main():
     # Asks for the text
     text = input("Full name: ")
-    
+
+    # Checks how many letters are in text
+
+    # Finds average letters per 100 words
+
+    # Checks how many sentences are in text
+
+    # Finds average sentences per 100 words
+
+    # Calculates reading level with Coleman-Liau index
+    level =
+
+    def get_letters():
+        while True:
+            l = 
+
