@@ -14,9 +14,6 @@ def main():
     # Finds average sentences per 100 words
 
     # Calculates reading level with Coleman-Liau index
-    level =
 
-    def get_letters():
-        while True:
-            l = 
 
+main()
