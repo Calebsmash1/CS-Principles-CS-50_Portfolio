@@ -5,12 +5,12 @@ from cs50 import get_string
 file = open("phonebook.csv", "a")
 
 # Get numbers from the user
-name = get_string("Name: ")
-number = get_string(Number: ")
+name = input("Name: ")
+number = input("Number: ")
 
 # Write the name and number to the file
 writer = csv.writer(file)
 writer.writrow([name, number])
 
 # Close the open file
-file.close
+file.close()
