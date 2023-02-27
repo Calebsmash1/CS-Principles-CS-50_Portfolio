@@ -17,9 +17,6 @@ def main():
     # Calculates reading level with Coleman-Liau index
     final_level = round(0.0588 * (100 * letters / words) - 0.296 * (100 * sentences / words) - 15.8)
 
-    print(f"letters: {letters}")
-    print(f"sentences: {sentences}")
-    print(f"words: {words}")
     print(f"Grade {final_level}")
 
 # Checks how many letters are in the text
@@ -56,7 +53,3 @@ def calculate_words(text):
 
 
 main()
-
-# Source citation
-    # https://discuss.codecademy.com/t/python-how-to-count-number-of-letters-in-a-string/78055/2
-    #
