@@ -41,7 +41,7 @@ def calculate_letters(text):
 def calculate_sentences(text):
     # Starts a counter for the sentences
     sentences = 0
-    special_char = [".", "?", "!", ":"]
+    special_char = [".", "?", "!"]
 
     for char in text:
         if char in special_char:
@@ -50,8 +50,8 @@ def calculate_sentences(text):
 
 def calculate_words(text):
     # Starts a counter for the words (Starts at 1)
-    words = 1
     special_char = [" "]
+    words = 1
 
     for char in text:
         if char in special_char:
