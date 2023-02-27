@@ -37,15 +37,11 @@ def main():
 def calculate_letters(text):
     # Starts a counter for the letters
     letters = 0
-    # Defines what are letters
-    special_char = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y",
-                    "z", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "L", "K", "J", "H", "G", "F", "D", "S", "A", "Z", "X", "C", "V", "B", "N", "M",]
-
-    # Loops through text looking for letters and returns them
-    for char in text:
-        if char in special_char:
-            letters += 1
+    for char in text:       # i holds each character in String s for every iteration of loop
+        if(char.isalpha()):
+            letters += 1   # Increment Count by 1
     return letters
+
 
 # Checks how many sentences are in the text
 
