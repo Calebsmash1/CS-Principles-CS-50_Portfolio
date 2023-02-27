@@ -37,7 +37,7 @@ def calculate_letters(text):
 
 # Checks how many sentences are in the text
 def calculate_sentences(text):
-    # Starts a counter for the letters
+    # Starts a counter for the sentences (Starts at 1)
     sentences = 1
     special_char = ["."]
 
@@ -45,6 +45,16 @@ def calculate_sentences(text):
         if char in special_char:
             sentences += 1
     return sentences
+
+#def calculate_words(text):
+    # Starts a counter for the words (Starts at 1)
+    #words = 1
+    #special_char = [" "]
+
+    #for char in text:
+        #if char in special_char:
+           #words += 1
+    #return words
 
 
 main()
