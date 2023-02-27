@@ -27,7 +27,8 @@ def calculate_letters():
         # Starts a counter for the letters
         letters = 1
 
-        # 
-
+        if char:
+            letters += 1
+        return letters
 
 main()
