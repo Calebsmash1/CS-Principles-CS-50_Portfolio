@@ -12,7 +12,7 @@ def main():
     #average_letters = calculate_average_letters(text)
 
     # Checks how many sentences are in the text
-    #sentences = calculate_sentences(text)
+    sentences = calculate_sentences(text)
 
     # Finds average sentences per 100 words
     #average_sentences = calculate_average_sentences(text)
@@ -22,6 +22,7 @@ def main():
     #final_level = 0.0588 * average_letters - 0.296 * average_sentences - 15.8
 
     print(f"letters: {letters}")
+    print(f"sentences: {sentences}")
 
 # Checks how many letters are in the text
 def calculate_letters(text):
@@ -33,6 +34,17 @@ def calculate_letters(text):
         if char in special_char:
             letters += 1
     return letters
+
+# Checks how many sentences are in the text
+def calculate_sentences(text):
+    # Starts a counter for the letters
+    sentencest = 1
+    special_char = ["."]
+
+    for char in text:
+        if char in special_char:
+            sentences += 1
+    return sentences
 
 
 main()
