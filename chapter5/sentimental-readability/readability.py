@@ -18,8 +18,10 @@ def main():
     #average_sentences = calculate_average_sentences(text)
 
     # Calculates reading level with Coleman-Liau index
-    index = calculate_index
-    final_level = 0.0588 * average_letters - 0.296 * average_sentences - 15.8
+    #index = calculate_index
+    #final_level = 0.0588 * average_letters - 0.296 * average_sentences - 15.8
+
+    print(f"letters: {letters}")
 
 # Checks how many letters are in the text
 def calculate_letters(text):
