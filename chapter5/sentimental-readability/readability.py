@@ -27,6 +27,9 @@ def main():
 
     else:
         print(f"Grade {final_level}")
+        print(f"Letters {letters}")
+        print(f"Sentences {sentences}")
+        print(f"Words {words}")
 
 # Checks how many letters are in the text
 
