@@ -29,7 +29,7 @@ def calculate_letters(text):
         # Starts a counter for the letters
         letters = 0
 
-	    for char in txt:
+	    for list(string.ascii_letters) in txt:
 		    letters += 1
 	    return letters
 
