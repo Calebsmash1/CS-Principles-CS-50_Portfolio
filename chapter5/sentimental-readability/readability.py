@@ -59,7 +59,6 @@ def calculate_sentences(text):
             sentences += 1
     return sentences
 
-a
 def calculate_words(text):
 
     # Starts a counter for the words (Starts at 1)
