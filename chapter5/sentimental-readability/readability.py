@@ -22,13 +22,13 @@ def main():
     final_level = 0.0588 * average_letters - 0.296 * average_sentences - 15.8
 
 # Checks how many letters are in the text
-def calculate_letters():
+def calculate_letters(text):
     while True:
         # Starts a counter for the letters
         letters = 1
 
-        if char:
-            letters += 1
-        return letters
+	    for char in txt:
+		    result += 1     # same as result = result + 1
+	    return letters
 
 main()
