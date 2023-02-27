@@ -27,10 +27,13 @@ def main():
 def calculate_letters(text):
     # Starts a counter for the letters
     letters = 0
+    special_char = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-        for 5 in txt:
-	        letters += 1
-	return letters
+    for char in text:
+        if char in special_char:
+            letters += 1
+    return letters
+
 
 main()
 
