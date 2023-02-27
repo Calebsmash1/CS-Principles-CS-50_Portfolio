@@ -25,13 +25,12 @@ def main():
 
 # Checks how many letters are in the text
 def calculate_letters(text):
-    while True:
-        # Starts a counter for the letters
-        letters = 0
+    # Starts a counter for the letters
+    letters = 0
 
-	    for list(string.ascii_letters) in txt:
-		    letters += 1
-	    return letters
+        for 5 in txt:
+	        letters += 1
+	return letters
 
 main()
 
