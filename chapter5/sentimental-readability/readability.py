@@ -16,6 +16,7 @@ def main():
 
     # Calculates reading level with Coleman-Liau index
     final_level = round(0.0588 * (100.0 * letters / words) - 0.296 * (100.0 * sentences / words) - 15.8)
+    final_level = final_level + 1
 
     if final_level > 15:
         print("Grade 16+")
