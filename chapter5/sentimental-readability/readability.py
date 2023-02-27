@@ -9,13 +9,13 @@ def main():
     letters = calculate_letters(text)
 
     # Finds average letters per 100 words
-    average_letters = calculate_average_letters(text)
+    #average_letters = calculate_average_letters(text)
 
     # Checks how many sentences are in the text
-    sentences = calculate_sentences(text)
+    #sentences = calculate_sentences(text)
 
     # Finds average sentences per 100 words
-    average_sentences = calculate_average_sentences(text)
+    #average_sentences = calculate_average_sentences(text)
 
     # Calculates reading level with Coleman-Liau index
     index = calculate_index
@@ -25,10 +25,14 @@ def main():
 def calculate_letters(text):
     while True:
         # Starts a counter for the letters
-        letters = 1
+        letters = 0
 
 	    for char in txt:
-		    result += 1     # same as result = result + 1
+		    letters += 1
 	    return letters
 
 main()
+
+# Source citation
+    # https://discuss.codecademy.com/t/python-how-to-count-number-of-letters-in-a-string/78055/2
+    #
