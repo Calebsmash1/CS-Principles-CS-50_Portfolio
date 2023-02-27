@@ -35,8 +35,8 @@ def calculate_letters(text):
 
 # Checks how many sentences are in the text
 def calculate_sentences(text):
-    # Starts a counter for the sentences (Starts at 1)
-    sentences = 1
+    # Starts a counter for the sentences
+    sentences = 0
     special_char = ["."]
 
     for char in text:
