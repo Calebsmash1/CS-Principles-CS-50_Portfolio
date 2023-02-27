@@ -15,9 +15,17 @@ def main():
     sentences = calculate_sentences(text)
 
     # Calculates reading level with Coleman-Liau index
-    final_level = round((0.0588 * (100 * letters / words) - 0.296 * (100 * sentences / words) - 15.8) - 1)
+    final_level = round(0.0588 * (100 * letters / words) - 0.296 * (100 * sentences / words) - 15.8)
 
-    print(f"Grade {final_level}")
+    if final_level > 15:
+        print("Grade 16+")
+
+    if final_level < 1:
+        print("Before Grade 1")
+    
+        print(f"Grade {final_level}")
+
+
 
 # Checks how many letters are in the text
 def calculate_letters(text):
