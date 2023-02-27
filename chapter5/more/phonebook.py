@@ -8,4 +8,6 @@ name = input("Name: ")
 # Search for the name
 if name in names:
     nubmer = names[name]
-    
+    print(f"Number: {number}")
+else:
+    print("Not found")
