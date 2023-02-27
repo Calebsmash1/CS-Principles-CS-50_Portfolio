@@ -20,12 +20,11 @@ def main():
     if final_level > 15:
         print("Grade 16+")
 
-    if final_level < 1:
+    elif final_level < 1:
         print("Before Grade 1")
-    
+
+    else:
         print(f"Grade {final_level}")
-
-
 
 # Checks how many letters are in the text
 def calculate_letters(text):
