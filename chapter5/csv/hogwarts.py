@@ -17,4 +17,4 @@ with open("hogwarts.csv", "r") as house_list:
 
     # Add 1 to the correct house for each row in house_list/reader
     for row in reader:
-        house = 
+        house = row[1]
