@@ -13,11 +13,14 @@ with open("hogwarts.csv", "r") as house_list:
     # Read the csv and import as a dictionary and save as a variable called reader
     reader = csv.DictReader(house_list)
 
+    print(reader.fieldnames)
+
     # Skip over the title row
     next(reader)
 
     # Add 1 to the correct house for each row in house_list (reader)
     for row in reader:
+        print(row)
         house = row[1]
         houses[house] += 1
 
