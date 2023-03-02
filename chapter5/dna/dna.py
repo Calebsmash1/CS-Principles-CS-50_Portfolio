@@ -18,7 +18,7 @@ def main():
         # Put each row of the dictionary into the variable people
         for row in reader:
             people.append(row)
-        print(people)
+         print(people)
 
     # Read DNA sequence file into a variable
     with open(sys.argv[2]) as dna_file:
