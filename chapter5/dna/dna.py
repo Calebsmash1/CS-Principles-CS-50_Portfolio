@@ -26,6 +26,7 @@ def main():
     print(sequence)
 
     # TODO: Find longest match of each STR in DNA sequence
+    
     for str in strs:
         ... = longest_match(sequence, str)
 
