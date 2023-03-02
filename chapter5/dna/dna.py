@@ -8,7 +8,7 @@ def main():
 
     # TODO: Read database file into a variable
     people = []
-    with open(sys.argv[1] as db_file):
+    with open(sys.argv[1]) as db_file:
         reader = csv.DictReader(db_file)
 
         # Save the STRs to a variable
