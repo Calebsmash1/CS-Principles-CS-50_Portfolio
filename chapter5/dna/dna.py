@@ -10,7 +10,10 @@ def main():
     people = []
     with open(sys.argv[1] as db_file):
         reader = csv.DictReader(db_file)
-        
+
+        # Save the STRs to a variable
+        strs = reader.fieldnames[1:]
+        print(fieldnames)
 
     # TODO: Read DNA sequence file into a variable
 
