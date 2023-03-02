@@ -6,7 +6,7 @@ def main():
 
     # TODO: Check for command-line usage
 
-    # TODO: Read database file into a variable
+    # Read database file into a variable
     people = []
     with open(sys.argv[1]) as db_file:
         reader = csv.DictReader(db_file)
@@ -20,7 +20,7 @@ def main():
             people.append(row)
         print(people)
 
-    # TODO: Read DNA sequence file into a variable
+    # Read DNA sequence file into a variable
     with open(sys.argv[2]) as dna_file:
         sequence = dna_file.read
     print(sequence)
