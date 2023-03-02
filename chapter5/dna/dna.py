@@ -13,7 +13,12 @@ def main():
 
         # Save the STRs to a variable
         strs = reader.fieldnames[1:]
-        print(fieldnames)
+        #print(strs)
+
+        # Put each row of the dictionary into the variable people
+        for row in reader:
+            people.append(row)
+        print(people)
 
     # TODO: Read DNA sequence file into a variable
 
