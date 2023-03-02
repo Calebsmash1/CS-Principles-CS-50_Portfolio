@@ -13,17 +13,17 @@ def main():
 
         # Save the STRs to a variable
         strs = reader.fieldnames[1:]
-        #print(strs)
+        print(strs)
 
         # Put each row of the dictionary into the variable people
         for row in reader:
             people.append(row)
-         print(people)
+        print(people)
 
     # Read DNA sequence file into a variable
     with open(sys.argv[2]) as dna_file:
         sequence = dna_file.read
-    #print(sequence)
+    print(sequence)
 
     # Find longest match of each STR in DNA sequence
     matches = {}
