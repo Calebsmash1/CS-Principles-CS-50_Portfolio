@@ -6,7 +6,8 @@ def main():
 
     # TODO: Check for command-line usage
     if len(sys.argv) != 3:
-        print(Usage error)
+        print("Usage error")
+
 
     # Read database file into a variable
     people = []
@@ -34,6 +35,12 @@ def main():
     #print(matches)
 
     # TODO: Check database for matching profiles
+    # Loops through every person
+    for i in people:
+        # For each DNA strand
+        for i in :
+            #Compares to database
+
 
     return
 
