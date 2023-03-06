@@ -48,7 +48,7 @@ def main():
 
             if counter == len(matches):
                 print(p["name"])
-
+                exit()
             #else:
                 #print("No Matches")
 
