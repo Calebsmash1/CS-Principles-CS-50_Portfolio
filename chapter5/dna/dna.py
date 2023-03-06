@@ -35,20 +35,22 @@ def main():
     #!!!!!!!!!!print(matches)
 
     # TODO: Check database for matching profiles
+    counter = 0
     # For every person
-    for p in range (people):
-        
+    for p in people:
+
         # For each DNA strand
-        for m in range (matches):
+        for m in strs:
 
             # Compares to database
-            if matches[p[m]] == people:
-                print(f"{people}")
+            if int(p[m]) == int(matches[m]):
+                counter += 1
 
             if counter == len(matches):
+                print(p["name"])
 
-            else:
-                print("No Matches")
+            #else:
+                #print("No Matches")
 
     return
 
