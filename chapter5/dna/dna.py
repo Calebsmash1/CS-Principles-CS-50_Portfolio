@@ -39,7 +39,7 @@ def main():
         for str in strs:
 
             # Compares to database
-            if matches[str] == int(p[str]):
+            if int(matches[str]) == int(p[str]):
                 # Adds a check
                 check += 1
 
