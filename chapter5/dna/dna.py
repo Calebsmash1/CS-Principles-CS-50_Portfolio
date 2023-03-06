@@ -35,7 +35,7 @@ def main():
     #!!!!!!!!!!print(matches)
 
     # TODO: Check database for matching profiles
-    check = 0
+    check = 1
     # For every person
     for p in people:
 
@@ -43,17 +43,17 @@ def main():
         for m in matches:
 
             # Compares to database
-            if int(p[m]) == (matches[m]):
-                counter += 1
-            else:
-                counter == 0
+            if matches[m] == int(p[m]):
+                check += 1
+            # Resets # of checks so they don't carry over to next person
+            #else:
+                #check == 1
 
             if check == len(matches):
                 print(p["name"])
                 exit()
 
-            #else:
-                #print("No Matches")
+        print("No Matches")
 
     return
 
