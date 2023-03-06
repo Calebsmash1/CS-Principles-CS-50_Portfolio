@@ -46,7 +46,7 @@ def main():
             if int(p[m]) == (matches[m]):
                 counter += 1
             else:
-                
+                counter == 0
 
             if check == len(matches):
                 print(p["name"])
