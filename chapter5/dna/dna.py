@@ -21,7 +21,7 @@ def main():
         # Put each row of dictionary into the variable people
         for row in reader:
             people.append(row)
-        print(people)
+        #1!!!!!!!!!!!!!!!print(people)
 
     # Read DNA sequence file into a variable
     with open(sys.argv[2]) as dna_file:
@@ -32,15 +32,16 @@ def main():
     matches = {}
     for str in strs:
         matches[str] = longest_match(sequence, str)
-    print(matches)
+    #!!!!!!!!!!print(matches)
 
     # TODO: Check database for matching profiles
     # Loops through every person
-    #for i in people:
+    for p in range (people):
         # For each DNA strand
-        #for i in :
+        for m in range (matches):
             #Compares to database
-
+            if matches[m] == people[p]:
+                print(f"{people[p]}")
 
     return
 
