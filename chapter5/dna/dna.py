@@ -40,10 +40,10 @@ def main():
     for p in people:
 
         # For each DNA strand
-        for m in strs:
+        for m in matches:
 
             # Compares to database
-            if int(p[m]) == int(matches[m]):
+            if int(p[m]) == (matches[m]):
                 counter += 1
 
             if counter == len(matches):
