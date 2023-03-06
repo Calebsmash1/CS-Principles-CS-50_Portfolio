@@ -48,6 +48,8 @@ def main():
             # Print the person's name
             print(p["name"])
             exit()
+        # Resets # so they don't carry over to next person
+        check == 0
 
     print("No match")
 
