@@ -31,7 +31,7 @@ def main():
 
     # Check database for matching profiles
     # Starts a counter to check for matches (Let's us exit when someone is missing a match)
-    check = 1
+    check = 0
     # For every person
     for p in people:
 
@@ -42,9 +42,9 @@ def main():
             if matches[m] == int(p[m]):
                 # Adds a check
                 check += 1
-            # If there is no check, eesets # so they don't carry over to next person
+            # If there is no check, resets # so they don't carry over to next person
             else:
-                check == 1
+                check == 0
 
             # If all checks are matches
             if check == len(matches):
