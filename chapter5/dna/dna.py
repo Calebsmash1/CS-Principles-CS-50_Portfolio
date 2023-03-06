@@ -16,41 +16,41 @@ def main():
 
         # Save the STRs to a variable
         strs = reader.fieldnames[1:]
-        # !!!!!!!!!!!!!!!!1print(strs)
 
         # Put each row of dictionary into the variable people
         for row in reader:
             people.append(row)
-        #1!!!!!!!!!!!!!!!print(people)
 
     # Read DNA sequence file into a variable
     with open(sys.argv[2]) as dna_file:
         sequence = dna_file.read()
-    # !!!!!!!!!!!!!!!!! print(sequence)
 
     # Find longest match of each STR in DNA sequence
     matches = {}
     for str in strs:
         matches[str] = longest_match(sequence, str)
-    #!!!!!!!!!!print(matches)
 
-    # TODO: Check database for matching profiles
+    # Check database for matching profiles
+    # Starts a counter to check for matches (Let's us exit when someone is missing a match)
     check = 1
     # For every person
     for p in people:
 
-        # For each DNA strand
+        # For each DNA strands in row
         for m in matches:
 
             # Compares to database
             if matches[m] == int(p[m]):
+                # Adds a check
                 check += 1
-            # Resets # of checks so they don't carry over to next person
-            #else:
-                #check == 1
+            # If there is no check, eesets # so they don't carry over to next person
+            else:
+                check == 1
 
+            # If all checks are matches
             if check == len(matches):
-                print(f"{p["name"]}")
+                # Print the person's name
+                print(p["name"])
                 exit()
 
     print("No Matches")
