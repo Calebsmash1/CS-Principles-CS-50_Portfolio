@@ -34,7 +34,7 @@ def main():
     check = 0
     # For every person
     for p in people:
-        
+
         # For each DNA strands in row
         for str in strs:
 
