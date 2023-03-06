@@ -4,7 +4,7 @@ import sys
 
 def main():
 
-    # TODO: Check for command-line usage
+    # Check for command-line usage
     if len(sys.argv) != 3:
         print("Usage error")
 
@@ -16,17 +16,17 @@ def main():
 
         # Save the STRs to a variable
         strs = reader.fieldnames[1:]
-        #print(strs)
+        # !!!!!!!!!!!!!!!!1print(strs)
 
         # Put each row of dictionary into the variable people
         for row in reader:
             people.append(row)
-        #print(people)
+        print(people)
 
     # Read DNA sequence file into a variable
     with open(sys.argv[2]) as dna_file:
         sequence = dna_file.read()
-    #print(sequence)
+    # !!!!!!!!!!!!!!!!! print(sequence)
 
     # Find longest match of each STR in DNA sequence
     matches = {}
@@ -36,9 +36,9 @@ def main():
 
     # TODO: Check database for matching profiles
     # Loops through every person
-    for i in people:
+    #for i in people:
         # For each DNA strand
-        for i in :
+        #for i in :
             #Compares to database
 
 
