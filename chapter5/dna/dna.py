@@ -36,7 +36,7 @@ def main():
     for p in people:
 
         # For each DNA strands in row
-        for m in matches:
+        for str in strs:
 
             # Compares to database
             if matches[m] == int(p[m]):
