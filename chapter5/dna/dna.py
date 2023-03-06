@@ -40,8 +40,9 @@ def main():
         # For each DNA strand
         for m in range (matches):
             #Compares to database
-            if matches[m] == people[p]:
-                print(f"{people[p]}")
+            if matches[m] == people:
+                print(f"{people}")
+            else
 
     return
 
