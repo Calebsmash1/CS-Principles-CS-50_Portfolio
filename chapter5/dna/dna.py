@@ -43,8 +43,8 @@ def main():
                 # Adds a check
                 check += 1
             # If there is no check, resets # so they don't carry over to next person
-            else:
-                check == 0
+            #else:
+                #check == 0
 
             # If all checks are matches
             if check == len(matches):
