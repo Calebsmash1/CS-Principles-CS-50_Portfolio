@@ -36,9 +36,9 @@ def main():
 
     # TODO: Check database for matching profiles
     # Loops through every person
-    #for i in people:
+    for i in people:
         # For each DNA strand
-        #for i in :
+        for i in :
             #Compares to database
 
 
