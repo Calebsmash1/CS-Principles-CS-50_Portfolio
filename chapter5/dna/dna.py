@@ -44,7 +44,7 @@ def main():
                 check += 1
 
         # If all checks are matches
-        if check == len(matches):
+        if check == len(strs):
             # Print the person's name
             print(p["name"])
             exit()
