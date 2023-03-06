@@ -8,7 +8,6 @@ def main():
     if len(sys.argv) != 3:
         print("Usage error")
 
-
     # Read database file into a variable
     people = []
     with open(sys.argv[1]) as db_file:
