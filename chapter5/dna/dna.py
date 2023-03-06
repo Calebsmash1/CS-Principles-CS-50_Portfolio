@@ -52,7 +52,7 @@ def main():
                 print(p["name"])
                 exit()
 
-    print("No Matches")
+    print("No match")
 
     return
 
