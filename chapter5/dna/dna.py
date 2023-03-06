@@ -42,15 +42,12 @@ def main():
             if matches[str] == int(p[str]):
                 # Adds a check
                 check += 1
-            # If there is no check, resets # so they don't carry over to next person
-            else:
-                check == 0
 
-            # If all checks are matches
-            if check == len(matches):
-                # Print the person's name
-                print(p["name"])
-                exit()
+        # If all checks are matches
+        if check == len(matches):
+            # Print the person's name
+            print(p["name"])
+            exit()
 
     print("No match")
 
