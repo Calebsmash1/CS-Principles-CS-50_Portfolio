@@ -4,13 +4,17 @@
 
 
 # Asks how many spots are there
-spots = input("How many spots are there?: ")
-# Asks how many strikers are trying out
-strikers = input("How manys strikers are trying out?: ")
+v = input("How many spots are there?: ")
 
-if strikers <= spots:
+# Asks how many strikers are trying out
+s = input("How manys strikers are trying out?: ")
+
+if s <= v:
     print("Recruit them all!")
     exit()
+strikers = []
+for i in range(s):
+    name = input("Striker name: ")
+    strikers.append(name)
 
-
-for spots:
+print(f"Striker name: {strikers}")
