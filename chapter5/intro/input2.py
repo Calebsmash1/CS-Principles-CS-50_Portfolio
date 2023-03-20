@@ -5,7 +5,7 @@ except ValueError:
     exit()
 
 try
-    x = int input("x: "))
+    x = int input("x: ")
 except ValueError:
     print("That is not an int!")
     exit()
