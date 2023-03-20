@@ -4,13 +4,15 @@
 
 def main():
     # Asks user how many strikers are trying out for team
-    striker = input("How many strikers will be trying out?: ")
+    s = input("How many strikers are trying out?: ")
 
     # Asks user how many spots there are
-    spots = input("How many strikers are you looking to recruit?: ")
+    p = input()
 
     # Dictionary of Strikers
-    
+
+    # Dictionairy of Chosen Strikers
+
     # Asks user to fill out striker's stats
 
 
