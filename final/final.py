@@ -15,6 +15,7 @@ def main():
     # Dictionairy of Chosen Strikers
 
     # Asks user to fill out striker's stats
+    shots
 
 
     # Calls OVR_calculator function to find which striker(s) makes it into the team
