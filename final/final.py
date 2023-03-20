@@ -1,11 +1,16 @@
+# This programs serves to aid in the tryout process for a
+# soccer team's striker roster.
+# (Works under assumption that no two players have equal stats)
 
 def main():
     # Asks user how many strikers are trying out for team
-    prospects = input("How many strikers will be trying out?: ")
+    striker = input("How many strikers will be trying out?: ")
 
     # Asks user how many spots there are
     spots = input("How many strikers are you looking to recruit?: ")
 
+    # Dictionary of Strikers
+    
     # Asks user to fill out striker's stats
 
 
