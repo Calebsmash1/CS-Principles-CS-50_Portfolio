@@ -11,4 +11,6 @@ strikers = input("How manys strikers are trying out?: ")
 if strikers <= spots:
     print("Recruit them all!")
     exit()
-print("meh")
+
+
+for spots:
