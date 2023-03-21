@@ -16,5 +16,8 @@ for i in range(s):
     striker_name.append(name)
 
 for q in range(s):
-    shots = input("{striker_name[0]} shots?: ")
-    print(f"Striker name: {striker_name[0]}")
+    shots = input(f"{striker_name[q]} shots?: ")
+    print(f"Striker name: {striker_name[q]}")
+
+for w in range(s):
+    print(f"{striker_name[w]}")
