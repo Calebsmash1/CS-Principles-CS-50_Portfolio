@@ -19,7 +19,7 @@ for i in range(s):
     shots = input(f"{striker_name[i]} shots?: ")
     striker_name.append(shots)
     #target = input(f"{striker_name[i]} shots on target?: ")
-print(f"{striker_name}")
+print(f"{striker_name[0]}")
 
 #for i in range(s):
     #print(f"{striker_name[i]}")
