@@ -18,8 +18,11 @@ for i in range(s):
 striker_score = []
 for i in range(s):
     shots = input(f"{striker_name[i]} shots?: ")
+    target = input(f"{striker_name[i]} on target?: ")
+    score = shots / target
+    print(f{score})
 
-    striker_score.append(shots)
+    striker_score.append(score)
     #target = input(f"{striker_name[i]} shots on target?: ")
 print(f"{striker_name[0]}: ", end="")
 print(f"{striker_score[0]}")
