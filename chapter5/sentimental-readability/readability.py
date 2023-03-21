@@ -38,7 +38,7 @@ def calculate_letters(text):
     # Starts a counter for the letters
     letters = 0
     for char in text:       # i holds each character in String s for every iteration of loop
-        if(char.isalpha()):
+        if (char.isalpha()):
             letters += 1   # Increment Count by 1
     return letters
 
@@ -57,6 +57,7 @@ def calculate_sentences(text):
         if char in special_char:
             sentences += 1
     return sentences
+
 
 def calculate_words(text):
 
