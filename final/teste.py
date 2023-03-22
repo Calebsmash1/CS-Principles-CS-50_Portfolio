@@ -32,10 +32,10 @@ for i in range (s):
     print(f"{striker_score[i]}")
 
 for i in range (s):
-    if {striker_score[i]} > {striker_score[i + 1]}:
+    if {striker_score[i]} > {striker_score[1]}:
         print(f"{striker_name[i]} made the cut!")
     else:
-        print(f"{striker_name[i + 1]} made the cut!")
+        print(f"{striker_name[i]} made the cut!")
 
 # for i in range(s):
     #print(f"{striker_name[i]}")
