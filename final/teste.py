@@ -31,5 +31,10 @@ for i in range (s):
     print(f"{striker_name[i]}: ", end="")
     print(f"{striker_score[i]}")
 
+for i in range (s):
+    for j in range (s):
+        if {striker_score[i]} < {striker_score[i + 1]}
+            
+
 # for i in range(s):
     #print(f"{striker_name[i]}")
