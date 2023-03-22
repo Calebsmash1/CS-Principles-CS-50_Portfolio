@@ -27,7 +27,8 @@ for i in range(s):
 
     striker_score.append(score)
     #target = input(f"{striker_name[i]} shots on target?: ")
-print(f"{striker_name[0]}: ", end="")
-print(f"{striker_score[0]}")
+for i in range (s):
+    print(f"{striker_name[0]}: ", end="")
+    print(f"{striker_score[0]}")
 # for i in range(s):
     #print(f"{striker_name[i]}")
