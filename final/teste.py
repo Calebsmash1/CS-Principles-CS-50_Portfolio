@@ -31,11 +31,11 @@ for i in range (s):
     print(f"{striker_name[i]}: ", end="")
     print(f"{striker_score[i]}")
 
-
-if {striker_score[i]} > {striker_score[i]}:
-    print(f"{striker_name[i]} made the cut!")
-else:
-    print(f"{striker_name[i]} made the cut!")
+for i in range (s):
+    if {striker_score[i]} > {striker_score[i]}:
+        print(f"{striker_name[i]} made the cut!")
+    else:
+        print(f"{striker_name[i]} made the cut!")
 
 # for i in range(s):
     #print(f"{striker_name[i]}")
