@@ -30,5 +30,6 @@ for i in range(s):
 for i in range (s):
     print(f"{striker_name[i]}: ", end="")
     print(f"{striker_score[i]}")
+
 # for i in range(s):
     #print(f"{striker_name[i]}")
