@@ -25,6 +25,7 @@ def main():
             #print(f"Please provide acurate information)
         score = target / shots
         score = score * 100
+        striker_score.append(score)
         print(f"{score}%")
 
         #striker_score.append(score)
@@ -33,7 +34,7 @@ def main():
      #   print(f"{striker_name[i]}: ", end="")
       #  print(f"{striker_score[i]}")
 
-    #print(f"{striker_name}")
-    #print(f"{striker_score}")
+    print(f"{striker_name}")
+    print(f"{striker_score}")
 
 main()
