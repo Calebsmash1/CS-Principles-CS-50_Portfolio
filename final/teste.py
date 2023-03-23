@@ -37,5 +37,3 @@ for i in range (s):
     else:
         print(f"{striker_name[i]} made the cut!")
 
-# for i in range(s):
-    #print(f"{striker_name[i]}")
