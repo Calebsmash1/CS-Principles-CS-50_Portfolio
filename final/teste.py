@@ -40,4 +40,4 @@ for i in range (s):
         print(f"{striker_name[i]} made the cut!")
 
 print(f"{striker_name}")
-print(f"{striker_score})
+print(f"{striker_score}")
