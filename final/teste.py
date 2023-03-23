@@ -27,14 +27,6 @@ def main():
         score = score * 100
         print(f"{score}%")
 
-OVR = 0
-def OVR(score):
-    if score = 100:
-        return OVR +
-    else:
-        OVR = score + 14
-        return OVR
-
         #striker_score.append(score)
         #target = input(f"{striker_name[i]} shots on target?: ")
     #for i in range (s):
