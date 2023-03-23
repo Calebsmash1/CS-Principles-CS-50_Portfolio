@@ -26,8 +26,9 @@ def main():
         score = target / shots
         score = score * 100
         print(f"{score}%")
-        
-def score()
+
+def accuracy(shots, target)
+        return 
         striker_score.append(score)
         #target = input(f"{striker_name[i]} shots on target?: ")
     for i in range (s):
