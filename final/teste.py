@@ -21,9 +21,10 @@ for i in range(s):
     shots = int(shots)
     target = input(f"{striker_name[i]} on target?: ")
     target = int(target)
+    if
     score = target / shots
-    score = score * 100
-    print(f"{score}%")
+        score = score * 100
+        print(f"{score}%")
 
     striker_score.append(score)
     #target = input(f"{striker_name[i]} shots on target?: ")
