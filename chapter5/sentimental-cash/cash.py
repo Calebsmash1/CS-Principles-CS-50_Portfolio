@@ -37,7 +37,7 @@ def get_cents():
     return cents
 
 
-def calculate_quarters(cents, trev):
+def calculate_quarters(cents):
     # Divide by 25 (value of a quarter) for rounding
     return cents // 25
 
