@@ -21,8 +21,8 @@ for i in range(s):
     shots = int(shots)
     target = input(f"{striker_name[i]} on target?: ")
     target = int(target)
-    if target > shots
-        print(f"Please provide acurate information)
+    #if target > shots
+        #print(f"Please provide acurate information)
     score = target / shots
     score = score * 100
     print(f"{score}%")
@@ -39,3 +39,5 @@ for i in range (s):
     else:
         print(f"{striker_name[i]} made the cut!")
 
+print(f"{striker_name}")
+print(f"{striker_score})
