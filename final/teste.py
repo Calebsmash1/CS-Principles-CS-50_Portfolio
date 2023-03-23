@@ -27,15 +27,21 @@ def main():
         score = score * 100
         print(f"{score}%")
 
-def accuracy(shots, target)
-        return 
-        striker_score.append(score)
-        #target = input(f"{striker_name[i]} shots on target?: ")
-    for i in range (s):
-        print(f"{striker_name[i]}: ", end="")
-        print(f"{striker_score[i]}")
+OVR = 0
+def OVR(score):
+    if score = 100:
+        return OVR +
+    else:
+        OVR = score + 14
+        return OVR
 
-    print(f"{striker_name}")
-    print(f"{striker_score}")
+        #striker_score.append(score)
+        #target = input(f"{striker_name[i]} shots on target?: ")
+    #for i in range (s):
+     #   print(f"{striker_name[i]}: ", end="")
+      #  print(f"{striker_score[i]}")
+
+    #print(f"{striker_name}")
+    #print(f"{striker_score}")
 
 main()
