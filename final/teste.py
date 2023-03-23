@@ -35,3 +35,5 @@ def main():
 
     print(f"{striker_name}")
     print(f"{striker_score}")
+
+main()
