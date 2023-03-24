@@ -40,7 +40,7 @@ def main():
     for i in range(s):
         ovr = 0
         ovr = ((striker_dribble_rate[i] + striker_accuracy[i]) / 2)
-        # ovr = int(ovr)
+        ovr = int(ovr)
         striker_ovr.append(ovr)
 
     print(f"{striker_dribble_rate}")
