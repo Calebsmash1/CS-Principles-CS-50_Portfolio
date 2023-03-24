@@ -20,34 +20,6 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    # Asks for striker's shot accuracy and saves in a list
-    striker_accuracy = []
-    for i in range(s):
-        shots = input(f"{striker_name[i]} How many shots taken?: ")
-        shots = int(shots)
-        target = input(f"{striker_name[i]} How many shots on target?: ")
-        target = int(target)
-        if target > shots:
-            print("Please provide accurate information.")
-            exit()
-        accuracy = target / shots
-        accuracy = accuracy * 100
-        striker_accuracy.append(accuracy)
-
-    # Asks for striker's dribbling success rate and saves in a list
-    striker_dribble_rate = []
-    for i in range(s):
-        dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
-        dribbles = int(dribbles)
-        successful = input(f"{striker_name[i]} How many were successful?: ")
-        successful = int(successful)
-        if successful > dribbles:
-            print("Please provide accurate information.")
-            exit()
-        rate = successful / dribbles
-        rate = rate * 100
-        striker_dribble_rate.append(rate)
-
     # Asks for striker's passing success rate and saves in a list
     striker_pass_rate = []
     for i in range(s):
@@ -90,9 +62,62 @@ def main():
     # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
 
+# Finds a striker's accuracy
 def accuracy_finder():
+
+    # Asks for striker's shot accuracy and saves in a list
+    striker_name = []
+    for i in range(s):
+        name = input("Striker name: ")
+        striker_name.append(name)
+
+    # Asks for striker's shot accuracy and saves in a list
+    striker_accuracy = []
+    for i in range(s):
+        shots = input(f"{striker_name[i]} How many shots taken?: ")
+        shots = int(shots)
+        target = input(f"{striker_name[i]} How many shots on target?: ")
+        target = int(target)
+        if target > shots:
+            print("Please provide accurate information.")
+            exit()
+        accuracy = target / shots
+        accuracy = accuracy * 100
+        striker_accuracy.append(accuracy)
+
+
 def dribble_success_rate_finder():
+
+    # Asks for striker's dribbling success rate and saves in a list
+    striker_dribble_rate = []
+    for i in range(s):
+        dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
+        dribbles = int(dribbles)
+        successful = input(f"{striker_name[i]} How many were successful?: ")
+        successful = int(successful)
+        if successful > dribbles:
+            print("Please provide accurate information.")
+            exit()
+        rate = successful / dribbles
+        rate = rate * 100
+        striker_dribble_rate.append(rate)
+
 def pass_success_rate_finder():
+
+    # Asks for striker's passing success rate and saves in a list
+    striker_pass_rate = []
+    for i in range(s):
+        passes = input(f"{striker_name[i]} How many passes made?: ")
+        passes = int(passes)
+        through = input(f"{striker_name[i]} How many were received?: ")
+        through = int(through)
+        if through > passes:
+            print("Please provide accurate information.")
+            exit()
+        vision = through / passes
+        vision = vision * 100
+        striker_pass_rate.append(vision)
+
 def ovr_calculator():
 
 main()
