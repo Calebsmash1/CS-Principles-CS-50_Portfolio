@@ -25,7 +25,7 @@ def main():
         score = target / shots
         score = score * 100
         striker_score.append(score)
-        print(f"{score}%")
+        print(f"{score}")
 
     striker_rate = []
     for i in range(s):
@@ -36,6 +36,7 @@ def main():
         rate = suc / dri
         rate = rate * 100
         striker_rate.append(rate)
+        print(f"{score}")
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
