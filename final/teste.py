@@ -52,9 +52,11 @@ def main():
     #spot = int(spot)
 
     largest = 0
+    spot
     for i in range(striker_ovr[i]):
         if i > largest:
             largest = i
+            spot = 
 
 
     print(f"{largest}")
