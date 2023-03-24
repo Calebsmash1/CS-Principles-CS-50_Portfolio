@@ -1,13 +1,9 @@
-# Program that helps find the best striker among a group
-# to aid in the tryout process, helping user recruit the best player
-# (Assumes no 2 players are of equal skill)
-
 def main():
     # Asks how many strikers are trying out
     s = input("How manys strikers are trying out?: ")
     s = int(s)
     if s == 1:
-        print("They made the cut!")
+        print("They are the best!")
         exit()
     if s <= 0:
         print("Please provide at least one player.")
@@ -17,13 +13,6 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    striker_score = shot_finder()
-    striker_rate = rate_finder()
-
-    print(f"{striker_name}")
-    print(f"{striker_score}")
-
-def shot_finder(s):
     striker_score = []
     for i in range(s):
         shots = input(f"{striker_name[i]} shots?: ")
@@ -33,17 +22,20 @@ def shot_finder(s):
         score = target / shots
         score = score * 100
         striker_score.append(score)
-        return {striker_score}
+        print(f"{score}%")
 
-def rate_finder(s):
+    striker_rate = []
     for i in range(s):
-        dribbles = input(f"{striker_name[i]} dribbles?: ")
-        dribbles = int(dribbles)
-        success = input(f"{striker_name[i]} succesful?: ")
-        success = int(success)
-        rate = success / dribbles
+        d = input(f"{striker_name[i]} dribbles??: ")
+        d = int(d)
+        s = input(f"{striker_name[i]} on succesful?: ")
+        s = int(s)
+        rate = s / d
         rate = rate * 100
         striker_rate.append(rate)
-        return {striker_rate}
+
+    print(f"{striker_rate}")
+    print(f"{striker_name}")
+    print(f"{striker_score}")
 
 main()
