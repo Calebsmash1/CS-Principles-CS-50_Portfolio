@@ -1,8 +1,6 @@
 
 def main():
     # Asks how many strikers are trying out
-    ovr = []
-
     s = input("How manys strikers are trying out?: ")
     s = int(s)
     if s == 1:
@@ -37,6 +35,8 @@ def main():
         rate = rate * 100
         striker_rate.append(rate)
         print(f"{rate}")
+
+    ovr = ovr_calc(s, striker_rate, striker_score)
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
