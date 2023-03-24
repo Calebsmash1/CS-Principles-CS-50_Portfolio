@@ -30,18 +30,21 @@ def main():
         dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
         dribbles = int(dribbles)
         successful = input(f"{striker_name[i]} How many were successful?: ")
-        successful = int(suc)
+        successful = int(successful)
         rate = successful / dribbles
         rate = rate * 100
-        striker_rate.append(rate)
+        striker_dribble_rate.append(rate)
         print(f"{rate}")
 
     striker_ovr = []
         for i in range(s):
-        ovr = input(f"{striker_ovr})
+        ovr = (({striker_dribble_rate[i]} + {striker_accuracy[i]}) / 2)
+        ovr = int(ovr)
+        striker_ovr.append(ovr)
 
-    print(f"{striker_rate}")
+    print(f"{striker_dribble_rate}")
     print(f"{striker_name}")
     print(f"{striker_accuracy}")
+    print(f"{striker_ovr}")
 
 main()
