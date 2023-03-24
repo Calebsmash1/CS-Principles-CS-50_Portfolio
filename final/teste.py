@@ -17,7 +17,8 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-
+    striker_score = shot_finder()
+    striker_rate = rate_finder()
 
     print(f"{striker_name}")
     print(f"{striker_score}")
@@ -32,8 +33,9 @@ def shot_finder(s):
         score = target / shots
         score = score * 100
         striker_score.append(score)
+        return {striker_score}
 
-def dribble_success(s):
+def rate_finder(s):
     for i in range(s):
         dribbles = input(f"{striker_name[i]} dribbles?: ")
         dribbles = int(dribbles)
