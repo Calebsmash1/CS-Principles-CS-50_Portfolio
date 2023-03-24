@@ -51,6 +51,10 @@ def main():
     spot = max(striker_ovr[i])
     spot = int(spot)
 
+    largest = 0
+    for i in range(s):
+        if 
+
     print(f"{spot}")
     print(f"Best Striker is {striker_name[spot]}")
 
