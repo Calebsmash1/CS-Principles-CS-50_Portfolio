@@ -1,3 +1,7 @@
+# Program serves as a tool to help the tryout process
+# by taking in player names and stats and returning
+# the best player.
+# Assumes there are not players of equal skill
 
 def main():
     # Asks how many strikers are trying out
@@ -52,7 +56,7 @@ def main():
     print(f"{striker_accuracy}")
     print(f"{striker_ovr}")
 
-    
+
     spot = 0
     great = max(striker_ovr)
 
