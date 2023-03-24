@@ -4,10 +4,10 @@ def main():
     s = int(s)
     if s == 1:
         print("They are the best!")
-        break
+        exit()
     if s <= 0:
         print("Please provide at least one player.")
-        break
+        exit()
     striker_name = []
     for i in range(s):
         name = input("Striker name: ")
