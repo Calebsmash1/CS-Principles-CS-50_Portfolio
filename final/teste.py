@@ -57,8 +57,9 @@ def main():
     print(f"{great}")
     for i in range(striker_ovr[i]):
         if striker_ovr[i] == great:
+            spot = i
             break
-    print(f"{i}")
+    print(f"{spot}")
 
     #print(f"{largest}")
     #print(f"Best Striker is {striker_name[spot]}")
