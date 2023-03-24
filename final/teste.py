@@ -52,9 +52,7 @@ def main():
     print(f"{striker_accuracy}")
     print(f"{striker_ovr}")
 
-    #spot = max(striker_ovr[i])
-    #spot = int(spot)
-
+    
     spot = 0
     great = max(striker_ovr)
 
