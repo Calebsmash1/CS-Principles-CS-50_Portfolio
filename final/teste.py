@@ -36,9 +36,9 @@ def main():
         striker_rate.append(rate)
         print(f"{rate}")
 
-    ovr = []
+    striker_ovr = []
         for i in range(s):
-        ovr
+        ovr = input(f"{striker_ovr})
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
