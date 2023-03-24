@@ -33,6 +33,9 @@ def main():
         dribbles = int(dribbles)
         successful = input(f"{striker_name[i]} How many were successful?: ")
         successful = int(successful)
+        if successful > dribbles:
+            print("Please provide accurate information.")
+            exit()
         rate = successful / dribbles
         rate = rate * 100
         striker_dribble_rate.append(rate)
