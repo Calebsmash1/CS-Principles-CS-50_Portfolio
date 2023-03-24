@@ -48,8 +48,10 @@ def main():
     print(f"{striker_accuracy}")
     print(f"{striker_ovr}")
 
-    for i in range(s):
-        if max(striker_ovr[i]):
-            print(f"Best Striker is {striker_name[i]}")
+    spot = max(striker_ovr[i])
+    spot = int(spot)
+
+    print(f"{spot}")
+    print(f"Best Striker is {striker_name[spot]}")
 
 main()
