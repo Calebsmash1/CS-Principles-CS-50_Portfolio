@@ -13,6 +13,13 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
+    
+
+    print(f"{striker_name}")
+    print(f"{striker_score}")
+
+def OVR_calculator(s):
+
     striker_score = []
     for i in range(s):
         shots = input(f"{striker_name[i]} shots?: ")
@@ -24,7 +31,5 @@ def main():
         striker_score.append(score)
         print(f"{score}%")
 
-    print(f"{striker_name}")
-    print(f"{striker_score}")
 
 main()
