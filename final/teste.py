@@ -25,10 +25,10 @@ def main():
         striker_score.append(score)
         print(f"{score}")
 
-    striker_rate = []
+    striker_dribble_success = []
     for i in range(s):
-        dri = input(f"{striker_name[i]} dribbles??: ")
-        dri = int(dri)
+        dribbles = input(f"{striker_name[i]} dribbles??: ")
+        dribbles = int(dri)
         suc = input(f"{striker_name[i]} on succesful?: ")
         suc = int(suc)
         rate = suc / dri
@@ -36,8 +36,12 @@ def main():
         striker_rate.append(rate)
         print(f"{rate}")
 
+    ovr = []
+        for i in range(s):
+        ovr
+
     print(f"{striker_rate}")
     print(f"{striker_name}")
     print(f"{striker_score}")
-    
+
 main()
