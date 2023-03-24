@@ -21,7 +21,7 @@ def main():
         target = input(f"{striker_name[i]} How many shots on target?: ")
         target = int(target)
         accuracy = target / shots
-        accuracy = score * 100
+        accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
         print(f"{accuracy}")
 
