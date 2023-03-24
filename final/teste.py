@@ -14,24 +14,24 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    striker_score = []
+    striker_accuracy = []
     for i in range(s):
-        shots = input(f"{striker_name[i]} shots?: ")
+        shots = input(f"{striker_name[i]} How many shots taken?: ")
         shots = int(shots)
-        target = input(f"{striker_name[i]} on target?: ")
+        target = input(f"{striker_name[i]} How many shots on target?: ")
         target = int(target)
         score = target / shots
         score = score * 100
-        striker_score.append(score)
-        print(f"{score}")
+        striker_accuracy.append(accuracy)
+        print(f"{accuracy}")
 
-    striker_dribble_success = []
+    striker_dribble_rate = []
     for i in range(s):
-        dribbles = input(f"{striker_name[i]} dribbles??: ")
-        dribbles = int(dri)
-        suc = input(f"{striker_name[i]} on succesful?: ")
-        suc = int(suc)
-        rate = suc / dri
+        dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
+        dribbles = int(dribbles)
+        successful = input(f"{striker_name[i]} How many were successful?: ")
+        successful = int(suc)
+        rate = successful / dribbles
         rate = rate * 100
         striker_rate.append(rate)
         print(f"{rate}")
@@ -42,6 +42,6 @@ def main():
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
-    print(f"{striker_score}")
+    print(f"{striker_accuracy}")
 
 main()
