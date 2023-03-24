@@ -58,7 +58,7 @@ def main():
         if through > passes:
             print("Please provide accurate information.")
             exit()
-        vision = through / pass
+        vision = through / passes
         vision = vision * 100
         striker_pass_rate.append(vision)
 
@@ -66,9 +66,7 @@ def main():
     striker_ovr = []
     for i in range(s):
         ovr = 0
-        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]
-                ]]]]][[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]=======]=====][[[[[[=]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]) / 3)
-        ovr = int(ovr)
+        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
         striker_ovr.append(ovr)
 
     print(f"{striker_name}")
@@ -92,9 +90,9 @@ def main():
     # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
 
-def accuracy_finder()
-def dribble_success_rate_finder()
-def ovr_calculator()
-
+def accuracy_finder():
+def dribble_success_rate_finder():
+def pass_success_rate_finder():
+def ovr_calculator():
 
 main()
