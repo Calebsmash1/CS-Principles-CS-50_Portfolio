@@ -23,7 +23,6 @@ def main():
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
-        print(f"{accuracy}")
 
     striker_dribble_rate = []
     for i in range(s):
@@ -34,7 +33,6 @@ def main():
         rate = successful / dribbles
         rate = rate * 100
         striker_dribble_rate.append(rate)
-        print(f"{rate}")
 
     striker_ovr = []
     for i in range(s):
