@@ -66,7 +66,8 @@ def main():
     striker_ovr = []
     for i in range(s):
         ovr = 0
-        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
+        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]
+                ]]]]][[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]=======]=====][[[[[[=]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]) / 3)
         ovr = int(ovr)
         striker_ovr.append(ovr)
 
