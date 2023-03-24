@@ -48,11 +48,25 @@ def main():
         rate = rate * 100
         striker_dribble_rate.append(rate)
 
+    # Asks for striker's passing success rate and saves in a list
+    striker_pass_rate = []
+    for i in range(s):
+        passes = input(f"{striker_name[i]} How many passes made?: ")
+        passes = int(passes)
+        through = input(f"{striker_name[i]} How many were received?: ")
+        through = int(through)
+        if through > passes:
+            print("Please provide accurate information.")
+            exit()
+        vision = through / pass
+        vision = vision * 100
+        striker_pass_rate.append(vision)
+
     # Calculates player's Overall Rating using their stat averages and saves in a list
     striker_ovr = []
     for i in range(s):
         ovr = 0
-        ovr = ((striker_dribble_rate[i] + striker_accuracy[i]) / 2)
+        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
         ovr = int(ovr)
         striker_ovr.append(ovr)
 
