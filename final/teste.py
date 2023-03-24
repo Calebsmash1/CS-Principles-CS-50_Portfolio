@@ -13,11 +13,14 @@ def main():
     if s <= 0:
         print("Then why use program?.")
         exit()
+
+    # Asks for and saves striker names in a list
     striker_name = []
     for i in range(s):
         name = input("Striker name: ")
         striker_name.append(name)
 
+    # Asks for striker's shot accuracy and saves in a list
     striker_accuracy = []
     for i in range(s):
         shots = input(f"{striker_name[i]} How many shots taken?: ")
@@ -31,6 +34,7 @@ def main():
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
 
+    # Asks for striker's dribbling success rate and saves in a list
     striker_dribble_rate = []
     for i in range(s):
         dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
@@ -44,6 +48,7 @@ def main():
         rate = rate * 100
         striker_dribble_rate.append(rate)
 
+    # Calculates player's Overall Rating using 
     striker_ovr = []
     for i in range(s):
         ovr = 0
