@@ -36,13 +36,8 @@ def main():
         striker_rate.append(rate)
         print(f"{rate}")
 
-    ovr = []
-    for i in range(s):
-        ovr[i] = ({striker_score[i]} + {striker_rate[i]}) / 2
-
     print(f"{striker_rate}")
     print(f"{striker_name}")
     print(f"{striker_score}")
-    print(f"{ovr}")
-
+    
 main()
