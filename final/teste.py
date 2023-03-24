@@ -56,9 +56,10 @@ def main():
         ovr = int(ovr)
         striker_ovr.append(ovr)
 
-    print(f"{striker_dribble_rate}")
     print(f"{striker_name}")
     print(f"{striker_accuracy}")
+    print(f"{striker_dribble_rate}")
+    print(f"{striker_pass_rate}")
     print(f"{striker_ovr}")
 
 
