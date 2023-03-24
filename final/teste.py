@@ -52,7 +52,7 @@ def main():
     #spot = int(spot)
 
     largest = 0
-    for i in range(s):
+    for i in range(sriker_ovr):
         if i > largest:
             largest = i
 
