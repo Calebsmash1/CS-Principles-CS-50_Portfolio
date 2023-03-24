@@ -48,7 +48,7 @@ def main():
         rate = rate * 100
         striker_dribble_rate.append(rate)
 
-    # Calculates player's Overall Rating using 
+    # Calculates player's Overall Rating using their stat averages and saves in a list
     striker_ovr = []
     for i in range(s):
         ovr = 0
@@ -62,6 +62,7 @@ def main():
     print(f"{striker_ovr}")
 
 
+    # Compares player Overalls and finds best player
     spot = 0
     great = max(striker_ovr)
 
@@ -72,6 +73,12 @@ def main():
     spot = int(spot)
     print(f"{spot}")
 
+    # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
+
+def accuracy_finder()
+def dribble_success_rate_finder()
+def ovr_calculator()
+
 
 main()
