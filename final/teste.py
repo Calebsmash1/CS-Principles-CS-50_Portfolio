@@ -19,18 +19,10 @@ def main():
         shots = int(shots)
         target = input(f"{striker_name[i]} on target?: ")
         target = int(target)
-        #if target > shots
-            #print(f"Please provide acurate information)
         score = target / shots
         score = score * 100
         striker_score.append(score)
         print(f"{score}%")
-
-        #striker_score.append(score)
-        #target = input(f"{striker_name[i]} shots on target?: ")
-    #for i in range (s):
-     #   print(f"{striker_name[i]}: ", end="")
-      #  print(f"{striker_score[i]}")
 
     print(f"{striker_name}")
     print(f"{striker_score}")
