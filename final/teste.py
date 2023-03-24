@@ -7,7 +7,7 @@ def main():
         print("They are the best!")
         exit()
     if s <= 0:
-        print("Please provide at least one player.")
+        print("Then why use program?.")
         exit()
     striker_name = []
     for i in range(s):
