@@ -20,6 +20,9 @@ def main():
         shots = int(shots)
         target = input(f"{striker_name[i]} How many shots on target?: ")
         target = int(target)
+        if target > shots:
+            print("Please provide accurate information.")
+            exit()
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
