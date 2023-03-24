@@ -36,7 +36,7 @@ def main():
         rate = suc / dri
         rate = rate * 100
         striker_rate.append(rate)
-        print(f"{score}")
+        print(f"{rate}")
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
