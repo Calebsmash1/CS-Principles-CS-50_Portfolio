@@ -48,6 +48,7 @@ def main():
     print(f"{striker_accuracy}")
     print(f"{striker_ovr}")
 
+    BestStriker = max(striker_ovr[])
     
 
 
