@@ -45,11 +45,11 @@ def main():
     print(f"{striker_score}")
     print(f"{ovr}")
 
-#def ovr_calc(s, striker_rate, striker_score):
- #   ovr = []
-  #  for i in range(s):
-   #     ovr = ({striker_score[i]} + {striker_rate[i]}) / 2
-    #    return ovr[i]
+def ovr_calc(s, striker_rate, striker_score):
+    ovr = []
+    for i in range(s):
+        ovr = ({striker_score[i]} + {striker_rate[i]}) / 2
+        return ovr[i]
 
 
 main()
