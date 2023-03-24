@@ -40,6 +40,7 @@ def main():
     print(f"{striker_rate}")
     print(f"{striker_name}")
     print(f"{striker_score}")
+    print(f"{ovr}")
 
 def ovr_calc(s, striker_rate, striker_score):
     ovr = []
