@@ -54,10 +54,9 @@ def main():
     largest = 0
     spot = 0
     for i in range(striker_ovr[i]):
-        print(f"{i}")
         if i > largest:
             largest = i
-    print(f"{i}")
+        print(f"{largest}")
 
 
     print(f"{largest}")
