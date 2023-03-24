@@ -36,7 +36,7 @@ def main():
         striker_rate.append(rate)
         print(f"{rate}")
 
-    ovr = ovr_calc(s, striker_rate, striker_score)
+    ovr = [ovr_calc(s, striker_rate, striker_score)]
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
