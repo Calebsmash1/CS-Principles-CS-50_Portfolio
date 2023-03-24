@@ -36,18 +36,20 @@ def main():
         striker_rate.append(rate)
         print(f"{rate}")
 
-    ovr = [ovr_calc(s, striker_rate, striker_score)]
+    ovr = []
+    for i in range(s):
+        ovr = ({striker_score[i]} + {striker_rate[i]}) / 2
 
     print(f"{striker_rate}")
     print(f"{striker_name}")
     print(f"{striker_score}")
     print(f"{ovr}")
 
-def ovr_calc(s, striker_rate, striker_score):
-    ovr = []
-    for i in range(s):
-        ovr = ({striker_score[i]} + {striker_rate[i]}) / 2
-        return ovr[i]
+#def ovr_calc(s, striker_rate, striker_score):
+ #   ovr = []
+  #  for i in range(s):
+   #     ovr = ({striker_score[i]} + {striker_rate[i]}) / 2
+    #    return ovr[i]
 
 
 main()
