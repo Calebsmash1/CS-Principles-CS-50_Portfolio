@@ -37,7 +37,7 @@ def main():
         print(f"{rate}")
 
     striker_ovr = []
-        for i in range(s):
+    for i in range(s):
         ovr = (({striker_dribble_rate[i]} + {striker_accuracy[i]}) / 2)
         ovr = int(ovr)
         striker_ovr.append(ovr)
