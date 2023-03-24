@@ -20,27 +20,7 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    # Asks for striker's passing success rate and saves in a list
-    striker_pass_rate = []
-    for i in range(s):
-        passes = input(f"{striker_name[i]} How many passes made?: ")
-        passes = int(passes)
-        through = input(f"{striker_name[i]} How many were received?: ")
-        through = int(through)
-        if through > passes:
-            print("Please provide accurate information.")
-            exit()
-        vision = through / passes
-        vision = vision * 100
-        striker_pass_rate.append(vision)
-
-    # Calculates player's Overall Rating using their stat averages and saves in a list
-    striker_ovr = []
-    for i in range(s):
-        ovr = 0
-        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
-        striker_ovr.append(ovr)
-
+    #
 
 
     print(f"{striker_name}")
@@ -110,6 +90,16 @@ def pass_success_rate_finder():
         striker_pass_rate.append(vision)
 
 def ovr_calculator():
+
+    # Calculates player's Overall Rating using their stat averages and saves in a list
+    striker_ovr = []
+    for i in range(s):
+        ovr = 0
+        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
+        striker_ovr.append(ovr)
+
+
+def best_striker_finder():
 
     # Compares player Overalls and finds best player
     spot = 0
