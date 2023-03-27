@@ -19,7 +19,8 @@ def main():
     for i in range(s):
         name = input("Striker name: ")
         striker_name.append(name)
-        
+
+    new_accuracy = accuracy_finder({striker_accuracy})
 
     print(f"{striker_name}")
     print(f"{striker_accuracy}")
@@ -58,6 +59,7 @@ def accuracy_finder():
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
+        return {striker_accuracy}
 
 
 def dribble_success_rate_finder():
