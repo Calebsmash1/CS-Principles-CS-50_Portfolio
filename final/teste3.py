@@ -90,9 +90,9 @@ def main():
     # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
 
-def accuracy_finder():
-def dribble_success_rate_finder():
-def pass_success_rate_finder():
-def ovr_calculator():
+#def accuracy_finder():
+#def dribble_success_rate_finder():
+#def pass_success_rate_finder():
+#def ovr_calculator():
 
 main()
