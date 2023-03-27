@@ -59,7 +59,7 @@ def accuracy_finder():
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
-        return {striker_accuracy}
+    return ({striker_accuracy})
 
 
 def dribble_success_rate_finder():
