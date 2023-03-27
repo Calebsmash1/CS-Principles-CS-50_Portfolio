@@ -19,6 +19,7 @@ def main():
     for i in range(s):
         name = input("Striker name: ")
         striker_name.append(name)
+        
 
     print(f"{striker_name}")
     print(f"{striker_accuracy}")
@@ -26,17 +27,23 @@ def main():
     print(f"{striker_pass_rate}")
     print(f"{striker_ovr}")
 
+
+    # Compares player Overalls and finds best player
+    spot = 0
+    great = max(striker_ovr)
+
+    for i in range(striker_ovr[i]):
+        if striker_ovr[i] == great:
+            spot = i
+            break
+    spot = int(spot)
+    print(f"{spot}")
+
     # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
 
 
 def accuracy_finder():
-
-    # Asks for striker's shot accuracy and saves in a list
-    striker_name = []
-    for i in range(s):
-        name = input("Striker name: ")
-        striker_name.append(name)
 
     # Asks for striker's shot accuracy and saves in a list
     striker_accuracy = []
@@ -87,26 +94,13 @@ def pass_success_rate_finder():
         striker_pass_rate.append(vision)
 
 def ovr_calculator():
-
     # Calculates player's Overall Rating using their stat averages and saves in a list
     striker_ovr = []
     for i in range(s):
         ovr = 0
         ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
+        ovr = int(ovr)
         striker_ovr.append(ovr)
 
-
-def best_striker_finder():
-
-    # Compares player Overalls and finds best player
-    spot = 0
-    great = max(striker_ovr)
-
-    for i in range(striker_ovr[i]):
-        if striker_ovr[i] == great:
-            spot = i
-            break
-    spot = int(spot)
-    print(f"{spot}")
 
 main()
