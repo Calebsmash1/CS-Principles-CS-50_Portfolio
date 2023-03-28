@@ -27,6 +27,20 @@ def main():
     print(f"{cll}")
     print(f"{striker_name}")
 
+    # Compares player Overalls and finds best player
+    spot = 0
+    great = max(cll)
+
+    for i in range(s):
+        if cll[i] == great:
+            spot = i
+            break
+    spot = int(spot)
+    print(f"{spot}")
+
+    # Prints who the best player is
+    print(f"Best Striker is {striker_name[spot]}")
+
 def accuracy_finder(s, striker_name):
 
     # Asks for striker's shot accuracy and saves in a list
