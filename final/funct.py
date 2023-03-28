@@ -29,10 +29,9 @@ def main():
             spot = i
             break
     spot = int(spot)
-    print(f"{spot}")
 
     # Prints who the best player is
-    print(f"Best Striker is {new[spot]}")
+    print(f"Best Striker is {striker_name[spot]}")
 
 def accuracy_finder(s, striker_name):
 
