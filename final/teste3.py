@@ -20,18 +20,22 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    striker_new = accuracy_finder(s)
+    acc = accuracy_finder(s, striker_name)
+    drr = dribble_success_rate_finder(s, striker_name)
+    pss = pass_success_rate_finder(s, striker_name0)
 
     # Calculates player's Overall Rating using their stat averages and saves in a list
     striker_ovr = []
     for i in range(s):
         ovr = 0
-        ovr = ((striker_new[i] + 2))
+        ovr = ((acc[i] + drr[i] + pss[i]) / 3)
         ovr = int(ovr)
         striker_ovr.append(ovr)
 
     print(f"{striker_name}")
-    print(f"{striker_new}")
+    print(f"{striker_acc}")
+    print(f"{striker_drr}")
+    print(f"{striker_pss}")
     print(f"{striker_ovr}")
 
 
@@ -48,7 +52,7 @@ def main():
     # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
 
-def accuracy_finder(s):
+def accuracy_finder(s, striker_name):
 
     # Asks for striker's shot accuracy and saves in a list
     striker_accuracy = []
@@ -66,7 +70,39 @@ def accuracy_finder(s):
     return striker_accuracy
 
 
-#def dribble_success_rate_finder():
+def dribble_success_rate_finder(s, striker_name):
+
+    # Asks for striker's dribbling success rate and saves in a list
+    striker_dribble_rate = []
+    for i in range(s):
+        dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
+        dribbles = int(dribbles)
+        successful = input(f"{striker_name[i]} How many were successful?: ")
+        successful = int(successful)
+        if successful > dribbles:
+            print("Please provide accurate information.")
+            exit()
+        rate = successful / dribbles
+        rate = rate * 100
+        striker_dribble_rate.append(rate)
+    return striker_dribble_rate
+
+def pass_success_rate_finder(s, striker_name):
+
+    # Asks for striker's passing success rate and saves in a list
+    striker_pass_rate = []
+    for i in range(s):
+        passes = input(f"{striker_name[i]} How many passes made?: ")
+        passes = int(passes)
+        through = input(f"{striker_name[i]} How many were received?: ")
+        through = int(through)
+        if through > passes:
+            print("Please provide accurate information.")
+            exit()
+        vision = through / passes
+        vision = vision * 100
+        striker_pass_rate.append(vision)
+
 #def ovr_calculator():
 
 
