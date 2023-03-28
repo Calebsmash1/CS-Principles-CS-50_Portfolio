@@ -16,14 +16,13 @@ def main():
         striker_name.append(name)
 
 
-    
+    new = accuracy_finder(s, striker_name)
 
     print(f"{new}")
 
     print(f"{striker_name}")
-    print(f"{striker_new})
 
-def accuracy_finder(s):
+def accuracy_finder(s, striker_name):
 
     # Asks for striker's shot accuracy and saves in a list
     striker_accuracy = []
