@@ -20,7 +20,8 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    new_accuracy = accuracy_finder({striker_accuracy})
+    new_accuracy = []
+    new_accuracy == accuracy_finder({striker_accuracy})
 
     print(f"{striker_name}")
     print(f"{striker_accuracy}")
