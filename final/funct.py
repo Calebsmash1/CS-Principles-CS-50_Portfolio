@@ -42,9 +42,9 @@ def accuracy_finder(s, striker_name):
         shots = int(shots)
         target = input(f"{striker_name[i]} How many shots on target?: ")
         target = int(target)
-        if target > shots:
+        if target > shots :
             print("Please provide accurate information.")
-            exit()
+            break
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
@@ -60,7 +60,7 @@ def dribble_finder(s, striker_name):
         successful = int(successful)
         if successful > dribbles:
             print("Please provide accurate information.")
-            exit()
+            break
         rate = successful / dribbles
         rate = rate * 100
         striker_dribble_rate.append(rate)
@@ -77,7 +77,7 @@ def pass_finder(s, striker_name):
         through = int(through)
         if through > passes:
             print("Please provide accurate information.")
-            exit()
+            break
         vision = through / passes
         vision = vision * 100
         striker_pass_rate.append(vision)
@@ -93,6 +93,5 @@ def ovr_calculator(s, acc, drr, pss):
         ovr = int(ovr)
         striker_ovr.append(ovr)
     return striker_ovr
-
 
 main()
