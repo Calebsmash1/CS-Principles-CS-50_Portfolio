@@ -32,7 +32,7 @@ def main():
     print(f"{spot}")
 
     # Prints who the best player is
-    print(f"Best Striker is {striker_name[spot]}")
+    print(f"Best Striker is {}")
 
 def accuracy_finder(s, striker_name):
 
