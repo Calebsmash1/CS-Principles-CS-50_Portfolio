@@ -20,40 +20,6 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    acc = accuracy_finder(s, striker_name)
-    drr = dribble_success_rate_finder(s, striker_name)
-    pss = pass_success_rate_finder(s, striker_name)
-
-    # Calculates player's Overall Rating using their stat averages and saves in a list
-    striker_ovr = []
-    for i in range(s):
-        ovr = 0
-        ovr = ((acc[i] + drr[i] + pss[i]) / 3)
-        ovr = int(ovr)
-        striker_ovr.append(ovr)
-
-    print(f"{striker_name}")
-    print(f"{striker_acc}")
-    print(f"{striker_drr}")
-    print(f"{striker_pss}")
-    print(f"{striker_ovr}")
-
-
-    # Compares player Overalls and finds best player
-    spot = 0
-    great = max(striker_ovr)
-
-    for i in range(striker_ovr[i]):
-        if striker_ovr[i] == great:
-            spot = i
-            break
-    spot = int(spot)
-
-    # Prints who the best player is
-    print(f"Best Striker is {striker_name[spot]}")
-
-def accuracy_finder(s, striker_name):
-
     # Asks for striker's shot accuracy and saves in a list
     striker_accuracy = []
     for i in range(s):
@@ -67,10 +33,6 @@ def accuracy_finder(s, striker_name):
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
-    return striker_accuracy
-
-
-def dribble_success_rate_finder(s, striker_name):
 
     # Asks for striker's dribbling success rate and saves in a list
     striker_dribble_rate = []
@@ -85,9 +47,6 @@ def dribble_success_rate_finder(s, striker_name):
         rate = successful / dribbles
         rate = rate * 100
         striker_dribble_rate.append(rate)
-    return striker_dribble_rate
-
-def pass_success_rate_finder(s, striker_name):
 
     # Asks for striker's passing success rate and saves in a list
     striker_pass_rate = []
@@ -103,6 +62,37 @@ def pass_success_rate_finder(s, striker_name):
         vision = vision * 100
         striker_pass_rate.append(vision)
 
+    # Calculates player's Overall Rating using their stat averages and saves in a list
+    striker_ovr = []
+    for i in range(s):
+        ovr = 0
+        ovr = ((striker_dribble_rate[i] + striker_accuracy[i] + striker_pass_rate[i]) / 3)
+        ovr = int(ovr)
+        striker_ovr.append(ovr)
+
+    print(f"{striker_name}")
+    print(f"{striker_accuracy}")
+    print(f"{striker_dribble_rate}")
+    print(f"{striker_pass_rate}")
+    print(f"{striker_ovr}")
+
+
+    # Compares player Overalls and finds best player
+    spot = 0
+    great = max(striker_ovr)
+
+    for i in range(striker_ovr[i]):
+        if striker_ovr[i] == great:
+            spot = i
+            break
+    spot = int(spot)
+    print(f"{spot}")
+
+    # Prints who the best player is
+    print(f"Best Striker is {striker_name[spot]}")
+
+#def accuracy_finder():
+#def dribble_success_rate_finder():
 #def ovr_calculator():
 
 

@@ -59,9 +59,12 @@ def dribble_finder(s, striker_name):
     for i in range(s):
         dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
         dribbles = int(dribbles)
+        if dribbles < 0:
+            print("Please provide accurate information.")
+            break
         successful = input(f"{striker_name[i]} How many were successful?: ")
         successful = int(successful)
-        if successful > dribbles:
+        if successful > dribbles or successful < 0:
             print("Please provide accurate information.")
             break
         rate = successful / dribbles
@@ -76,9 +79,12 @@ def pass_finder(s, striker_name):
     for i in range(s):
         passes = input(f"{striker_name[i]} How many passes made?: ")
         passes = int(passes)
+        if passes < 0:
+            print("Please provide accurate information.")
+            break
         through = input(f"{striker_name[i]} How many were received?: ")
         through = int(through)
-        if through > passes:
+        if through > passes or through < 0:
             print("Please provide accurate information.")
             break
         vision = through / passes
