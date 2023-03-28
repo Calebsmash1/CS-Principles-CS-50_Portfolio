@@ -40,9 +40,12 @@ def accuracy_finder(s, striker_name):
     for i in range(s):
         shots = input(f"{striker_name[i]} How many shots taken?: ")
         shots = int(shots)
+        if shots < 0:
+            print("Please provide accurate information.")
+            break
         target = input(f"{striker_name[i]} How many shots on target?: ")
         target = int(target)
-        if target > shots :
+        if target > shots or target < 0:
             print("Please provide accurate information.")
             break
         accuracy = target / shots
