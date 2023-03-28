@@ -20,20 +20,6 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
-    # Asks for striker's shot accuracy and saves in a list
-    striker_accuracy = []
-    for i in range(s):
-        shots = input(f"{striker_name[i]} How many shots taken?: ")
-        shots = int(shots)
-        target = input(f"{striker_name[i]} How many shots on target?: ")
-        target = int(target)
-        if target > shots:
-            print("Please provide accurate information.")
-            exit()
-        accuracy = target / shots
-        accuracy = accuracy * 100
-        striker_accuracy.append(accuracy)
-
     # Calculates player's Overall Rating using their stat averages and saves in a list
     striker_ovr = []
     for i in range(s):
@@ -56,13 +42,26 @@ def main():
             spot = i
             break
     spot = int(spot)
-    print(f"{spot}")
 
     # Prints who the best player is
     print(f"Best Striker is {striker_name[spot]}")
 
-#def accuracy_finder():
+def accuracy_finder():
 
+    # Asks for striker's shot accuracy and saves in a list
+    striker_accuracy = []
+    for i in range(s):
+        shots = input(f"{striker_name[i]} How many shots taken?: ")
+        shots = int(shots)
+        target = input(f"{striker_name[i]} How many shots on target?: ")
+        target = int(target)
+        if target > shots:
+            print("Please provide accurate information.")
+            exit()
+        accuracy = target / shots
+        accuracy = accuracy * 100
+        striker_accuracy.append(accuracy)
+    
 
 
 #def dribble_success_rate_finder():
