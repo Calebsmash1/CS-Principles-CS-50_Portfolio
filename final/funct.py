@@ -15,11 +15,16 @@ def main():
         name = input("Striker name: ")
         striker_name.append(name)
 
+    acc = accuracy_finder(s, striker_name)
+    drr = dribble_finder(s, striker_name)
+    pss = pass_finder(s, striker_name)
+    cll = ovr_calculator(s, acc, drr, pss)
 
-    new = accuracy_finder(s, striker_name)
 
-    print(f"{new}")
-
+    print(f"{acc}")
+    print(f"{drr}")
+    print(f"{pss}")
+    print(f"{cll}")
     print(f"{striker_name}")
 
 def accuracy_finder(s, striker_name):
@@ -37,7 +42,51 @@ def accuracy_finder(s, striker_name):
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
-    print(f"{striker_accuracy}")
     return striker_accuracy
+
+def dribble_finder(s, striker_name):
+    # Asks for striker's dribbling success rate and saves in a list
+    striker_dribble_rate = []
+    for i in range(s):
+        dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
+        dribbles = int(dribbles)
+        successful = input(f"{striker_name[i]} How many were successful?: ")
+        successful = int(successful)
+        if successful > dribbles:
+            print("Please provide accurate information.")
+            exit()
+        rate = successful / dribbles
+        rate = rate * 100
+        striker_dribble_rate.append(rate)
+    return striker_dribble_rate
+
+def pass_finder(s, striker_name):
+
+    # Asks for striker's passing success rate and saves in a list
+    striker_pass_rate = []
+    for i in range(s):
+        passes = input(f"{striker_name[i]} How many passes made?: ")
+        passes = int(passes)
+        through = input(f"{striker_name[i]} How many were received?: ")
+        through = int(through)
+        if through > passes:
+            print("Please provide accurate information.")
+            exit()
+        vision = through / passes
+        vision = vision * 100
+        striker_pass_rate.append(vision)
+    return striker_pass_rate
+
+def ovr_calculator(s, acc, drr, pss):
+
+    # Calculates player's Overall Rating using their stat averages and saves in a list
+    striker_ovr = []
+    for i in range(s):
+        ovr = 0
+        ovr = ((acc[i] + drr[i] + pss[i]) / 3)
+        ovr = int(ovr)
+        striker_ovr.append(ovr)
+    return striker_ovr
+
 
 main()
