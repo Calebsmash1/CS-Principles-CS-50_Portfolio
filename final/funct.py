@@ -19,7 +19,6 @@ def main():
     drr = dribble_finder(s, striker_name)
     pss = pass_finder(s, striker_name)
     cll = ovr_calculator(s, acc, drr, pss)
-    new = new_finder(s, cll)
 
     # Compares player Overalls and finds best player
     spot = 0
