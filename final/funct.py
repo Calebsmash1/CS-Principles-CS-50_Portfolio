@@ -20,13 +20,6 @@ def main():
     pss = pass_finder(s, striker_name)
     cll = ovr_calculator(s, acc, drr, pss)
 
-
-    print(f"{acc}")
-    print(f"{drr}")
-    print(f"{pss}")
-    print(f"{cll}")
-    print(f"{striker_name}")
-
     # Compares player Overalls and finds best player
     spot = 0
     great = max(cll)
