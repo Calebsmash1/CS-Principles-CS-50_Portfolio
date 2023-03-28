@@ -22,7 +22,7 @@ def main():
 
     acc = accuracy_finder(s, striker_name)
     drr = dribble_success_rate_finder(s, striker_name)
-    pss = pass_success_rate_finder(s, striker_name0)
+    pss = pass_success_rate_finder(s, striker_name)
 
     # Calculates player's Overall Rating using their stat averages and saves in a list
     striker_ovr = []
