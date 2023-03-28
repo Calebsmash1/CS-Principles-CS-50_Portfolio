@@ -19,6 +19,7 @@ def main():
     drr = dribble_finder(s, striker_name)
     pss = pass_finder(s, striker_name)
     cll = ovr_calculator(s, acc, drr, pss)
+    new = new_finder(s, cll)
 
     # Compares player Overalls and finds best player
     spot = 0
@@ -32,7 +33,7 @@ def main():
     print(f"{spot}")
 
     # Prints who the best player is
-    print(f"Best Striker is {}")
+    print(f"Best Striker is {new[spot]}")
 
 def accuracy_finder(s, striker_name):
 
