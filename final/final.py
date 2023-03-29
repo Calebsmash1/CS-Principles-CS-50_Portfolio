@@ -3,7 +3,8 @@
 # to find the best player.
 
 # ASSUMPTIONS: Program assumes that no two players are of
-# equal skill, that the user uses integers, and that all players are strikers.
+# equal skill, that user follows directions properly, (inputs what the programs asks for)
+# that the user uses integers, and that all players are strikers.
 
 def main():
     # Asks how many strikers are trying out
