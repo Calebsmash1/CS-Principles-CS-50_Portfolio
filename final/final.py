@@ -9,13 +9,10 @@ def main():
     # Asks how many strikers are trying out
     s = input("How manys strikers are trying out?: ")
     s = int(s)
-    # Ends program if only one player
-    if s == 1:
-        print("They are the best!")
-        exit()
-    if s <= 0:
-        print("Then why use program?.")
-        exit()
+    # Ends program if user if given only one or less players
+    if s <= 1:
+        print("Please provide at least 2 or more players")
+        break
 
     # Asks for and saves striker names in a list
     striker_name = []
@@ -41,7 +38,7 @@ def main():
     spot = int(spot)
 
     # Prints who the best player is
-    print(f"Best Striker is {striker_name[spot]}, with and Overall of {ovr[spot]}")
+    print(f"Best Striker is {striker_name[spot]}, with and Overall of {ovr[spot]}!")
 
 # Finds the accuracy of each player
 def accuracy_finder(s, striker_name):
