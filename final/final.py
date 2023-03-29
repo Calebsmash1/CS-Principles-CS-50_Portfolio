@@ -14,13 +14,13 @@ def main():
         print("Please provide at least 2 or more players")
         break
 
-    # Asks for and saves striker names in a list
+    # Asks for, and saves striker names in a list using append
     striker_name = []
     for i in range(s):
         name = input("Striker name: ")
         striker_name.append(name)
 
-    # Calls functions to determine a striker's stats
+    # Calls functions that determine a striker's stats
     acc = accuracy_finder(s, striker_name)
     drr = dribble_finder(s, striker_name)
     pss = pass_finder(s, striker_name)
@@ -48,6 +48,7 @@ def accuracy_finder(s, striker_name):
     for i in range(s):
         shots = input(f"{striker_name[i]} How many shots taken?: ")
         shots = int(shots)
+        # Re-prompts user if given innacurate information
         if shots < 0:
             print("Please provide accurate information.")
             break
@@ -68,6 +69,7 @@ def dribble_finder(s, striker_name):
     for i in range(s):
         dribbles = input(f"{striker_name[i]} How many dribbles done?: ")
         dribbles = int(dribbles)
+        # Re-prompts user if given innacurate information
         if dribbles < 0:
             print("Please provide accurate information.")
             break
@@ -89,6 +91,7 @@ def pass_finder(s, striker_name):
     for i in range(s):
         passes = input(f"{striker_name[i]} How many passes made?: ")
         passes = int(passes)
+        # Re-prompts user if given innacurate information
         if passes < 0:
             print("Please provide accurate information.")
             break
