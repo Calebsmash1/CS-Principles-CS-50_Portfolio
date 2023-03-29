@@ -1,13 +1,15 @@
 # Program that aids in a soccer team's tryout process
 # by taking in a list of players and their stats
 # and finding the best one.
+
 # ASSUMPTIONS: Program assumes that no two players are of
-# equal skill
+# equal skill and that the user uses integers.
 
 def main():
     # Asks how many strikers are trying out
     s = input("How manys strikers are trying out?: ")
     s = int(s)
+    # Ends program if only one player
     if s == 1:
         print("They are the best!")
         exit()
@@ -39,7 +41,7 @@ def main():
     spot = int(spot)
 
     # Prints who the best player is
-    print(f"Best Striker is {striker_name[spot]}")
+    print(f"Best Striker is {striker_name[spot]}, with and Overall of {ovr[spot]}")
 
 # Finds the accuracy of each player
 def accuracy_finder(s, striker_name):
