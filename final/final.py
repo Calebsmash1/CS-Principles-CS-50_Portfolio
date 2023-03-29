@@ -1,9 +1,9 @@
 # Program that aids in a soccer team's tryout process
 # by taking in a list of players and their stats
-# and finding the best one.
+# to find the best player.
 
 # ASSUMPTIONS: Program assumes that no two players are of
-# equal skill and that the user uses integers.
+# equal skill, that the user uses integers, and that all players are strikers.
 
 def main():
     # Asks how many strikers are trying out
@@ -12,7 +12,7 @@ def main():
     # Ends program if user if given only one or less players
     if s <= 1:
         print("Please provide at least 2 or more players")
-        break
+        exit()
 
     # Asks for, and saves striker names in a list using append
     striker_name = []
