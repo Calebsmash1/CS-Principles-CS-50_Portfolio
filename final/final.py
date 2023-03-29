@@ -31,7 +31,7 @@ def main():
 
     # Compares player Overalls and finds best player
     spot = 0
-    great = max(cll)
+    great = max(ovr)
 
     # Determines which player is the best
     for i in range(s):
