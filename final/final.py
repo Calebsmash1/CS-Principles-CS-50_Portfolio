@@ -76,9 +76,6 @@ def dribble_finder(s, striker_name):
             break
         successful = input(f"{striker_name[i]} How many were successful?: ")
         successful = int(successful)
-        if successful > dribbles or successful < 0:
-            print("Please provide accurate information.")
-            break
         rate = successful / dribbles
         rate = rate * 100
         striker_dribble_rate.append(rate)
