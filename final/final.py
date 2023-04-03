@@ -52,12 +52,12 @@ def accuracy_finder(s, striker_name):
         # Re-prompts user if given innacurate information
         if shots < 0:
             print("Please provide accurate information.")
-            break
+            exit()
         target = input(f"{striker_name[i]} How many shots on target?: ")
         target = int(target)
         if target > shots or target < 0:
             print("Please provide accurate information.")
-            break
+            exit()
         accuracy = target / shots
         accuracy = accuracy * 100
         striker_accuracy.append(accuracy)
@@ -73,12 +73,12 @@ def dribble_finder(s, striker_name):
         # Re-prompts user if given innacurate information
         if dribbles < 0:
             print("Please provide accurate information.")
-            break
+            exit()
         successful = input(f"{striker_name[i]} How many were successful?: ")
         successful = int(successful)
         if successful > dribbles or successful < 0:
             print("Please provide accurate information.")
-            break
+            exit()
         rate = successful / dribbles
         rate = rate * 100
         striker_dribble_rate.append(rate)
@@ -95,12 +95,12 @@ def pass_finder(s, striker_name):
         # Re-prompts user if given innacurate information
         if passes < 0:
             print("Please provide accurate information.")
-            break
+            exit()
         through = input(f"{striker_name[i]} How many were received?: ")
         through = int(through)
         if through > passes or through < 0:
             print("Please provide accurate information.")
-            break
+            exit()
         vision = through / passes
         vision = vision * 100
         striker_pass_rate.append(vision)
