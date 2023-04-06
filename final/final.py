@@ -39,7 +39,7 @@ def main():
     spot = int(spot)
 
     # Prints who the best player is
-    print(f"Best Striker is {striker_name[spot]}, with and Overall of {ovr[spot]}!")
+    print(f"Best Striker is {striker_name[spot]}, with an Overall of {ovr[spot]}!")
 
 # Finds the accuracy of each player
 def accuracy_finder(s, striker_name):
