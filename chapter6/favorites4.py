@@ -7,7 +7,7 @@ with open("favorites.csv", "r") as file:
 
     for row in reader:
         # Remove spaces before and after title, convert all letters to uppercase
-        title = row["title"].stripI()upper()
+        title = row["title"].stripI().upper()
         # Add to the list
         titles.add(title)
 
