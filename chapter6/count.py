@@ -8,7 +8,14 @@ with open ("favorites.csv", "r") as file:
 
     for now in reader:
         title = row["title"].strip().upper()
-        titles[title} += 1
+
+        # If found a new title
+        if not title in titles:
+            # Set count to 0
+            title[title] = 0
+
+        # Add 1 to the count
+        titles[title] += 1
 
 for title in sorted(titles):
-    print(title)
+    print(title, titles[title])
