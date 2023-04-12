@@ -12,4 +12,5 @@ with open("favorites.csv", "r") as file:
             titles.append(row["titles"])
 
 # Printing every title in the list
-    print(row["title"])
+for title in titles:
+    print("title")
