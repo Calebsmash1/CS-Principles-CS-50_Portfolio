@@ -1,8 +1,1 @@
-SELECT movies.title FROM people
-JOIN stars ON people.id = stars.person_id
-JOIN movies ON stars.movie_id = movies.id
-WHERE people.name = "Johnny Depp" AND movies.title IN(
-SELECT movies.title FROM people
-JOIN stars ON people.id = stars.person_id
-JOIN movies ON stars.movie_id = movies.id
-WHERE people.name = "Helena Bonham Carter");
+SELECT title FROM movies, stars, people WHERE movies.id = stars.movie_id AND people.id = stars.person_id AND name like "%Johnny Depp%" AND title IN (SELECT title FROM movies, stars, people WHERE movies.id = stars.movie_id AND people.id = stars.person_id AND name like "%Helena Bonham Carter%");
