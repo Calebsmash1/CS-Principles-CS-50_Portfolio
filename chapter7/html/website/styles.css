@@ -8,13 +8,8 @@
 }
 
 
-
-.collapse
+body
 {
-    &:not(.show)
-    {
-      display: none;
-    }
+    text-align: center;
 }
-
 
