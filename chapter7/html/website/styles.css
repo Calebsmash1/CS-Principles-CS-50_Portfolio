@@ -11,16 +11,17 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 85%;
+    width="800"
+    height="700"
 }
 
 .general
 {
     text-align: center;
     color: white;
-    background-color:black;
 }
 
 .high
 {
-
+    background-color:black;
 }
